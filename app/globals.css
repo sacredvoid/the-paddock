@@ -54,6 +54,7 @@
   --color-border-subtle: #2A2A2A;
   --color-text-primary: #F5F5F5;
   --color-text-secondary: #888888;
+  --font-heading: var(--font-titillium);
 }
 
 :root {

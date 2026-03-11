@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div>
       {/* Hero section with carbon fiber texture */}
-      <section className="carbon-fiber relative flex flex-col items-center justify-center gap-8 px-6 py-24">
+      <section className="carbon-fiber relative -mx-4 -mt-8 flex flex-col items-center justify-center gap-8 px-6 py-24">
         <h1 className="text-center text-5xl font-black tracking-tight text-text-primary md:text-7xl"
             style={{ fontFamily: "var(--font-titillium)" }}>
           THE <span className="text-f1-red">PADDOCK</span>
@@ -15,7 +15,7 @@ export default function Home() {
       </section>
 
       {/* Design system preview */}
-      <section className="dot-grid px-6 py-16">
+      <section className="dot-grid -mx-4 px-6 py-16">
         <div className="mx-auto max-w-4xl space-y-12">
           {/* Color palette */}
           <div>
