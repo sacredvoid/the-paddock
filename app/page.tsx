@@ -1,65 +1,114 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen">
+      {/* Hero section with carbon fiber texture */}
+      <section className="carbon-fiber relative flex flex-col items-center justify-center gap-8 px-6 py-24">
+        <h1 className="text-center text-5xl font-black tracking-tight text-text-primary md:text-7xl"
+            style={{ fontFamily: "var(--font-titillium)" }}>
+          THE <span className="text-f1-red">PADDOCK</span>
+        </h1>
+        <p className="max-w-lg text-center text-lg text-text-secondary">
+          Everything about Formula 1. Drivers, circuits, race analysis,
+          historical records, and interactive visualizations.
+        </p>
+        <div className="h-1 w-24 rounded bg-f1-red" />
+      </section>
+
+      {/* Design system preview */}
+      <section className="dot-grid px-6 py-16">
+        <div className="mx-auto max-w-4xl space-y-12">
+          {/* Color palette */}
+          <div>
+            <h2 className="mb-6 text-2xl font-bold text-text-primary"
+                style={{ fontFamily: "var(--font-titillium)" }}>
+              Color Palette
+            </h2>
+            <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col items-center gap-2">
+                <div className="h-16 w-16 rounded-lg bg-f1-red" />
+                <span className="text-xs text-text-secondary">F1 Red</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="h-16 w-16 rounded-lg bg-accent" />
+                <span className="text-xs text-text-secondary">Accent</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="h-16 w-16 rounded-lg bg-surface" />
+                <span className="text-xs text-text-secondary">Surface</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="h-16 w-16 rounded-lg bg-surface-elevated" />
+                <span className="text-xs text-text-secondary">Elevated</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="h-16 w-16 rounded-lg border border-border-subtle bg-background" />
+                <span className="text-xs text-text-secondary">Background</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Stats preview with monospace numbers */}
+          <div>
+            <h2 className="mb-6 text-2xl font-bold text-text-primary"
+                style={{ fontFamily: "var(--font-titillium)" }}>
+              Stats Display
+            </h2>
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+              {[
+                { label: "Championships", value: "7" },
+                { label: "Race Wins", value: "103" },
+                { label: "Pole Positions", value: "104" },
+                { label: "Fastest Laps", value: "77" },
+              ].map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-lg border border-border-subtle bg-surface-elevated p-4"
+                >
+                  <div className="stats-number text-3xl font-bold text-f1-red">
+                    {stat.value}
+                  </div>
+                  <div className="mt-1 text-sm text-text-secondary">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Team colors preview */}
+          <div>
+            <h2 className="mb-6 text-2xl font-bold text-text-primary"
+                style={{ fontFamily: "var(--font-titillium)" }}>
+              Team Colors
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { name: "Red Bull", color: "#3671C6" },
+                { name: "Mercedes", color: "#27F4D2" },
+                { name: "Ferrari", color: "#E8002D" },
+                { name: "McLaren", color: "#FF8000" },
+                { name: "Aston Martin", color: "#229971" },
+                { name: "Alpine", color: "#FF87BC" },
+                { name: "Williams", color: "#64C4FF" },
+                { name: "RB", color: "#6692FF" },
+                { name: "Kick Sauber", color: "#52E252" },
+                { name: "Haas", color: "#B6BABD" },
+              ].map((team) => (
+                <div
+                  key={team.name}
+                  className="flex items-center gap-2 rounded-md border border-border-subtle bg-surface px-3 py-2"
+                >
+                  <div
+                    className="h-3 w-3 rounded-full"
+                    style={{ backgroundColor: team.color }}
+                  />
+                  <span className="text-sm text-text-primary">{team.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
     </div>
   );
 }

@@ -45,6 +45,15 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* F1 Theme Colors */
+  --color-f1-red: #E10600;
+  --color-accent: #00D2BE;
+  --color-surface: #141414;
+  --color-surface-elevated: #1E1E1E;
+  --color-border-subtle: #2A2A2A;
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #888888;
 }
 
 :root {
@@ -83,37 +92,37 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: #0A0A0A;
+  --foreground: #F5F5F5;
+  --card: #141414;
+  --card-foreground: #F5F5F5;
+  --popover: #1E1E1E;
+  --popover-foreground: #F5F5F5;
+  --primary: #E10600;
+  --primary-foreground: #FFFFFF;
+  --secondary: #1E1E1E;
+  --secondary-foreground: #F5F5F5;
+  --muted: #1E1E1E;
+  --muted-foreground: #888888;
+  --accent: #00D2BE;
+  --accent-foreground: #0A0A0A;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.809 0.105 251.813);
-  --chart-2: oklch(0.623 0.214 259.815);
-  --chart-3: oklch(0.546 0.245 262.881);
-  --chart-4: oklch(0.488 0.243 264.376);
-  --chart-5: oklch(0.424 0.199 265.638);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --border: #2A2A2A;
+  --input: #2A2A2A;
+  --ring: #E10600;
+  --chart-1: #E10600;
+  --chart-2: #00D2BE;
+  --chart-3: #3671C6;
+  --chart-4: #FF8000;
+  --chart-5: #27F4D2;
+  --sidebar: #141414;
+  --sidebar-foreground: #F5F5F5;
+  --sidebar-primary: #E10600;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #1E1E1E;
+  --sidebar-accent-foreground: #F5F5F5;
+  --sidebar-border: #2A2A2A;
+  --sidebar-ring: #E10600;
 }
 
 @layer base {
@@ -126,4 +135,23 @@
   html {
     @apply font-sans;
   }
+}
+
+/* Carbon fiber texture - used on hero sections */
+.carbon-fiber {
+  background-image:
+    repeating-conic-gradient(#141414 0% 25%, transparent 0% 50%) 0 0 / 4px 4px,
+    repeating-conic-gradient(#141414 0% 25%, transparent 0% 50%) 2px 2px / 4px 4px;
+}
+
+/* Subtle dot grid pattern for section backgrounds */
+.dot-grid {
+  background-image: radial-gradient(circle, #2A2A2A 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Tabular numbers for stats alignment */
+.stats-number {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
 }
