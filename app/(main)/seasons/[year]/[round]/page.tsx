@@ -119,18 +119,15 @@ export default async function RaceDetailPage({
 
       {/* Race Results */}
       <section className="mb-12">
-        <h2
-          className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary"
-          style={{ fontFamily: "var(--font-titillium)" }}
-        >
-          <Trophy className="size-5 text-f1-red" />
+        <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary">
+          <Trophy className="size-5 text-glow" />
           Race Results
         </h2>
 
-        <div className="overflow-hidden rounded-xl border border-border-subtle">
+        <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)]">
           <Table>
             <TableHeader>
-              <TableRow className="border-border-subtle bg-surface-elevated hover:bg-surface-elevated">
+              <TableRow className="border-[rgba(255,255,255,0.06)] bg-surface-2 hover:bg-surface-2">
                 <TableHead className="w-14 text-text-secondary">Pos</TableHead>
                 <TableHead className="text-text-secondary">Driver</TableHead>
                 <TableHead className="text-text-secondary">Team</TableHead>
@@ -141,12 +138,12 @@ export default async function RaceDetailPage({
               </TableRow>
             </TableHeader>
             <TableBody>
-              {race.results.map((result, idx) => {
+              {race.results.map((result) => {
                 const finished = isFinished(result.status);
                 return (
                   <TableRow
                     key={`${result.driverId}-${result.position}`}
-                    className={`border-border-subtle ${!finished ? "opacity-60" : ""} ${idx % 2 === 1 ? "bg-surface-elevated/50" : ""}`}
+                    className={`border-[rgba(255,255,255,0.06)] hover:bg-surface-2 ${!finished ? "opacity-60" : ""}`}
                     style={{ borderLeft: `4px solid ${getTeamColor(result.teamId)}` }}
                   >
                     <TableCell className="stats-number font-bold text-text-primary">
@@ -162,7 +159,7 @@ export default async function RaceDetailPage({
                     <TableCell>
                       <Link
                         href={`/drivers/${result.driverId}`}
-                        className="font-medium text-text-primary hover:text-accent"
+                        className="font-medium text-text-primary hover:text-glow"
                       >
                         {driverDisplayName(result.driverId)}
                       </Link>
@@ -170,7 +167,7 @@ export default async function RaceDetailPage({
                     <TableCell>
                       <Link
                         href={`/teams/${result.teamId}`}
-                        className="text-text-secondary hover:text-accent"
+                        className="text-text-secondary hover:text-glow"
                       >
                         {teamDisplayName(result.teamId)}
                       </Link>
@@ -187,7 +184,7 @@ export default async function RaceDetailPage({
                           {result.position === 1 ? result.time : result.time || result.status}
                         </span>
                       ) : (
-                        <span className="text-f1-red">{result.status}</span>
+                        <span className="text-danger">{result.status}</span>
                       )}
                     </TableCell>
                     <TableCell className="stats-number text-right font-medium text-text-primary">
@@ -204,18 +201,15 @@ export default async function RaceDetailPage({
       {/* Qualifying Results */}
       {race.qualifying && race.qualifying.length > 0 && (
         <section className="mb-12">
-          <h2
-            className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
-          >
-            <Clock className="size-5 text-accent" />
+          <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary">
+            <Clock className="size-5 text-glow" />
             Qualifying
           </h2>
 
-          <div className="overflow-hidden rounded-xl border border-border-subtle">
+          <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)]">
             <Table>
               <TableHeader>
-                <TableRow className="border-border-subtle bg-surface-elevated hover:bg-surface-elevated">
+                <TableRow className="border-[rgba(255,255,255,0.06)] bg-surface-2 hover:bg-surface-2">
                   <TableHead className="w-14 text-text-secondary">Pos</TableHead>
                   <TableHead className="text-text-secondary">Driver</TableHead>
                   <TableHead className="text-text-secondary">Team</TableHead>
@@ -225,10 +219,10 @@ export default async function RaceDetailPage({
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {race.qualifying.map((q, idx) => (
+                {race.qualifying.map((q) => (
                   <TableRow
                     key={`qual-${q.driverId}`}
-                    className={`border-border-subtle ${idx % 2 === 1 ? "bg-surface-elevated/50" : ""}`}
+                    className="border-[rgba(255,255,255,0.06)] hover:bg-surface-2"
                     style={{ borderLeft: `4px solid ${getTeamColor(q.teamId)}` }}
                   >
                     <TableCell className="stats-number font-bold text-text-primary">
@@ -244,7 +238,7 @@ export default async function RaceDetailPage({
                     <TableCell>
                       <Link
                         href={`/drivers/${q.driverId}`}
-                        className="font-medium text-text-primary hover:text-accent"
+                        className="font-medium text-text-primary hover:text-glow"
                       >
                         {driverDisplayName(q.driverId)}
                       </Link>
@@ -252,7 +246,7 @@ export default async function RaceDetailPage({
                     <TableCell>
                       <Link
                         href={`/teams/${q.teamId}`}
-                        className="text-text-secondary hover:text-accent"
+                        className="text-text-secondary hover:text-glow"
                       >
                         {teamDisplayName(q.teamId)}
                       </Link>
@@ -277,18 +271,15 @@ export default async function RaceDetailPage({
       {/* Pit Stops */}
       {race.pitStops && race.pitStops.length > 0 && (
         <section className="mb-12">
-          <h2
-            className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
-          >
+          <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary">
             <Fuel className="size-5 text-amber-400" />
             Pit Stops
           </h2>
 
-          <div className="overflow-hidden rounded-xl border border-border-subtle">
+          <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)]">
             <Table>
               <TableHeader>
-                <TableRow className="border-border-subtle bg-surface-elevated hover:bg-surface-elevated">
+                <TableRow className="border-[rgba(255,255,255,0.06)] bg-surface-2 hover:bg-surface-2">
                   <TableHead className="text-text-secondary">Driver</TableHead>
                   <TableHead className="text-right text-text-secondary">Stop</TableHead>
                   <TableHead className="text-right text-text-secondary">Lap</TableHead>
@@ -296,7 +287,7 @@ export default async function RaceDetailPage({
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {groupPitStops(race.pitStops).map((group, groupIdx) => (
+                {groupPitStops(race.pitStops).map((group) => (
                   group.stops.map((stop, stopIdx) => {
                     // Find the team for this driver from race results
                     const raceEntry = race.results.find(r => r.driverId === stop.driverId);
@@ -306,14 +297,14 @@ export default async function RaceDetailPage({
                     return (
                       <TableRow
                         key={`pit-${stop.driverId}-${stop.stop}`}
-                        className={`border-border-subtle ${groupIdx % 2 === 1 ? "bg-surface-elevated/50" : ""}`}
+                        className="border-[rgba(255,255,255,0.06)] hover:bg-surface-2"
                         style={{ borderLeft: `4px solid ${getTeamColor(teamId)}` }}
                       >
                         <TableCell>
                           {isFirstInGroup ? (
                             <Link
                               href={`/drivers/${stop.driverId}`}
-                              className="font-medium text-text-primary hover:text-accent"
+                              className="font-medium text-text-primary hover:text-glow"
                             >
                               {driverShortName(stop.driverId)}
                             </Link>

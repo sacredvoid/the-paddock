@@ -57,7 +57,7 @@ export default async function CircuitDetailPage({
       />
 
       {/* Circuit Track Outline */}
-      <div className="mb-8 flex justify-center rounded-xl border border-border-subtle bg-surface p-6">
+      <div className="mb-8 flex justify-center rounded-xl border border-[rgba(255,255,255,0.06)] bg-surface-1 p-6">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={getCircuitSvgPath(circuit.id)}
@@ -78,17 +78,14 @@ export default async function CircuitDetailPage({
       <div className="mb-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
         {/* Info Panel */}
         <div className="space-y-4 lg:col-span-1">
-          <h2
-            className="text-lg font-semibold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
-          >
+          <h2 className="text-lg font-semibold text-text-primary">
             Location Details
           </h2>
 
-          <div className="space-y-3 rounded-xl border border-border-subtle bg-surface p-4">
+          <div className="space-y-3 rounded-xl border border-[rgba(255,255,255,0.06)] bg-surface-1 p-4">
             <div className="flex items-center gap-3">
-              <div className="flex size-9 items-center justify-center rounded-lg bg-surface-elevated">
-                <MapPin className="size-4 text-f1-red" />
+              <div className="flex size-9 items-center justify-center rounded-lg bg-surface-2">
+                <MapPin className="size-4 text-glow" />
               </div>
               <div>
                 <p className="text-xs text-text-secondary">City</p>
@@ -99,8 +96,8 @@ export default async function CircuitDetailPage({
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="flex size-9 items-center justify-center rounded-lg bg-surface-elevated">
-                <Globe className="size-4 text-f1-red" />
+              <div className="flex size-9 items-center justify-center rounded-lg bg-surface-2">
+                <Globe className="size-4 text-glow" />
               </div>
               <div>
                 <p className="text-xs text-text-secondary">Country</p>
@@ -111,8 +108,8 @@ export default async function CircuitDetailPage({
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="flex size-9 items-center justify-center rounded-lg bg-surface-elevated">
-                <Navigation className="size-4 text-f1-red" />
+              <div className="flex size-9 items-center justify-center rounded-lg bg-surface-2">
+                <Navigation className="size-4 text-glow" />
               </div>
               <div>
                 <p className="text-xs text-text-secondary">Latitude</p>
@@ -123,8 +120,8 @@ export default async function CircuitDetailPage({
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="flex size-9 items-center justify-center rounded-lg bg-surface-elevated">
-                <Navigation className="size-4 text-f1-red" style={{ transform: "rotate(90deg)" }} />
+              <div className="flex size-9 items-center justify-center rounded-lg bg-surface-2">
+                <Navigation className="size-4 text-glow" style={{ transform: "rotate(90deg)" }} />
               </div>
               <div>
                 <p className="text-xs text-text-secondary">Longitude</p>
@@ -135,9 +132,9 @@ export default async function CircuitDetailPage({
             </div>
           </div>
 
-          <div className="rounded-xl border border-border-subtle bg-surface p-4">
+          <div className="rounded-xl border border-[rgba(255,255,255,0.06)] bg-surface-1 p-4">
             <p className="text-xs text-text-secondary">Races Hosted</p>
-            <p className="stats-number mt-1 text-4xl font-bold text-f1-red">
+            <p className="stats-number mt-1 text-4xl font-bold text-glow">
               {circuit.totalRaces}
             </p>
             <p className="mt-1 text-xs text-text-secondary">
@@ -148,10 +145,7 @@ export default async function CircuitDetailPage({
 
         {/* Map */}
         <div className="lg:col-span-2">
-          <h2
-            className="mb-4 text-lg font-semibold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
-          >
+          <h2 className="mb-4 text-lg font-semibold text-text-primary">
             Circuit Location
           </h2>
           <CircuitLocationMap

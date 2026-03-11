@@ -31,10 +31,10 @@ export function SeasonPicker({
           if (val != null) onChange(val);
         }}
       >
-        <SelectTrigger className="w-full border-border-subtle bg-surface text-text-primary">
+        <SelectTrigger className="w-full border-[rgba(255,255,255,0.06)] bg-surface-2 text-text-primary">
           <SelectValue placeholder="Select a season" />
         </SelectTrigger>
-        <SelectContent className="bg-surface-elevated border-border-subtle">
+        <SelectContent className="bg-surface-2 border-[rgba(255,255,255,0.06)]">
           {seasons.map((year) => (
             <SelectItem key={year} value={String(year)}>
               {year}
@@ -44,7 +44,7 @@ export function SeasonPicker({
       </Select>
       {value && championName && (
         <p className="text-xs text-text-secondary">
-          Champion: <span className="text-accent">{championName}</span>
+          Champion: <span className="text-glow">{championName}</span>
         </p>
       )}
     </div>

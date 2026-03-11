@@ -27,7 +27,7 @@ export function CircuitMap({ circuits }: CircuitMapProps) {
   } | null>(null);
 
   return (
-    <div className="relative overflow-hidden rounded-xl border border-border-subtle bg-surface">
+    <div className="relative overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)] bg-surface-1">
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{
@@ -45,12 +45,12 @@ export function CircuitMap({ circuits }: CircuitMapProps) {
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill="#1E1E1E"
-                  stroke="#2A2A2A"
+                  fill="#111113"
+                  stroke="#1A1A1E"
                   strokeWidth={0.5}
                   style={{
                     default: { outline: "none" },
-                    hover: { outline: "none", fill: "#2A2A2A" },
+                    hover: { outline: "none", fill: "#1A1A1E" },
                     pressed: { outline: "none" },
                   }}
                 />
@@ -86,11 +86,11 @@ export function CircuitMap({ circuits }: CircuitMapProps) {
             >
               <circle
                 r={3}
-                fill="#E10600"
+                fill="#FF6B2C"
                 stroke="#F5F5F5"
                 strokeWidth={0.5}
                 className="cursor-pointer transition-all duration-150 hover:r-[5]"
-                style={{ filter: "drop-shadow(0 0 3px rgba(225, 6, 0, 0.5))" }}
+                style={{ filter: "drop-shadow(0 0 3px rgba(255, 107, 44, 0.5))" }}
               />
             </Marker>
           ))}
@@ -100,7 +100,7 @@ export function CircuitMap({ circuits }: CircuitMapProps) {
       {/* Tooltip */}
       {tooltip && (
         <div
-          className="pointer-events-none absolute z-10 rounded-lg border border-border-subtle bg-surface-elevated px-3 py-2 shadow-lg"
+          className="pointer-events-none absolute z-10 rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-2 px-3 py-2 shadow-lg"
           style={{
             left: tooltip.x,
             top: tooltip.y,
@@ -113,7 +113,7 @@ export function CircuitMap({ circuits }: CircuitMapProps) {
           <p className="text-xs text-text-secondary">
             {tooltip.city}, {tooltip.country}
           </p>
-          <p className="mt-1 text-xs text-f1-red">
+          <p className="mt-1 text-xs text-glow">
             {tooltip.totalRaces} race{tooltip.totalRaces !== 1 ? "s" : ""}
           </p>
         </div>

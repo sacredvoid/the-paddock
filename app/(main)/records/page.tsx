@@ -65,11 +65,10 @@ function RecordCard({ record }: { record: F1Record }) {
   const suffix = getValueSuffix(record.title);
 
   return (
-    <Card className="border-border-subtle bg-surface">
+    <Card className="border-[rgba(255,255,255,0.06)] bg-surface-1">
       <CardHeader>
         <CardTitle
           className="text-lg font-bold text-text-primary"
-          style={{ fontFamily: "var(--font-titillium)" }}
         >
           {record.title}
         </CardTitle>
@@ -87,8 +86,8 @@ function RecordCard({ record }: { record: F1Record }) {
                 key={entry.rank}
                 className={`flex items-center gap-3 rounded-lg px-2 py-1.5 transition-colors ${
                   isTop3
-                    ? "bg-surface-elevated"
-                    : "hover:bg-surface-elevated/50"
+                    ? "bg-surface-2"
+                    : "hover:bg-surface-2/50"
                 }`}
                 style={
                   isTop3 && color
@@ -102,7 +101,7 @@ function RecordCard({ record }: { record: F1Record }) {
                   {href ? (
                     <Link
                       href={href}
-                      className="truncate text-sm font-medium text-text-primary hover:text-f1-red transition-colors"
+                      className="truncate text-sm font-medium text-text-primary hover:text-glow transition-colors"
                     >
                       {name}
                     </Link>
@@ -192,10 +191,9 @@ export default function RecordsPage() {
       {/* Driver Records */}
       <section className="mb-16">
         <div className="mb-6 flex items-center gap-3">
-          <div className="h-8 w-1 rounded-full bg-f1-red" />
+          <div className="h-8 w-1 rounded-full bg-glow" />
           <h2
             className="text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
           >
             Driver Records
           </h2>
@@ -210,10 +208,9 @@ export default function RecordsPage() {
       {/* Constructor Records */}
       <section>
         <div className="mb-6 flex items-center gap-3">
-          <div className="h-8 w-1 rounded-full bg-accent" />
+          <div className="h-8 w-1 rounded-full bg-glow" />
           <h2
             className="text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
           >
             Constructor Records
           </h2>

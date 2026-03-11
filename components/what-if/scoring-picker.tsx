@@ -30,8 +30,8 @@ export function ScoringPicker({
             className={cn(
               "flex flex-col gap-0.5 rounded-lg border px-3 py-2.5 text-left transition-colors",
               value === system.id
-                ? "border-f1-red bg-f1-red/10"
-                : "border-border-subtle bg-surface hover:border-text-secondary/40"
+                ? "border-glow bg-glow-muted"
+                : "border-[rgba(255,255,255,0.06)] bg-surface-1 hover:border-[rgba(255,255,255,0.1)]"
             )}
           >
             <div className="flex items-center justify-between">
@@ -53,7 +53,7 @@ export function ScoringPicker({
       </div>
 
       {/* Remove DNFs toggle */}
-      <div className="mt-1 flex items-center justify-between rounded-lg border border-border-subtle bg-surface px-3 py-2.5">
+      <div className="mt-1 flex items-center justify-between rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 px-3 py-2.5">
         <div className="flex flex-col">
           <span className="text-sm font-medium text-text-primary">
             Remove DNFs
@@ -69,7 +69,7 @@ export function ScoringPicker({
           onClick={() => onRemoveDNFsChange(!removeDNFs)}
           className={cn(
             "relative h-6 w-11 shrink-0 cursor-pointer rounded-full transition-colors",
-            removeDNFs ? "bg-f1-red" : "bg-border-subtle"
+            removeDNFs ? "bg-glow" : "bg-surface-3"
           )}
         >
           <span

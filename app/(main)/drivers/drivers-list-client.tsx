@@ -146,7 +146,7 @@ export function DriversListClient({
         onFilterChange={handleFilterChange}
         searchPlaceholder="Search drivers by name, code, or nationality..."
         onSearchChange={setSearch}
-        className="border border-border-subtle"
+        className="border border-[rgba(255,255,255,0.06)]"
       />
 
       {/* Results count */}
@@ -165,11 +165,10 @@ export function DriversListClient({
             <div className="mb-4 flex items-center gap-3">
               <h2
                 className="text-xl font-bold text-text-primary"
-                style={{ fontFamily: "var(--font-titillium)" }}
               >
                 Active Drivers
               </h2>
-              <div className="h-px flex-1 bg-border-subtle" />
+              <div className="h-px flex-1 bg-[rgba(255,255,255,0.06)]" />
               <span className="stats-number text-sm text-text-secondary">
                 {filtered.active.length}
               </span>
@@ -204,11 +203,10 @@ export function DriversListClient({
           <div className="mb-4 flex items-center gap-3">
             <h2
               className="text-xl font-bold text-text-primary"
-              style={{ fontFamily: "var(--font-titillium)" }}
             >
               Historic Drivers
             </h2>
-            <div className="h-px flex-1 bg-border-subtle" />
+            <div className="h-px flex-1 bg-[rgba(255,255,255,0.06)]" />
             <span className="stats-number text-sm text-text-secondary">
               {filtered.historic.length}
             </span>
@@ -238,7 +236,7 @@ export function DriversListClient({
 
       {/* Empty state */}
       {totalShown === 0 && (
-        <div className="flex flex-col items-center justify-center rounded-lg border border-border-subtle bg-surface py-16">
+        <div className="flex flex-col items-center justify-center rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 py-16">
           <p className="text-lg font-medium text-text-primary">
             No drivers found
           </p>

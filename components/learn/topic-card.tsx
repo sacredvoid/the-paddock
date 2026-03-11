@@ -10,17 +10,15 @@ interface TopicCardProps {
 export function TopicCard({ topic, index }: TopicCardProps) {
   return (
     <Link href={`/learn/${topic.slug}`} className="group block">
-      <div className="flex h-full gap-4 rounded-xl border border-border-subtle bg-surface p-5 transition-all duration-200 hover:-translate-y-1 hover:border-accent/40 hover:bg-surface-elevated">
+      <div className="flex h-full gap-4 rounded-xl bg-surface-1 border-[rgba(255,255,255,0.06)] border p-5 card-glow">
         <span
-          className="text-3xl font-bold text-text-secondary/40"
-          style={{ fontFamily: "var(--font-titillium)" }}
+          className="text-3xl font-bold text-text-tertiary"
         >
           {String(index + 1).padStart(2, "0")}
         </span>
         <div className="flex flex-1 flex-col gap-2">
           <h3
-            className="text-lg font-semibold text-text-primary group-hover:text-accent"
-            style={{ fontFamily: "var(--font-titillium)" }}
+            className="text-lg font-semibold text-text-primary group-hover:text-glow"
           >
             {topic.title}
           </h3>

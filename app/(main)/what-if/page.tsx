@@ -156,7 +156,7 @@ function WhatIfSimulator() {
         {/* Results area */}
         <div>
           {!selectedSeason && (
-            <div className="flex flex-col items-center justify-center gap-2 rounded-lg border border-border-subtle bg-surface px-6 py-16">
+            <div className="flex flex-col items-center justify-center gap-2 rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 px-6 py-16">
               <p className="text-lg text-text-secondary">
                 Pick a season to get started
               </p>
@@ -168,7 +168,7 @@ function WhatIfSimulator() {
           )}
 
           {selectedSeason && loading && (
-            <div className="flex items-center justify-center rounded-lg border border-border-subtle bg-surface px-6 py-16">
+            <div className="flex items-center justify-center rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 px-6 py-16">
               <p className="text-text-secondary">Loading season data...</p>
             </div>
           )}
@@ -203,7 +203,7 @@ export default function WhatIfPage() {
             title="What If?"
             subtitle="See how different scoring systems change F1 history"
           />
-          <div className="flex items-center justify-center rounded-lg border border-border-subtle bg-surface px-6 py-16">
+          <div className="flex items-center justify-center rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 px-6 py-16">
             <p className="text-text-secondary">Loading...</p>
           </div>
         </div>

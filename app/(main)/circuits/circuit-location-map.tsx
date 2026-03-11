@@ -17,7 +17,7 @@ interface CircuitLocationMapProps {
 
 export function CircuitLocationMap({ lat, lng, name }: CircuitLocationMapProps) {
   return (
-    <div className="overflow-hidden rounded-xl border border-border-subtle bg-surface">
+    <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)] bg-surface-1">
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{
@@ -34,8 +34,8 @@ export function CircuitLocationMap({ lat, lng, name }: CircuitLocationMapProps) 
               <Geography
                 key={geo.rsmKey}
                 geography={geo}
-                fill="#1E1E1E"
-                stroke="#2A2A2A"
+                fill="#111113"
+                stroke="#1A1A1E"
                 strokeWidth={0.5}
                 style={{
                   default: { outline: "none" },
@@ -52,7 +52,7 @@ export function CircuitLocationMap({ lat, lng, name }: CircuitLocationMapProps) 
           <circle
             r={12}
             fill="none"
-            stroke="#E10600"
+            stroke="#FF6B2C"
             strokeWidth={1.5}
             opacity={0.4}
           >
@@ -74,17 +74,17 @@ export function CircuitLocationMap({ lat, lng, name }: CircuitLocationMapProps) 
           {/* Main dot */}
           <circle
             r={6}
-            fill="#E10600"
+            fill="#FF6B2C"
             stroke="#F5F5F5"
             strokeWidth={1.5}
-            style={{ filter: "drop-shadow(0 0 6px rgba(225, 6, 0, 0.6))" }}
+            style={{ filter: "drop-shadow(0 0 6px rgba(255, 107, 44, 0.6))" }}
           />
           {/* Label */}
           <text
             textAnchor="middle"
             y={-16}
             style={{
-              fontFamily: "var(--font-titillium), sans-serif",
+              fontFamily: "var(--font-inter), sans-serif",
               fill: "#F5F5F5",
               fontSize: "10px",
               fontWeight: 600,

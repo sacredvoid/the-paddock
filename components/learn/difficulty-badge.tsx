@@ -15,7 +15,7 @@ const config = {
   },
   advanced: {
     label: "Advanced",
-    className: "bg-[#E10600]/15 text-[#E10600] border-[#E10600]/30",
+    className: "bg-glow/15 text-glow border-glow/30",
   },
 };
 

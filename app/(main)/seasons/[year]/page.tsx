@@ -113,18 +113,15 @@ export default async function SeasonDetailPage({
 
       {/* Race Calendar */}
       <section className="mb-12">
-        <h2
-          className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary"
-          style={{ fontFamily: "var(--font-titillium)" }}
-        >
-          <Calendar className="size-5 text-f1-red" />
+        <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary">
+          <Calendar className="size-5 text-glow" />
           Race Calendar
         </h2>
 
-        <div className="overflow-hidden rounded-xl border border-border-subtle">
+        <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)]">
           <Table>
             <TableHeader>
-              <TableRow className="border-border-subtle bg-surface-elevated hover:bg-surface-elevated">
+              <TableRow className="border-[rgba(255,255,255,0.06)] bg-surface-2 hover:bg-surface-2">
                 <TableHead className="text-text-secondary">Rd</TableHead>
                 <TableHead className="text-text-secondary">Grand Prix</TableHead>
                 <TableHead className="text-text-secondary">Circuit</TableHead>
@@ -133,12 +130,12 @@ export default async function SeasonDetailPage({
               </TableRow>
             </TableHeader>
             <TableBody>
-              {season.races.map((race, idx) => {
+              {season.races.map((race) => {
                 const winner = race.results.find((r) => r.position === 1);
                 return (
                   <TableRow
                     key={race.round}
-                    className={`border-border-subtle ${idx % 2 === 1 ? "bg-surface-elevated/50" : ""}`}
+                    className="border-[rgba(255,255,255,0.06)] hover:bg-surface-2"
                   >
                     <TableCell className="stats-number text-text-secondary">
                       {race.round}
@@ -146,7 +143,7 @@ export default async function SeasonDetailPage({
                     <TableCell>
                       <Link
                         href={`/seasons/${year}/${race.round}`}
-                        className="font-medium text-text-primary hover:text-f1-red"
+                        className="font-medium text-text-primary hover:text-glow"
                       >
                         {race.name}
                       </Link>
@@ -166,7 +163,7 @@ export default async function SeasonDetailPage({
                           />
                           <Link
                             href={`/drivers/${winner.driverId}`}
-                            className="text-text-primary hover:text-accent"
+                            className="text-text-primary hover:text-glow"
                           >
                             {driverDisplayName(winner.driverId)}
                           </Link>
@@ -186,18 +183,15 @@ export default async function SeasonDetailPage({
       {/* Driver Championship Standings */}
       {season.driverStandings.length > 0 && (
         <section className="mb-12">
-          <h2
-            className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
-          >
+          <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary">
             <Trophy className="size-5 text-amber-400" />
             Driver Standings
           </h2>
 
-          <div className="overflow-hidden rounded-xl border border-border-subtle">
+          <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)]">
             <Table>
               <TableHeader>
-                <TableRow className="border-border-subtle bg-surface-elevated hover:bg-surface-elevated">
+                <TableRow className="border-[rgba(255,255,255,0.06)] bg-surface-2 hover:bg-surface-2">
                   <TableHead className="w-16 text-text-secondary">Pos</TableHead>
                   <TableHead className="text-text-secondary">Driver</TableHead>
                   <TableHead className="text-right text-text-secondary">Points</TableHead>
@@ -205,13 +199,12 @@ export default async function SeasonDetailPage({
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {season.driverStandings.map((entry, idx) => (
+                {season.driverStandings.map((entry) => (
                   <DriverStandingRow
                     key={entry.id}
                     entry={entry}
                     isChampion={champion?.driverId === entry.id}
                     championTeamId={champion?.driverId === entry.id ? champion.teamId : null}
-                    alt={idx % 2 === 1}
                   />
                 ))}
               </TableBody>
@@ -223,18 +216,15 @@ export default async function SeasonDetailPage({
       {/* Constructor Championship Standings */}
       {season.constructorStandings.length > 0 && (
         <section className="mb-12">
-          <h2
-            className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
-          >
-            <Flag className="size-5 text-accent" />
+          <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-text-primary">
+            <Flag className="size-5 text-glow" />
             Constructor Standings
           </h2>
 
-          <div className="overflow-hidden rounded-xl border border-border-subtle">
+          <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)]">
             <Table>
               <TableHeader>
-                <TableRow className="border-border-subtle bg-surface-elevated hover:bg-surface-elevated">
+                <TableRow className="border-[rgba(255,255,255,0.06)] bg-surface-2 hover:bg-surface-2">
                   <TableHead className="w-16 text-text-secondary">Pos</TableHead>
                   <TableHead className="text-text-secondary">Team</TableHead>
                   <TableHead className="text-right text-text-secondary">Points</TableHead>
@@ -242,10 +232,10 @@ export default async function SeasonDetailPage({
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {season.constructorStandings.map((entry, idx) => (
+                {season.constructorStandings.map((entry) => (
                   <TableRow
                     key={entry.id}
-                    className={`border-border-subtle ${idx % 2 === 1 ? "bg-surface-elevated/50" : ""}`}
+                    className="border-[rgba(255,255,255,0.06)] hover:bg-surface-2"
                     style={{ borderLeft: `4px solid ${getTeamColor(entry.id)}` }}
                   >
                     <TableCell className="stats-number font-bold text-text-primary">
@@ -261,7 +251,7 @@ export default async function SeasonDetailPage({
                     <TableCell>
                       <Link
                         href={`/teams/${entry.id}`}
-                        className="font-medium text-text-primary hover:text-accent"
+                        className="font-medium text-text-primary hover:text-glow"
                       >
                         {teamDisplayName(entry.id)}
                       </Link>
@@ -287,12 +277,10 @@ function DriverStandingRow({
   entry,
   isChampion,
   championTeamId,
-  alt,
 }: {
   entry: StandingEntry;
   isChampion: boolean;
   championTeamId: string | null;
-  alt: boolean;
 }) {
   // Try to find the driver's team from season data.
   // For the champion we know the team, for others we show name only.
@@ -302,7 +290,7 @@ function DriverStandingRow({
 
   return (
     <TableRow
-      className={`border-border-subtle ${alt ? "bg-surface-elevated/50" : ""}`}
+      className="border-[rgba(255,255,255,0.06)] hover:bg-surface-2"
       style={teamColor ? { borderLeft: `4px solid ${teamColor}` } : undefined}
     >
       <TableCell className="stats-number font-bold text-text-primary">
@@ -318,7 +306,7 @@ function DriverStandingRow({
       <TableCell>
         <Link
           href={`/drivers/${entry.id}`}
-          className="font-medium text-text-primary hover:text-accent"
+          className="font-medium text-text-primary hover:text-glow"
         >
           {driverDisplayName(entry.id)}
         </Link>

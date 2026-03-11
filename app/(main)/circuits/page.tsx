@@ -46,10 +46,7 @@ export default function CircuitsPage() {
 
       {/* World Map */}
       <div className="mb-10">
-        <h2
-          className="mb-4 text-xl font-semibold text-text-primary"
-          style={{ fontFamily: "var(--font-titillium)" }}
-        >
+        <h2 className="mb-4 text-xl font-semibold text-text-primary">
           Circuit Locations
         </h2>
         <CircuitMap circuits={circuits} />
@@ -59,23 +56,17 @@ export default function CircuitsPage() {
       </div>
 
       {/* Circuit List */}
-      <h2
-        className="mb-4 text-xl font-semibold text-text-primary"
-        style={{ fontFamily: "var(--font-titillium)" }}
-      >
+      <h2 className="mb-4 text-xl font-semibold text-text-primary">
         All Circuits
       </h2>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {sorted.map((circuit) => (
           <Link key={circuit.slug} href={`/circuits/${circuit.slug}`} className="group">
-            <Card className="border-border-subtle bg-surface transition-colors duration-150 hover:border-f1-red/40 hover:bg-surface-elevated">
+            <Card className="bg-surface-1 border-[rgba(255,255,255,0.06)] card-glow">
               <CardContent>
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0 flex-1">
-                    <h3
-                      className="truncate text-base font-semibold text-text-primary"
-                      style={{ fontFamily: "var(--font-titillium)" }}
-                    >
+                    <h3 className="truncate text-base font-semibold text-text-primary">
                       {circuit.name}
                     </h3>
                     <div className="mt-1 flex items-center gap-1.5 text-sm text-text-secondary">

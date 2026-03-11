@@ -39,7 +39,6 @@ export default function LearnPage() {
       <section className="mb-12">
         <h2
           className="mb-6 text-2xl font-bold text-text-primary"
-          style={{ fontFamily: "var(--font-titillium)" }}
         >
           Getting Started
         </h2>
@@ -55,7 +54,6 @@ export default function LearnPage() {
         <section className="mb-12">
           <h2
             className="mb-6 text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
           >
             Going Deeper
           </h2>

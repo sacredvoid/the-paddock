@@ -153,55 +153,49 @@ export default async function Home() {
   return (
     <div>
       {/* Hero section */}
-      <section className="carbon-fiber relative -mx-4 -mt-8 flex flex-col items-center justify-center gap-6 px-6 py-24">
+      <section className="hero-gradient relative -mx-4 -mt-8 flex flex-col items-center justify-center gap-6 px-6 py-24">
         <h1
-          className="text-center text-5xl font-black tracking-tight text-text-primary md:text-7xl"
-          style={{ fontFamily: "var(--font-titillium)" }}
+          className="text-center text-6xl font-black tracking-tight text-text-primary md:text-7xl"
         >
-          THE <span className="text-f1-red">PADDOCK</span>
+          THE <span className="text-glow">PADDOCK</span>
         </h1>
         <p className="max-w-xl text-center text-lg text-text-secondary">
           The complete Formula 1 encyclopedia. {allDrivers.length} drivers,{" "}
           {allTeams.length} constructors, {allCircuits.length} circuits, and 75+
           years of racing history.
         </p>
-        <div className="h-1 w-24 rounded bg-f1-red" />
-
-        {/* Quick stat pills */}
-        <div className="mt-2 flex flex-wrap justify-center gap-3">
-          <span className="rounded-full border border-border-subtle bg-surface px-4 py-1.5 text-sm text-text-secondary">
-            <span className="stats-number font-bold text-text-primary">{allDrivers.length}</span> Drivers
-          </span>
-          <span className="rounded-full border border-border-subtle bg-surface px-4 py-1.5 text-sm text-text-secondary">
-            <span className="stats-number font-bold text-text-primary">{allTeams.length}</span> Constructors
-          </span>
-          <span className="rounded-full border border-border-subtle bg-surface px-4 py-1.5 text-sm text-text-secondary">
-            <span className="stats-number font-bold text-text-primary">{allCircuits.length}</span> Circuits
-          </span>
-          <span className="rounded-full border border-border-subtle bg-surface px-4 py-1.5 text-sm text-text-secondary">
-            <span className="stats-number font-bold text-text-primary">1950&ndash;2026</span> Seasons
-          </span>
-        </div>
       </section>
 
-      <div className="dot-grid -mx-4 px-6 py-16">
-        <div className="mx-auto max-w-6xl space-y-16">
+      {/* Quick stat pills */}
+      <div className="flex flex-wrap justify-center gap-3 py-6">
+        <span className="rounded-full border border-[rgba(255,255,255,0.06)] bg-surface-1 px-4 py-1.5 text-sm text-text-secondary">
+          <span className="stats-number font-bold text-text-primary">{allDrivers.length}</span> Drivers
+        </span>
+        <span className="rounded-full border border-[rgba(255,255,255,0.06)] bg-surface-1 px-4 py-1.5 text-sm text-text-secondary">
+          <span className="stats-number font-bold text-text-primary">{allTeams.length}</span> Constructors
+        </span>
+        <span className="rounded-full border border-[rgba(255,255,255,0.06)] bg-surface-1 px-4 py-1.5 text-sm text-text-secondary">
+          <span className="stats-number font-bold text-text-primary">{allCircuits.length}</span> Circuits
+        </span>
+        <span className="rounded-full border border-[rgba(255,255,255,0.06)] bg-surface-1 px-4 py-1.5 text-sm text-text-secondary">
+          <span className="stats-number font-bold text-text-primary">1950&ndash;2026</span> Seasons
+        </span>
+      </div>
+
+      <div className="mx-auto max-w-6xl space-y-16 py-16">
 
           {/* 2025 Season Stats */}
           <section>
             <div className="mb-6 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="h-8 w-1 rounded-full bg-f1-red" />
-                <h2
-                  className="text-2xl font-bold text-text-primary"
-                  style={{ fontFamily: "var(--font-titillium)" }}
-                >
+              <div>
+                <span className="section-label">Current Season</span>
+                <h2 className="text-2xl font-bold text-text-primary">
                   2025 Season
                 </h2>
               </div>
               <Link
                 href="/seasons/2025"
-                className="flex items-center gap-1 text-sm font-medium text-text-secondary hover:text-f1-red transition-colors"
+                className="flex items-center gap-1 text-sm font-medium text-text-secondary hover:text-glow transition-colors"
               >
                 Full standings <ChevronRight className="size-4" />
               </Link>
@@ -237,7 +231,7 @@ export default async function Home() {
 
             {/* Top 5 in standings */}
             <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
-              <Card className="border-border-subtle bg-surface">
+              <Card className="border-[rgba(255,255,255,0.06)] bg-surface-1">
                 <CardContent>
                   <h3 className="mb-3 text-sm font-medium text-text-secondary">
                     Driver Standings
@@ -256,7 +250,7 @@ export default async function Home() {
                           {driver ? (
                             <Link
                               href={`/drivers/${driver.slug}`}
-                              className="flex-1 text-sm font-medium text-text-primary hover:text-f1-red transition-colors"
+                              className="flex-1 text-sm font-medium text-text-primary hover:text-glow transition-colors"
                             >
                               {driver.firstName} {driver.lastName}
                             </Link>
@@ -273,7 +267,7 @@ export default async function Home() {
                           </span>
                           {entry.wins > 0 && (
                             <span className="flex items-center gap-0.5 text-xs text-text-secondary">
-                              <Trophy className="size-3 text-f1-red" />
+                              <Trophy className="size-3 text-glow" />
                               {entry.wins}
                             </span>
                           )}
@@ -284,7 +278,7 @@ export default async function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border-border-subtle bg-surface">
+              <Card className="border-[rgba(255,255,255,0.06)] bg-surface-1">
                 <CardContent>
                   <h3 className="mb-3 text-sm font-medium text-text-secondary">
                     Constructor Standings
@@ -318,7 +312,7 @@ export default async function Home() {
                           {team ? (
                             <Link
                               href={`/teams/${team.slug}`}
-                              className="flex-1 text-sm font-medium text-text-primary hover:text-f1-red transition-colors"
+                              className="flex-1 text-sm font-medium text-text-primary hover:text-glow transition-colors"
                             >
                               {team.name}
                             </Link>
@@ -345,18 +339,15 @@ export default async function Home() {
           {/* Featured Drivers */}
           <section>
             <div className="mb-6 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="h-8 w-1 rounded-full bg-f1-red" />
-                <h2
-                  className="text-2xl font-bold text-text-primary"
-                  style={{ fontFamily: "var(--font-titillium)" }}
-                >
+              <div>
+                <span className="section-label">Featured</span>
+                <h2 className="text-2xl font-bold text-text-primary">
                   Top Active Drivers
                 </h2>
               </div>
               <Link
                 href="/drivers"
-                className="flex items-center gap-1 text-sm font-medium text-text-secondary hover:text-f1-red transition-colors"
+                className="flex items-center gap-1 text-sm font-medium text-text-secondary hover:text-glow transition-colors"
               >
                 All drivers <ChevronRight className="size-4" />
               </Link>
@@ -390,18 +381,15 @@ export default async function Home() {
           {/* Recent Champions */}
           <section>
             <div className="mb-6 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="h-8 w-1 rounded-full bg-accent" />
-                <h2
-                  className="text-2xl font-bold text-text-primary"
-                  style={{ fontFamily: "var(--font-titillium)" }}
-                >
+              <div>
+                <span className="section-label">History</span>
+                <h2 className="text-2xl font-bold text-text-primary">
                   Recent World Champions
                 </h2>
               </div>
               <Link
                 href="/seasons"
-                className="flex items-center gap-1 text-sm font-medium text-text-secondary hover:text-f1-red transition-colors"
+                className="flex items-center gap-1 text-sm font-medium text-text-secondary hover:text-glow transition-colors"
               >
                 All seasons <ChevronRight className="size-4" />
               </Link>
@@ -417,12 +405,12 @@ export default async function Home() {
                     className="block"
                   >
                     <Card
-                      className="border-border-subtle bg-surface transition-transform duration-200 hover:-translate-y-0.5"
+                      className="card-glow border-[rgba(255,255,255,0.06)] bg-surface-1"
                       style={{ borderLeft: `4px solid ${teamColor}` }}
                     >
                       <CardContent className="flex items-center gap-4">
                         <span
-                          className="stats-number text-3xl font-black text-text-secondary"
+                          className="stats-number text-3xl font-black text-text-tertiary"
                         >
                           {champ.year}
                         </span>
@@ -436,7 +424,7 @@ export default async function Home() {
                           />
                         ) : (
                           <div
-                            className="flex size-8 items-center justify-center rounded-full border border-border-subtle bg-surface-elevated"
+                            className="flex size-8 items-center justify-center rounded-full border border-[rgba(255,255,255,0.06)] bg-surface-2"
                           >
                             <span className="text-xs font-bold text-text-secondary">
                               {champ.driverName.split(" ").map((n) => n[0]).join("")}
@@ -465,12 +453,9 @@ export default async function Home() {
 
           {/* Explore Sections */}
           <section>
-            <div className="mb-6 flex items-center gap-3">
-              <div className="h-8 w-1 rounded-full bg-f1-red" />
-              <h2
-                className="text-2xl font-bold text-text-primary"
-                style={{ fontFamily: "var(--font-titillium)" }}
-              >
+            <div className="mb-6">
+              <span className="section-label">Navigate</span>
+              <h2 className="text-2xl font-bold text-text-primary">
                 Explore
               </h2>
             </div>
@@ -479,13 +464,12 @@ export default async function Home() {
                 const Icon = section.icon;
                 return (
                   <Link key={section.href} href={section.href} className="block">
-                    <Card className="h-full border-border-subtle bg-surface transition-all duration-200 hover:-translate-y-0.5 hover:border-f1-red/30">
+                    <Card className="card-glow h-full border-[rgba(255,255,255,0.06)] bg-surface-1">
                       <CardContent className="flex flex-col gap-3">
-                        <Icon className="size-6 text-f1-red" />
+                        <Icon className="size-6 text-glow" />
                         <div>
                           <h3
                             className="font-bold text-text-primary"
-                            style={{ fontFamily: "var(--font-titillium)" }}
                           >
                             {section.label}
                           </h3>
@@ -500,7 +484,6 @@ export default async function Home() {
               })}
             </div>
           </section>
-        </div>
       </div>
     </div>
   );

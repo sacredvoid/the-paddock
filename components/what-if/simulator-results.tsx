@@ -39,14 +39,14 @@ function PositionChange({ change }: { change?: number }) {
   }
   if (change > 0) {
     return (
-      <span className="inline-flex items-center gap-0.5 text-green-500">
+      <span className="inline-flex items-center gap-0.5 text-success">
         <ChevronUp className="size-3.5" />
         <span className="stats-number text-xs">{change}</span>
       </span>
     );
   }
   return (
-    <span className="inline-flex items-center gap-0.5 text-red-500">
+    <span className="inline-flex items-center gap-0.5 text-danger">
       <ChevronDown className="size-3.5" />
       <span className="stats-number text-xs">{Math.abs(change)}</span>
     </span>
@@ -60,7 +60,7 @@ export function SimulatorResults({
 }: SimulatorResultsProps) {
   if (standings.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center gap-3 rounded-lg border border-border-subtle bg-surface px-6 py-12">
+      <div className="flex flex-col items-center justify-center gap-3 rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 px-6 py-12">
         <p className="text-text-secondary">
           No race result data available for this season yet.
         </p>
@@ -87,12 +87,12 @@ export function SimulatorResults({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3 }}
-            className="flex items-center gap-3 rounded-lg border border-f1-red/30 bg-f1-red/10 px-4 py-3"
+            className="flex items-center gap-3 rounded-lg border border-glow/30 bg-glow-muted px-4 py-3"
           >
-            <Trophy className="size-5 text-f1-red" />
+            <Trophy className="size-5 text-glow" />
             <p className="text-sm text-text-primary">
               Under this system,{" "}
-              <span className="font-bold text-f1-red">
+              <span className="font-bold text-glow">
                 {formatDriverName(newChampion.driverId)}
               </span>{" "}
               would have won the {year} championship!
@@ -102,10 +102,10 @@ export function SimulatorResults({
       </AnimatePresence>
 
       {/* Results table */}
-      <div className="overflow-x-auto rounded-lg border border-border-subtle">
+      <div className="overflow-x-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
         <Table>
           <TableHeader>
-            <TableRow className="border-border-subtle hover:bg-transparent">
+            <TableRow className="border-[rgba(255,255,255,0.06)] hover:bg-transparent">
               <TableHead className="w-12 text-center">Pos</TableHead>
               <TableHead>Driver</TableHead>
               <TableHead className="text-right">Points</TableHead>
@@ -124,17 +124,14 @@ export function SimulatorResults({
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.25 }}
-                  className={cn(
-                    "border-border-subtle transition-colors",
-                    standing.position % 2 === 0 && "bg-surface-elevated/50"
-                  )}
+                  className="border-[rgba(255,255,255,0.06)] transition-colors hover:bg-surface-2"
                 >
                   <TableCell className="text-center">
                     <span
                       className={cn(
                         "stats-number font-bold",
                         standing.position <= 3
-                          ? "text-f1-red"
+                          ? "text-glow"
                           : "text-text-primary"
                       )}
                     >

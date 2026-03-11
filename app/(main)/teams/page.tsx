@@ -42,7 +42,7 @@ export default function TeamsPage() {
         <StatCard
           label="Total Championships"
           value={totalChampionships}
-          teamColor="#E10600"
+          teamColor="#FF6B2C"
         />
         <StatCard
           label="Most Successful"

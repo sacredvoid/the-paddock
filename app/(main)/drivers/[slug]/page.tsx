@@ -83,12 +83,12 @@ export default async function DriverDetailPage({
 
       {/* Driver Identity Section */}
       <section className="mb-10">
-        <div className="rounded-xl border border-border-subtle bg-surface p-6 md:p-8">
+        <div className="rounded-xl border border-[rgba(255,255,255,0.06)] bg-surface-1 p-6 md:p-8">
           <div className="flex flex-wrap items-start justify-between gap-6">
             {/* Left: headshot + driver info */}
             <div className="flex items-start gap-6">
               {/* Headshot */}
-              <div className="relative size-[120px] shrink-0 overflow-hidden rounded-full border-2 border-border-subtle bg-surface-elevated md:size-[160px]">
+              <div className="relative size-[120px] shrink-0 overflow-hidden rounded-full border-2 border-[rgba(255,255,255,0.06)] bg-surface-2 md:size-[160px]">
                 {imageUrl ? (
                   <Image
                     src={imageUrl}
@@ -100,7 +100,7 @@ export default async function DriverDetailPage({
                 ) : (
                   <div className="flex size-full items-center justify-center">
                     {driver.number && driver.number !== "0" ? (
-                      <span className="stats-number text-4xl font-black text-f1-red md:text-5xl">
+                      <span className="stats-number text-4xl font-black text-glow md:text-5xl">
                         {driver.number}
                       </span>
                     ) : (
@@ -119,14 +119,14 @@ export default async function DriverDetailPage({
                 <div className="flex items-center gap-4">
                   {driver.number && driver.number !== "0" && (
                     <span
-                      className="stats-number text-5xl font-black text-f1-red md:text-6xl"
+                      className="stats-number text-5xl font-black text-glow md:text-6xl"
                     >
                       #{driver.number}
                     </span>
                   )}
                   {driver.code && (
                     <span
-                      className="stats-number rounded-md border border-border-subtle bg-surface-elevated px-3 py-1 text-2xl font-bold tracking-widest text-text-primary"
+                      className="stats-number rounded-md border border-[rgba(255,255,255,0.06)] bg-surface-2 px-3 py-1 text-2xl font-bold tracking-widest text-text-primary"
                     >
                       {driver.code}
                     </span>
@@ -157,8 +157,8 @@ export default async function DriverDetailPage({
                 variant={driver.isActive ? "default" : "secondary"}
                 className={
                   driver.isActive
-                    ? "bg-green-600 text-white"
-                    : "bg-surface-elevated text-text-secondary"
+                    ? "bg-success/10 text-success"
+                    : "bg-surface-2 text-text-secondary"
                 }
               >
                 {driver.isActive ? "Active" : "Historic"}
@@ -173,7 +173,6 @@ export default async function DriverDetailPage({
         <section className="mb-10">
           <h2
             className="mb-4 text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
           >
             Career Statistics
           </h2>
@@ -237,7 +236,6 @@ export default async function DriverDetailPage({
       <section className="mb-10">
         <h2
           className="mb-4 text-2xl font-bold text-text-primary"
-          style={{ fontFamily: "var(--font-titillium)" }}
         >
           Career Overview
         </h2>
@@ -245,28 +243,28 @@ export default async function DriverDetailPage({
         <div className="grid gap-4 md:grid-cols-2">
           {/* Key figures */}
           {stats && (
-            <Card className="border-border-subtle bg-surface">
+            <Card className="border-[rgba(255,255,255,0.06)] bg-surface-1">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-text-primary">
-                  <Target className="size-5 text-f1-red" />
+                  <Target className="size-5 text-glow" />
                   Key Figures
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <dl className="space-y-3">
-                  <div className="flex justify-between border-b border-border-subtle pb-2">
+                  <div className="flex justify-between border-b border-[rgba(255,255,255,0.06)] pb-2">
                     <dt className="text-text-secondary">Best Finish</dt>
                     <dd className="stats-number font-semibold text-text-primary">
                       P{stats.bestFinish}
                     </dd>
                   </div>
-                  <div className="flex justify-between border-b border-border-subtle pb-2">
+                  <div className="flex justify-between border-b border-[rgba(255,255,255,0.06)] pb-2">
                     <dt className="text-text-secondary">Avg. Finish</dt>
                     <dd className="stats-number font-semibold text-text-primary">
                       P{stats.averageFinish.toFixed(1)}
                     </dd>
                   </div>
-                  <div className="flex justify-between border-b border-border-subtle pb-2">
+                  <div className="flex justify-between border-b border-[rgba(255,255,255,0.06)] pb-2">
                     <dt className="text-text-secondary">Points per Race</dt>
                     <dd className="stats-number font-semibold text-text-primary">
                       {(stats.points / stats.races).toFixed(2)}
@@ -284,10 +282,10 @@ export default async function DriverDetailPage({
           )}
 
           {/* Seasons active */}
-          <Card className="border-border-subtle bg-surface">
+          <Card className="border-[rgba(255,255,255,0.06)] bg-surface-1">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-text-primary">
-                <Calendar className="size-5 text-accent" />
+                <Calendar className="size-5 text-glow" />
                 Seasons Active
               </CardTitle>
             </CardHeader>
@@ -303,7 +301,7 @@ export default async function DriverDetailPage({
                   <Link
                     key={year}
                     href={`/seasons/${year}`}
-                    className="rounded-md border border-border-subtle bg-surface-elevated px-2 py-0.5 text-xs text-text-secondary transition-colors hover:border-f1-red hover:text-text-primary"
+                    className="rounded-md border border-[rgba(255,255,255,0.06)] bg-surface-2 px-2 py-0.5 text-xs text-text-secondary transition-colors hover:border-glow/30 hover:text-glow"
                   >
                     {year}
                   </Link>

@@ -70,10 +70,7 @@ export default async function SeasonsPage() {
 
       {/* Recent seasons with champion info */}
       <section className="mb-12">
-        <h2
-          className="mb-6 text-2xl font-bold text-text-primary"
-          style={{ fontFamily: "var(--font-titillium)" }}
-        >
+        <h2 className="mb-6 text-2xl font-bold text-text-primary">
           Recent Seasons
         </h2>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -81,7 +78,7 @@ export default async function SeasonsPage() {
             <Link
               key={season.year}
               href={`/seasons/${season.year}`}
-              className="group relative overflow-hidden rounded-xl border border-border-subtle bg-surface transition-all hover:border-f1-red/50 hover:bg-surface-elevated"
+              className="group relative overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)] bg-surface-1 card-glow"
               style={
                 season.teamId
                   ? { borderLeftWidth: "4px", borderLeftColor: getTeamColor(season.teamId) }
@@ -90,10 +87,7 @@ export default async function SeasonsPage() {
             >
               <div className="flex items-center justify-between p-5">
                 <div className="space-y-2">
-                  <span
-                    className="text-3xl font-black text-text-primary"
-                    style={{ fontFamily: "var(--font-titillium)" }}
-                  >
+                  <span className="text-3xl font-black text-text-primary">
                     {season.year}
                   </span>
 
@@ -119,7 +113,7 @@ export default async function SeasonsPage() {
                   )}
                 </div>
 
-                <ChevronRight className="size-5 text-text-secondary transition-transform group-hover:translate-x-1 group-hover:text-f1-red" />
+                <ChevronRight className="size-5 text-text-secondary transition-transform group-hover:translate-x-1 group-hover:text-glow" />
               </div>
             </Link>
           ))}
@@ -128,10 +122,7 @@ export default async function SeasonsPage() {
 
       {/* Older seasons in a denser grid */}
       <section>
-        <h2
-          className="mb-6 text-2xl font-bold text-text-primary"
-          style={{ fontFamily: "var(--font-titillium)" }}
-        >
+        <h2 className="mb-6 text-2xl font-bold text-text-primary">
           Historic Seasons
         </h2>
 
@@ -146,12 +137,9 @@ export default async function SeasonsPage() {
                 <Link
                   key={year}
                   href={`/seasons/${year}`}
-                  className="group flex items-center justify-center rounded-lg border border-border-subtle bg-surface px-3 py-3 text-center transition-all hover:border-f1-red/50 hover:bg-surface-elevated"
+                  className="group flex items-center justify-center rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 px-3 py-3 text-center transition-all hover:border-glow/30"
                 >
-                  <span
-                    className="text-sm font-bold text-text-primary group-hover:text-f1-red"
-                    style={{ fontFamily: "var(--font-titillium)" }}
-                  >
+                  <span className="text-sm font-bold text-text-primary group-hover:text-glow">
                     {year}
                   </span>
                 </Link>

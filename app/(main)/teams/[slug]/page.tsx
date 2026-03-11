@@ -47,7 +47,7 @@ export default async function TeamDetailPage({
       {/* Team logo + color accent bar */}
       <div className="mb-8 flex items-center gap-5">
         {logoUrl ? (
-          <div className="flex size-20 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-white/10 p-3">
+          <div className="flex size-20 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)] bg-surface-1 p-3">
             <Image
               src={logoUrl}
               alt={`${team.name} logo`}
@@ -86,14 +86,14 @@ export default async function TeamDetailPage({
         {team.isActive ? (
           <Badge
             variant="outline"
-            className="border-accent/30 text-accent"
+            className="border-glow/30 text-glow"
           >
             Active
           </Badge>
         ) : (
           <Badge
             variant="outline"
-            className="border-border-subtle text-text-secondary"
+            className="border-[rgba(255,255,255,0.06)] text-text-secondary"
           >
             Historic
           </Badge>
@@ -103,10 +103,7 @@ export default async function TeamDetailPage({
       {/* Stats grid */}
       {stats && (
         <div className="mb-8">
-          <h2
-            className="mb-4 text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
-          >
+          <h2 className="mb-4 text-2xl font-bold text-text-primary">
             Career Statistics
           </h2>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
@@ -147,26 +144,23 @@ export default async function TeamDetailPage({
       {/* Derived stats section */}
       {stats && stats.races > 0 && (
         <div className="mb-8">
-          <h2
-            className="mb-4 text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
-          >
+          <h2 className="mb-4 text-2xl font-bold text-text-primary">
             Performance Rates
           </h2>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-            <div className="rounded-lg border border-border-subtle bg-surface p-4">
+            <div className="rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 p-4">
               <p className="text-sm text-text-secondary">Win Rate</p>
               <p className="stats-number mt-1 text-2xl font-bold text-text-primary">
                 {((stats.wins / stats.races) * 100).toFixed(1)}%
               </p>
             </div>
-            <div className="rounded-lg border border-border-subtle bg-surface p-4">
+            <div className="rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 p-4">
               <p className="text-sm text-text-secondary">Podium Rate</p>
               <p className="stats-number mt-1 text-2xl font-bold text-text-primary">
                 {((stats.podiums / stats.races) * 100).toFixed(1)}%
               </p>
             </div>
-            <div className="rounded-lg border border-border-subtle bg-surface p-4">
+            <div className="rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 p-4">
               <p className="text-sm text-text-secondary">
                 Points per Race
               </p>
@@ -181,10 +175,7 @@ export default async function TeamDetailPage({
       {/* Top Drivers */}
       {topDrivers.length > 0 && (
         <div>
-          <h2
-            className="mb-4 text-2xl font-bold text-text-primary"
-            style={{ fontFamily: "var(--font-titillium)" }}
-          >
+          <h2 className="mb-4 text-2xl font-bold text-text-primary">
             Top Drivers
           </h2>
           <div className="space-y-2">
@@ -196,7 +187,7 @@ export default async function TeamDetailPage({
                 <Link
                   key={td.driverId}
                   href={`/drivers/${driverSlug}`}
-                  className="flex items-center gap-4 rounded-lg border border-border-subtle bg-surface p-3 transition-colors hover:border-f1-red/30"
+                  className="flex items-center gap-4 rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 p-3 card-glow"
                   style={{ borderLeft: `3px solid ${color}` }}
                 >
                   {/* Rank */}
@@ -206,7 +197,7 @@ export default async function TeamDetailPage({
 
                   {/* Driver photo */}
                   {imageUrl ? (
-                    <div className="relative size-10 shrink-0 overflow-hidden rounded-full border border-border-subtle">
+                    <div className="relative size-10 shrink-0 overflow-hidden rounded-full border border-[rgba(255,255,255,0.06)]">
                       <Image
                         src={imageUrl}
                         alt={`${td.firstName} ${td.lastName}`}
@@ -216,7 +207,7 @@ export default async function TeamDetailPage({
                       />
                     </div>
                   ) : (
-                    <div className="flex size-10 shrink-0 items-center justify-center rounded-full border border-border-subtle bg-surface-elevated text-xs font-bold text-text-secondary">
+                    <div className="flex size-10 shrink-0 items-center justify-center rounded-full border border-[rgba(255,255,255,0.06)] bg-surface-2 text-xs font-bold text-text-secondary">
                       {td.firstName[0]}{td.lastName[0]}
                     </div>
                   )}
@@ -235,7 +226,7 @@ export default async function TeamDetailPage({
                   <div className="flex items-center gap-4 text-sm">
                     {td.wins > 0 && (
                       <div className="flex items-center gap-1">
-                        <Trophy className="size-3.5 text-f1-red" />
+                        <Trophy className="size-3.5 text-glow" />
                         <span className="stats-number font-bold text-text-primary">{td.wins}</span>
                         <span className="text-xs text-text-secondary">wins</span>
                       </div>

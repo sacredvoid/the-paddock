@@ -66,8 +66,8 @@ export function TeamsList({ teams, logoUrls }: TeamsListProps) {
               onClick={() => setFilter(mode)}
               className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
                 filter === mode
-                  ? "bg-f1-red text-white"
-                  : "bg-surface text-text-secondary hover:text-text-primary"
+                  ? "bg-glow text-white"
+                  : "bg-surface-1 text-text-secondary hover:text-text-primary"
               }`}
             >
               {label}
@@ -85,14 +85,14 @@ export function TeamsList({ teams, logoUrls }: TeamsListProps) {
             placeholder="Search teams..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full rounded-md border border-border-subtle bg-surface py-2 pl-9 pr-3 text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:ring-1 focus:ring-f1-red sm:w-64"
+            className="w-full rounded-md border border-[rgba(255,255,255,0.06)] bg-surface-1 py-2 pl-9 pr-3 text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:ring-1 focus:ring-glow sm:w-64"
           />
         </div>
       </div>
 
       {/* Teams grid */}
       {filtered.length === 0 ? (
-        <div className="rounded-lg border border-border-subtle bg-surface px-6 py-16 text-center">
+        <div className="rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 px-6 py-16 text-center">
           <p className="text-text-secondary">
             No teams found matching your search.
           </p>
@@ -128,7 +128,7 @@ function TeamCard({
   return (
     <Link href={`/teams/${team.slug}`} className="block">
       <Card
-        className="border-border-subtle bg-surface transition-transform duration-200 hover:-translate-y-0.5"
+        className="border-[rgba(255,255,255,0.06)] bg-surface-1 card-glow"
         style={{ borderLeft: `4px solid ${color}` }}
       >
         <CardContent className="flex flex-col gap-3">
@@ -137,7 +137,7 @@ function TeamCard({
             <div className="flex items-center gap-3">
               {/* Team logo or color fallback */}
               {logoUrl ? (
-                <div className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-white/10 p-1.5">
+                <div className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-surface-1 border-[rgba(255,255,255,0.06)] p-1.5">
                   <Image
                     src={logoUrl}
                     alt={`${team.name} logo`}
@@ -156,10 +156,7 @@ function TeamCard({
                 </div>
               )}
               <div>
-                <h3
-                  className="text-lg font-bold text-text-primary"
-                  style={{ fontFamily: "var(--font-titillium)" }}
-                >
+                <h3 className="text-lg font-bold text-text-primary">
                   {team.name}
                 </h3>
                 <span className="text-sm text-text-secondary">
@@ -170,14 +167,14 @@ function TeamCard({
             {team.isActive ? (
               <Badge
                 variant="outline"
-                className="shrink-0 border-accent/30 text-accent"
+                className="shrink-0 border-glow/30 text-glow"
               >
                 Active
               </Badge>
             ) : (
               <Badge
                 variant="outline"
-                className="shrink-0 border-border-subtle text-text-secondary"
+                className="shrink-0 border-[rgba(255,255,255,0.06)] text-text-secondary"
               >
                 Historic
               </Badge>
@@ -186,14 +183,14 @@ function TeamCard({
 
           {/* Stats row */}
           {stats && (
-            <div className="grid grid-cols-3 gap-3 border-t border-border-subtle pt-3">
+            <div className="grid grid-cols-3 gap-3 border-t border-[rgba(255,255,255,0.06)] pt-3">
               <div className="flex flex-col">
                 <span className="text-xs text-text-secondary">
                   Championships
                 </span>
                 <span className="stats-number text-lg font-bold text-text-primary flex items-center gap-1">
                   {stats.championships > 0 && (
-                    <Trophy className="size-3.5 text-f1-red" />
+                    <Trophy className="size-3.5 text-glow" />
                   )}
                   {stats.championships}
                 </span>
