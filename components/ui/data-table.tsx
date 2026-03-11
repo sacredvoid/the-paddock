@@ -48,7 +48,6 @@ export function DataTable<T extends Record<string, unknown>>({
 
   const handleSort = (key: string) => {
     if (sortKey === key) {
-      // Cycle: asc -> desc -> none
       if (sortDirection === "asc") {
         setSortDirection("desc");
       } else if (sortDirection === "desc") {
@@ -93,11 +92,12 @@ export function DataTable<T extends Record<string, unknown>>({
     <ScrollArea className={cn("w-full", className)}>
       <Table>
         <TableHeader>
-          <TableRow className="border-border-subtle hover:bg-transparent">
+          <TableRow className="border-[rgba(255,255,255,0.06)] hover:bg-transparent">
             {columns.map((col) => (
               <TableHead
                 key={col.key}
                 className={cn(
+                  "section-label",
                   alignClass(col.align),
                   col.sortable && "cursor-pointer select-none"
                 )}
@@ -120,10 +120,7 @@ export function DataTable<T extends Record<string, unknown>>({
           {sortedData.map((row, rowIdx) => (
             <TableRow
               key={rowIdx}
-              className={cn(
-                "border-border-subtle",
-                rowIdx % 2 === 1 && "bg-surface-elevated/50"
-              )}
+              className="border-b border-[rgba(255,255,255,0.06)] hover:bg-surface-2"
             >
               {columns.map((col) => {
                 const value = getNestedValue(row, col.key);
@@ -160,7 +157,7 @@ function SortIndicator({
     return <ChevronsUpDown className="size-3.5 text-text-secondary" />;
   }
   if (direction === "asc") {
-    return <ChevronUp className="size-3.5 text-f1-red" />;
+    return <ChevronUp className="size-3.5 text-glow" />;
   }
-  return <ChevronDown className="size-3.5 text-f1-red" />;
+  return <ChevronDown className="size-3.5 text-glow" />;
 }

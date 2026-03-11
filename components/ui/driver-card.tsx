@@ -32,13 +32,13 @@ export function DriverCard({ driver, imageUrl, className }: DriverCardProps) {
     <Link href={`/drivers/${driver.slug}`} className="block">
       <Card
         className={cn(
-          "border-border-subtle bg-surface transition-transform duration-200 hover:-translate-y-0.5 overflow-hidden",
+          "bg-surface-1 rounded-xl card-glow overflow-hidden",
           className
         )}
-        style={{ borderTop: `4px solid ${teamColor}` }}
+        style={{ borderTop: `3px solid ${teamColor}` }}
       >
         {/* Driver headshot */}
-        <div className="relative mx-auto mt-4 size-20 overflow-hidden rounded-full border-2 border-border-subtle bg-surface-elevated">
+        <div className="relative mx-auto mt-4 size-20 overflow-hidden rounded-full border-2 border-[rgba(255,255,255,0.06)] bg-surface-2">
           {imageUrl ? (
             <Image
               src={imageUrl}
@@ -75,19 +75,14 @@ export function DriverCard({ driver, imageUrl, className }: DriverCardProps) {
             <span className="block text-sm text-text-secondary">
               {driver.firstName}
             </span>
-            <span className="block text-lg font-bold text-text-primary">
+            <span className="block text-lg font-semibold text-text-primary">
               {driver.lastName}
             </span>
           </div>
 
-          {/* Nationality */}
-          <span className="text-center text-sm text-text-secondary">
-            {driver.nationality}
-          </span>
-
           {/* Wins stat */}
           <div className="flex items-center justify-center gap-1.5 text-sm text-text-secondary">
-            <Trophy className="size-4 text-f1-red" />
+            <Trophy className="size-4 text-glow" />
             <span className="stats-number font-medium text-text-primary">
               {driver.stats.wins}
             </span>

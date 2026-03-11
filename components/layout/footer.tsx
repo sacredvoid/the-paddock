@@ -3,25 +3,20 @@ import { Github } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border-subtle bg-surface">
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-8 text-center">
-        {/* Branding */}
-        <div
-          className="text-lg font-bold"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
-          <span className="text-text-secondary">THE </span>
-          <span className="text-f1-red">PADDOCK</span>
+    <footer className="border-t border-[rgba(255,255,255,0.06)] bg-surface-1">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6">
+        <div className="flex items-center gap-3">
+          <span className="text-sm font-bold">
+            <span className="text-text-secondary">THE </span>
+            <span className="text-glow">PADDOCK</span>
+          </span>
+          <span className="text-sm text-text-tertiary">
+            Not affiliated with Formula 1 or FIA
+          </span>
         </div>
 
-        {/* Disclaimer */}
-        <p className="max-w-md text-sm text-text-secondary">
-          Not affiliated with Formula 1, FIA, or any F1 team.
-        </p>
-
-        {/* Attribution and links */}
-        <div className="flex items-center gap-4 text-sm text-text-secondary">
-          <span>Data from Jolpica F1 API and OpenF1</span>
+        <div className="flex items-center gap-3 text-sm text-text-tertiary">
+          <span className="hidden sm:inline">Data from Jolpica F1 API and F1DB</span>
           <Link
             href="https://github.com/sacredvoid/the-paddock"
             target="_blank"
@@ -29,7 +24,7 @@ export function Footer() {
             className="transition-colors hover:text-text-primary"
             aria-label="GitHub repository"
           >
-            <Github className="size-5" />
+            <Github className="size-4" />
           </Link>
         </div>
       </div>

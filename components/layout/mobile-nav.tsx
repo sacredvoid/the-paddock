@@ -20,14 +20,11 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
 
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent side="right" className="bg-background p-0">
-        <SheetHeader className="border-b border-border-subtle px-6 py-4">
-          <SheetTitle
-            className="text-lg font-bold"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
+      <SheetContent side="right" className="glass border-l border-[rgba(255,255,255,0.06)] p-0">
+        <SheetHeader className="border-b border-[rgba(255,255,255,0.06)] px-6 py-4">
+          <SheetTitle className="text-lg font-bold">
             <span className="text-text-secondary">THE </span>
-            <span className="text-f1-red">PADDOCK</span>
+            <span className="text-glow">PADDOCK</span>
           </SheetTitle>
         </SheetHeader>
 
@@ -44,8 +41,8 @@ export function MobileNav({ open, onOpenChange }: MobileNavProps) {
                 onClick={() => onOpenChange(false)}
                 className={`rounded-md px-4 py-3 text-base font-medium transition-colors ${
                   isActive
-                    ? "bg-surface-elevated text-f1-red"
-                    : "text-text-secondary hover:bg-surface hover:text-text-primary"
+                    ? "border-l-2 border-glow bg-surface-2 text-glow"
+                    : "text-text-secondary hover:bg-surface-1 hover:text-text-primary"
                 }`}
               >
                 {item.label}

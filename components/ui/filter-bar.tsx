@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectTrigger,
@@ -41,7 +40,7 @@ export function FilterBar({
   return (
     <div
       className={cn(
-        "flex flex-wrap items-center gap-3 rounded-lg bg-surface p-4",
+        "glass flex flex-wrap items-center gap-3 rounded-xl border border-[rgba(255,255,255,0.06)] p-4",
         className
       )}
     >
@@ -55,6 +54,7 @@ export function FilterBar({
           </InputGroupAddon>
           <InputGroupInput
             placeholder={searchPlaceholder}
+            className="bg-surface-2 border-[rgba(255,255,255,0.06)]"
             onChange={(e) => onSearchChange(e.target.value)}
           />
         </InputGroup>
@@ -66,10 +66,10 @@ export function FilterBar({
           key={filter.key}
           onValueChange={(val) => onFilterChange(filter.key, val as string)}
         >
-          <SelectTrigger className="min-w-[140px]">
+          <SelectTrigger className="min-w-[140px] bg-surface-2 border-[rgba(255,255,255,0.06)]">
             <SelectValue placeholder={filter.label} />
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent className="bg-surface-2 border-[rgba(255,255,255,0.06)]">
             {filter.options.map((opt) => (
               <SelectItem key={opt.value} value={opt.value}>
                 {opt.label}

@@ -25,17 +25,17 @@ export function PageHeader({
       {breadcrumbs && breadcrumbs.length > 0 && (
         <nav
           aria-label="Breadcrumb"
-          className="mb-3 flex items-center gap-2 text-sm"
+          className="section-label mb-3 flex items-center gap-2"
         >
           {breadcrumbs.map((crumb, i) => (
             <span key={i} className="flex items-center gap-2">
               {i > 0 && (
-                <span className="text-text-secondary">/</span>
+                <span className="text-text-tertiary">/</span>
               )}
               {crumb.href ? (
                 <Link
                   href={crumb.href}
-                  className="text-accent hover:underline"
+                  className="text-glow hover:underline"
                 >
                   {crumb.label}
                 </Link>
@@ -48,16 +48,13 @@ export function PageHeader({
       )}
 
       {/* Title */}
-      <h1
-        className="text-4xl font-bold text-text-primary"
-        style={{ fontFamily: "var(--font-titillium)" }}
-      >
+      <h1 className="text-5xl font-bold tracking-tight text-text-primary">
         {title}
       </h1>
 
       {/* Subtitle */}
       {subtitle && (
-        <p className="mt-2 text-lg text-text-secondary">{subtitle}</p>
+        <p className="mt-3 text-lg text-text-secondary">{subtitle}</p>
       )}
     </div>
   );

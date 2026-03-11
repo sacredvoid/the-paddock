@@ -11,8 +11,8 @@ interface StatCardProps {
 }
 
 const trendConfig = {
-  up: { icon: TrendingUp, className: "text-green-500" },
-  down: { icon: TrendingDown, className: "text-red-500" },
+  up: { icon: TrendingUp, className: "text-success" },
+  down: { icon: TrendingDown, className: "text-danger" },
   neutral: { icon: Minus, className: "text-text-secondary" },
 } as const;
 
@@ -26,19 +26,19 @@ export function StatCard({
   return (
     <Card
       className={cn(
-        "border-border-subtle bg-surface",
+        "bg-surface-1 border-[rgba(255,255,255,0.06)] rounded-xl card-glow",
         className
       )}
       style={
         teamColor
-          ? { borderLeft: `4px solid ${teamColor}` }
+          ? { borderLeft: `3px solid ${teamColor}` }
           : undefined
       }
     >
       <CardContent className="flex items-start justify-between">
         <div>
-          <p className="text-sm text-text-secondary">{label}</p>
-          <p className="stats-number mt-1 text-3xl font-bold text-text-primary">
+          <p className="section-label">{label}</p>
+          <p className="stats-number mt-1 text-3xl font-semibold text-text-primary">
             {value}
           </p>
         </div>

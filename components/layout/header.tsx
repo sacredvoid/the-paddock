@@ -13,16 +13,15 @@ export function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border-subtle bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4">
+    <header className="sticky top-0 z-50 glass border-b border-[rgba(255,255,255,0.06)]">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Logo */}
         <Link
           href="/"
           className="flex items-center gap-1 text-xl font-bold"
-          style={{ fontFamily: "var(--font-heading)" }}
         >
           <span className="text-text-secondary">THE</span>
-          <span className="text-f1-red">PADDOCK</span>
+          <span className="text-glow">PADDOCK</span>
         </Link>
 
         {/* Desktop navigation */}
@@ -38,7 +37,7 @@ export function Header() {
                 href={item.href}
                 className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
                   isActive
-                    ? "text-f1-red"
+                    ? "text-glow"
                     : "text-text-secondary hover:text-text-primary"
                 }`}
               >
@@ -50,9 +49,12 @@ export function Header() {
 
         {/* Right side actions */}
         <div className="flex items-center gap-1">
-          {/* Search button placeholder */}
-          <Button variant="ghost" size="icon" aria-label="Search">
+          {/* Search button with Cmd+K hint */}
+          <Button variant="ghost" size="icon" className="relative" aria-label="Search">
             <Search className="size-4" />
+            <kbd className="pointer-events-none absolute -right-1 -top-1 hidden rounded border border-[rgba(255,255,255,0.06)] bg-surface-2 px-1 py-0.5 text-[10px] text-text-tertiary md:inline-block">
+              ⌘K
+            </kbd>
           </Button>
 
           {/* Mobile hamburger */}
