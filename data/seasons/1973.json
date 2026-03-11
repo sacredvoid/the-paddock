@@ -1,0 +1,6866 @@
+{
+  "year": 1973,
+  "champion": {
+    "driverId": "jackie-stewart",
+    "teamId": "tyrrell"
+  },
+  "constructorChampion": {
+    "teamId": "lotus"
+  },
+  "races": [
+    {
+      "round": 1,
+      "name": "Argentine Grand Prix",
+      "circuitId": "buenos-aires",
+      "date": "1973-01-28",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 2,
+          "laps": 96,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:56:18.220"
+        },
+        {
+          "position": 2,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 6,
+          "laps": 96,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:56:22.910"
+        },
+        {
+          "position": 3,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 4,
+          "laps": 96,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:56:51.410"
+        },
+        {
+          "position": 4,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "grid": 3,
+          "laps": 96,
+          "status": "Finished",
+          "points": 3,
+          "time": "1:57:00.790"
+        },
+        {
+          "position": 5,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 8,
+          "laps": 95,
+          "status": "Finished",
+          "points": 2,
+          "time": "+1 lap"
+        },
+        {
+          "position": 6,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 12,
+          "laps": 95,
+          "status": "Finished",
+          "points": 1,
+          "time": "+1 lap"
+        },
+        {
+          "position": 7,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 1,
+          "laps": 93,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 8,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 11,
+          "laps": 92,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 9,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "grid": 14,
+          "laps": 92,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 10,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 18,
+          "laps": 90,
+          "status": "Finished",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "grid": 17,
+          "laps": 84,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 7,
+          "laps": 79,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 19,
+          "laps": 79,
+          "status": "NC",
+          "points": 0,
+          "time": "+17 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 5,
+          "laps": 66,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 13,
+          "laps": 66,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 9,
+          "laps": 16,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 15,
+          "laps": 10,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 10,
+          "laps": 10,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "nanni-galli",
+          "teamId": "iso-marlboro",
+          "grid": 16,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "nanni-galli",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "name": "Brazilian Grand Prix",
+      "circuitId": "interlagos",
+      "date": "1973-02-11",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 2,
+          "laps": 40,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:43:55.600"
+        },
+        {
+          "position": 2,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 8,
+          "laps": 40,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:44:09.100"
+        },
+        {
+          "position": 3,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 5,
+          "laps": 40,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:45:42.000"
+        },
+        {
+          "position": 4,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "grid": 17,
+          "laps": 39,
+          "status": "Finished",
+          "points": 3,
+          "time": "+1 lap"
+        },
+        {
+          "position": 5,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "grid": 3,
+          "laps": 39,
+          "status": "Finished",
+          "points": 2,
+          "time": "+1 lap"
+        },
+        {
+          "position": 6,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 4,
+          "laps": 39,
+          "status": "Finished",
+          "points": 1,
+          "time": "+1 lap"
+        },
+        {
+          "position": 7,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 16,
+          "laps": 39,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 8,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 13,
+          "laps": 38,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 9,
+          "driverId": "nanni-galli",
+          "teamId": "iso-marlboro",
+          "grid": 18,
+          "laps": 38,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 10,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 9,
+          "laps": 38,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 11,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 7,
+          "laps": 38,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 12,
+          "driverId": "luiz-bueno",
+          "teamId": "surtees",
+          "grid": 20,
+          "laps": 36,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 10,
+          "laps": 23,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 19,
+          "laps": 18,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 6,
+          "laps": 9,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 14,
+          "laps": 6,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "grid": 15,
+          "laps": 5,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 1,
+          "laps": 5,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 11,
+          "laps": 5,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 12,
+          "laps": 3,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "nanni-galli",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "luiz-bueno",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "name": "South African Grand Prix",
+      "circuitId": "kyalami",
+      "date": "1973-03-03",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 16,
+          "laps": 79,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:43:11.070"
+        },
+        {
+          "position": 2,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 6,
+          "laps": 79,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:43:35.620"
+        },
+        {
+          "position": 3,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 2,
+          "laps": 79,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:43:36.130"
+        },
+        {
+          "position": 4,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "grid": 15,
+          "laps": 78,
+          "status": "Finished",
+          "points": 3,
+          "time": "+1 lap"
+        },
+        {
+          "position": 5,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 1,
+          "laps": 77,
+          "status": "Finished",
+          "points": 2,
+          "time": "+2 laps"
+        },
+        {
+          "position": 6,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 21,
+          "laps": 77,
+          "status": "Finished",
+          "points": 1,
+          "time": "+2 laps"
+        },
+        {
+          "position": 7,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 8,
+          "laps": 77,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 8,
+          "driverId": "andrea-de-adamich",
+          "teamId": "surtees",
+          "grid": 20,
+          "laps": 77,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 9,
+          "driverId": "jody-scheckter",
+          "teamId": "mclaren",
+          "grid": 3,
+          "laps": 75,
+          "status": "Finished",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 10,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 19,
+          "laps": 73,
+          "status": "Finished",
+          "points": 0,
+          "time": "+6 laps"
+        },
+        {
+          "position": 11,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 4,
+          "laps": 73,
+          "status": "Finished",
+          "points": 0,
+          "time": "+6 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 9,
+          "laps": 69,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "eddie-keizan",
+          "teamId": "tyrrell",
+          "grid": 22,
+          "laps": 67,
+          "status": "NC",
+          "points": 0,
+          "time": "+12 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "grid": 18,
+          "laps": 66,
+          "status": "NC",
+          "points": 0,
+          "time": "+13 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 25,
+          "laps": 66,
+          "status": "NC",
+          "points": 0,
+          "time": "+13 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 23,
+          "laps": 65,
+          "status": "NC",
+          "points": 0,
+          "time": "+14 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 17,
+          "laps": 52,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-pretorius",
+          "teamId": "iso-marlboro",
+          "grid": 24,
+          "laps": 35,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 10,
+          "laps": 26,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 14,
+          "laps": 14,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 7,
+          "laps": 4,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "dave-charlton",
+          "teamId": "lotus",
+          "grid": 13,
+          "laps": 3,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "grid": 11,
+          "laps": 2,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 5,
+          "laps": 2,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 12,
+          "laps": 2,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "jody-scheckter",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "dave-charlton",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "andrea-de-adamich",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "eddie-keizan",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 24,
+          "driverId": "jackie-pretorius",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 25,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "name": "Spanish Grand Prix",
+      "circuitId": "montjuic",
+      "date": "1973-04-29",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 7,
+          "laps": 75,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:48:18.700"
+        },
+        {
+          "position": 2,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 3,
+          "laps": 75,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:49:01.400"
+        },
+        {
+          "position": 3,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 14,
+          "laps": 75,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:49:31.800"
+        },
+        {
+          "position": 4,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 5,
+          "laps": 74,
+          "status": "Finished",
+          "points": 3,
+          "time": "+1 lap"
+        },
+        {
+          "position": 5,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 10,
+          "laps": 74,
+          "status": "Finished",
+          "points": 2,
+          "time": "+1 lap"
+        },
+        {
+          "position": 6,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 2,
+          "laps": 74,
+          "status": "Finished",
+          "points": 1,
+          "time": "+1 lap"
+        },
+        {
+          "position": 7,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 19,
+          "laps": 74,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 8,
+          "driverId": "henri-pescarolo",
+          "teamId": "march",
+          "grid": 18,
+          "laps": 73,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 9,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 8,
+          "laps": 69,
+          "status": "Finished",
+          "points": 0,
+          "time": "+6 laps"
+        },
+        {
+          "position": 10,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 12,
+          "laps": 69,
+          "status": "Finished",
+          "points": 0,
+          "time": "+6 laps"
+        },
+        {
+          "position": 11,
+          "driverId": "nanni-galli",
+          "teamId": "iso-marlboro",
+          "grid": 20,
+          "laps": 69,
+          "status": "Finished",
+          "points": 0,
+          "time": "+6 laps"
+        },
+        {
+          "position": 12,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "grid": 6,
+          "laps": 69,
+          "status": "Finished",
+          "points": 0,
+          "time": "+6 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 15,
+          "laps": 66,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 21,
+          "laps": 63,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 1,
+          "laps": 56,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 4,
+          "laps": 47,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 11,
+          "laps": 28,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 22,
+          "laps": 27,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 9,
+          "laps": 25,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 13,
+          "laps": 23,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "andrea-de-adamich",
+          "teamId": "brabham",
+          "grid": 17,
+          "laps": 17,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 16,
+          "laps": 13,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "andrea-de-adamich",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "henri-pescarolo",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "nanni-galli",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "name": "Belgian Grand Prix",
+      "circuitId": "zolder",
+      "date": "1973-05-20",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 6,
+          "laps": 70,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:42:13.430"
+        },
+        {
+          "position": 2,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 4,
+          "laps": 70,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:42:45.270"
+        },
+        {
+          "position": 3,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 9,
+          "laps": 70,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:44:16.220"
+        },
+        {
+          "position": 4,
+          "driverId": "andrea-de-adamich",
+          "teamId": "brabham",
+          "grid": 18,
+          "laps": 69,
+          "status": "Finished",
+          "points": 3,
+          "time": "+1 lap"
+        },
+        {
+          "position": 5,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 14,
+          "laps": 69,
+          "status": "Finished",
+          "points": 2,
+          "time": "+1 lap"
+        },
+        {
+          "position": 6,
+          "driverId": "chris-amon",
+          "teamId": "tecno",
+          "grid": 15,
+          "laps": 67,
+          "status": "Finished",
+          "points": 1,
+          "time": "+3 laps"
+        },
+        {
+          "position": 7,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 2,
+          "laps": 67,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 8,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 8,
+          "laps": 66,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 9,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 23,
+          "laps": 65,
+          "status": "Finished",
+          "points": 0,
+          "time": "+5 laps"
+        },
+        {
+          "position": 10,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 12,
+          "laps": 63,
+          "status": "Finished",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 11,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 20,
+          "laps": 63,
+          "status": "Finished",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "grid": 16,
+          "laps": 60,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 5,
+          "laps": 56,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 19,
+          "laps": 46,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 1,
+          "laps": 42,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 10,
+          "laps": 33,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 21,
+          "laps": 16,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 7,
+          "laps": 14,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 11,
+          "laps": 13,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 22,
+          "laps": 11,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "nanni-galli",
+          "teamId": "iso-marlboro",
+          "grid": 17,
+          "laps": 6,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "grid": 3,
+          "laps": 6,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 13,
+          "laps": 4,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "chris-amon",
+          "teamId": "tecno",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "nanni-galli",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "andrea-de-adamich",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "name": "Monaco Grand Prix",
+      "circuitId": "monaco",
+      "date": "1973-06-03",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 1,
+          "laps": 78,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:57:44.300"
+        },
+        {
+          "position": 2,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 5,
+          "laps": 78,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:57:45.600"
+        },
+        {
+          "position": 3,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 2,
+          "laps": 77,
+          "status": "Finished",
+          "points": 4,
+          "time": "+1 lap"
+        },
+        {
+          "position": 4,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 4,
+          "laps": 77,
+          "status": "Finished",
+          "points": 3,
+          "time": "+1 lap"
+        },
+        {
+          "position": 5,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 15,
+          "laps": 76,
+          "status": "Finished",
+          "points": 2,
+          "time": "+2 laps"
+        },
+        {
+          "position": 6,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 3,
+          "laps": 76,
+          "status": "Finished",
+          "points": 1,
+          "time": "+2 laps"
+        },
+        {
+          "position": 7,
+          "driverId": "andrea-de-adamich",
+          "teamId": "brabham",
+          "grid": 25,
+          "laps": 75,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 8,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 13,
+          "laps": 75,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 9,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "grid": 18,
+          "laps": 73,
+          "status": "Finished",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 10,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 22,
+          "laps": 72,
+          "status": "Finished",
+          "points": 0,
+          "time": "+6 laps"
+        },
+        {
+          "position": 11,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 9,
+          "laps": 71,
+          "status": "Finished",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "grid": 14,
+          "laps": 67,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 24,
+          "laps": 62,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "grid": 16,
+          "laps": 58,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 19,
+          "laps": 46,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "grid": 7,
+          "laps": 44,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 10,
+          "laps": 41,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 11,
+          "laps": 39,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "david-purley",
+          "teamId": "march",
+          "grid": 23,
+          "laps": 31,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 17,
+          "laps": 31,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "nanni-galli",
+          "teamId": "iso-marlboro",
+          "grid": 21,
+          "laps": 30,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 6,
+          "laps": 24,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "chris-amon",
+          "teamId": "tecno",
+          "grid": 12,
+          "laps": 22,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 8,
+          "laps": 15,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 20,
+          "laps": 3,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 0,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "chris-amon",
+          "teamId": "tecno",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "nanni-galli",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 24,
+          "driverId": "david-purley",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 25,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 26,
+          "driverId": "andrea-de-adamich",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "name": "Swedish Grand Prix",
+      "circuitId": "anderstorp",
+      "date": "1973-06-17",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 6,
+          "laps": 80,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:56:46.049"
+        },
+        {
+          "position": 2,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 1,
+          "laps": 80,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:56:50.079"
+        },
+        {
+          "position": 3,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 2,
+          "laps": 80,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:57:00.719"
+        },
+        {
+          "position": 4,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 5,
+          "laps": 80,
+          "status": "Finished",
+          "points": 3,
+          "time": "1:57:04.119"
+        },
+        {
+          "position": 5,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 3,
+          "laps": 80,
+          "status": "Finished",
+          "points": 2,
+          "time": "1:57:12.049"
+        },
+        {
+          "position": 6,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "grid": 8,
+          "laps": 79,
+          "status": "Finished",
+          "points": 1,
+          "time": "+1 lap"
+        },
+        {
+          "position": 7,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 7,
+          "laps": 79,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 8,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 21,
+          "laps": 77,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 9,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 12,
+          "laps": 77,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 10,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 16,
+          "laps": 77,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 11,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 11,
+          "laps": 76,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 12,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 4,
+          "laps": 76,
+          "status": "Finished",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 13,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 15,
+          "laps": 75,
+          "status": "Finished",
+          "points": 0,
+          "time": "+5 laps"
+        },
+        {
+          "position": 14,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 19,
+          "laps": 74,
+          "status": "Finished",
+          "points": 0,
+          "time": "+6 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 9,
+          "laps": 57,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 17,
+          "laps": 50,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 10,
+          "laps": 41,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "grid": 20,
+          "laps": 36,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 18,
+          "laps": 16,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 13,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "reine-wisell",
+          "teamId": "march",
+          "grid": 14,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "tom-belso",
+          "teamId": "iso-marlboro",
+          "grid": 0,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "reine-wisell",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "tom-belso",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "name": "French Grand Prix",
+      "circuitId": "paul-ricard",
+      "date": "1973-07-01",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 5,
+          "laps": 54,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:41:36.520"
+        },
+        {
+          "position": 2,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 4,
+          "laps": 54,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:42:17.440"
+        },
+        {
+          "position": 3,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 8,
+          "laps": 54,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:42:23.000"
+        },
+        {
+          "position": 4,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 1,
+          "laps": 54,
+          "status": "Finished",
+          "points": 3,
+          "time": "1:42:23.450"
+        },
+        {
+          "position": 5,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "grid": 12,
+          "laps": 54,
+          "status": "Finished",
+          "points": 2,
+          "time": "1:42:25.420"
+        },
+        {
+          "position": 6,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "grid": 14,
+          "laps": 54,
+          "status": "Finished",
+          "points": 1,
+          "time": "1:42:59.060"
+        },
+        {
+          "position": 7,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "grid": 10,
+          "laps": 54,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:43:05.710"
+        },
+        {
+          "position": 8,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 6,
+          "laps": 54,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:43:06.050"
+        },
+        {
+          "position": 9,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 17,
+          "laps": 54,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:43:22.280"
+        },
+        {
+          "position": 10,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 16,
+          "laps": 53,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 11,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 15,
+          "laps": 53,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 12,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 9,
+          "laps": 53,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 13,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 18,
+          "laps": 51,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 14,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 24,
+          "laps": 51,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 15,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "grid": 25,
+          "laps": 51,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 16,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 19,
+          "laps": 50,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "jody-scheckter",
+          "teamId": "mclaren",
+          "grid": 2,
+          "laps": 43,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 3,
+          "laps": 41,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 11,
+          "laps": 29,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "andrea-de-adamich",
+          "teamId": "brabham",
+          "grid": 13,
+          "laps": 28,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "reine-wisell",
+          "teamId": "march",
+          "grid": 22,
+          "laps": 20,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 20,
+          "laps": 16,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "henri-pescarolo",
+          "teamId": "iso-marlboro",
+          "grid": 23,
+          "laps": 16,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "grid": 7,
+          "laps": 7,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 21,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "jody-scheckter",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "andrea-de-adamich",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "reine-wisell",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "henri-pescarolo",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 24,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 25,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "name": "British Grand Prix",
+      "circuitId": "silverstone",
+      "date": "1973-07-14",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 3,
+          "laps": 67,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:29:18.500"
+        },
+        {
+          "position": 2,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 1,
+          "laps": 67,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:29:21.300"
+        },
+        {
+          "position": 3,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 2,
+          "laps": 67,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:29:21.500"
+        },
+        {
+          "position": 4,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "grid": 11,
+          "laps": 67,
+          "status": "Finished",
+          "points": 3,
+          "time": "1:29:21.900"
+        },
+        {
+          "position": 5,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 7,
+          "laps": 67,
+          "status": "Finished",
+          "points": 2,
+          "time": "1:29:55.100"
+        },
+        {
+          "position": 6,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 8,
+          "laps": 67,
+          "status": "Finished",
+          "points": 1,
+          "time": "1:30:03.200"
+        },
+        {
+          "position": 7,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 10,
+          "laps": 67,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:30:30.200"
+        },
+        {
+          "position": 8,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "grid": 19,
+          "laps": 67,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:30:35.900"
+        },
+        {
+          "position": 9,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 18,
+          "laps": 66,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 10,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 4,
+          "laps": 66,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 11,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 24,
+          "laps": 65,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 12,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 9,
+          "laps": 63,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 13,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "grid": 21,
+          "laps": 61,
+          "status": "Finished",
+          "points": 0,
+          "time": "+6 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 13,
+          "laps": 44,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 5,
+          "laps": 36,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "john-watson",
+          "teamId": "brabham",
+          "grid": 23,
+          "laps": 36,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 27,
+          "laps": 24,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "chris-amon",
+          "teamId": "tecno",
+          "grid": 29,
+          "laps": 6,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "graham-mcrae",
+          "teamId": "iso-marlboro",
+          "grid": 28,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 17,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "andrea-de-adamich",
+          "teamId": "brabham",
+          "grid": 20,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 25,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 12,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jochen-mass",
+          "teamId": "surtees",
+          "grid": 14,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 15,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jody-scheckter",
+          "teamId": "mclaren",
+          "grid": 6,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "roger-williamson",
+          "teamId": "march",
+          "grid": 22,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 26,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "david-purley",
+          "teamId": "march",
+          "grid": 16,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "jody-scheckter",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "jochen-mass",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "david-purley",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "andrea-de-adamich",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "roger-williamson",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "john-watson",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 24,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 25,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 26,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 27,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 28,
+          "driverId": "graham-mcrae",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 29,
+          "driverId": "chris-amon",
+          "teamId": "tecno",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "name": "Dutch Grand Prix",
+      "circuitId": "zandvoort",
+      "date": "1973-07-29",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 2,
+          "laps": 72,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:39:12.450"
+        },
+        {
+          "position": 2,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 3,
+          "laps": 72,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:39:28.280"
+        },
+        {
+          "position": 3,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "grid": 7,
+          "laps": 72,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:40:15.460"
+        },
+        {
+          "position": 4,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 6,
+          "laps": 72,
+          "status": "Finished",
+          "points": 3,
+          "time": "1:40:21.580"
+        },
+        {
+          "position": 5,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 9,
+          "laps": 72,
+          "status": "Finished",
+          "points": 2,
+          "time": "1:40:25.820"
+        },
+        {
+          "position": 6,
+          "driverId": "gijs-van-lennep",
+          "teamId": "iso-marlboro",
+          "grid": 20,
+          "laps": 70,
+          "status": "Finished",
+          "points": 1,
+          "time": "+2 laps"
+        },
+        {
+          "position": 7,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 8,
+          "laps": 69,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 8,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 12,
+          "laps": 68,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 9,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 15,
+          "laps": 68,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 10,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 22,
+          "laps": 67,
+          "status": "Finished",
+          "points": 0,
+          "time": "+5 laps"
+        },
+        {
+          "position": 11,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 1,
+          "laps": 66,
+          "status": "Finished",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 17,
+          "laps": 56,
+          "status": "NC",
+          "points": 0,
+          "time": "+16 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 24,
+          "laps": 52,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 11,
+          "laps": 51,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 4,
+          "laps": 31,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 13,
+          "laps": 27,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "chris-amon",
+          "teamId": "tecno",
+          "grid": 19,
+          "laps": 22,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 5,
+          "laps": 9,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "david-purley",
+          "teamId": "march",
+          "grid": 21,
+          "laps": 8,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "roger-williamson",
+          "teamId": "march",
+          "grid": 18,
+          "laps": 7,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 23,
+          "laps": 2,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 16,
+          "laps": 2,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 10,
+          "laps": 1,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "grid": 14,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "roger-williamson",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "chris-amon",
+          "teamId": "tecno",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "gijs-van-lennep",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "david-purley",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 24,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "name": "German Grand Prix",
+      "circuitId": "nurburgring",
+      "date": "1973-08-05",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 1,
+          "laps": 14,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:42:03.000"
+        },
+        {
+          "position": 2,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 3,
+          "laps": 14,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:42:04.600"
+        },
+        {
+          "position": 3,
+          "driverId": "jacky-ickx",
+          "teamId": "mclaren",
+          "grid": 4,
+          "laps": 14,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:42:44.200"
+        },
+        {
+          "position": 4,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 11,
+          "laps": 14,
+          "status": "Finished",
+          "points": 3,
+          "time": "1:42:56.800"
+        },
+        {
+          "position": 5,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 13,
+          "laps": 14,
+          "status": "Finished",
+          "points": 2,
+          "time": "1:43:22.900"
+        },
+        {
+          "position": 6,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 14,
+          "laps": 14,
+          "status": "Finished",
+          "points": 1,
+          "time": "1:43:27.300"
+        },
+        {
+          "position": 7,
+          "driverId": "jochen-mass",
+          "teamId": "surtees",
+          "grid": 15,
+          "laps": 14,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:43:28.200"
+        },
+        {
+          "position": 8,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 17,
+          "laps": 14,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:43:28.700"
+        },
+        {
+          "position": 9,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 7,
+          "laps": 14,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:44:14.800"
+        },
+        {
+          "position": 10,
+          "driverId": "henri-pescarolo",
+          "teamId": "iso-marlboro",
+          "grid": 12,
+          "laps": 14,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:44:25.500"
+        },
+        {
+          "position": 11,
+          "driverId": "rolf-stommelen",
+          "teamId": "brabham",
+          "grid": 16,
+          "laps": 14,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:45:30.300"
+        },
+        {
+          "position": 12,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 8,
+          "laps": 14,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:45:41.700"
+        },
+        {
+          "position": 13,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 20,
+          "laps": 14,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:45:52.000"
+        },
+        {
+          "position": 14,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 18,
+          "laps": 13,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 15,
+          "driverId": "david-purley",
+          "teamId": "march",
+          "grid": 22,
+          "laps": 13,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 16,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 19,
+          "laps": 13,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 6,
+          "laps": 7,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 10,
+          "laps": 7,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 21,
+          "laps": 5,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 9,
+          "laps": 4,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 5,
+          "laps": 1,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 2,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 0,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "jacky-ickx",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "henri-pescarolo",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "jochen-mass",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "rolf-stommelen",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "david-purley",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "name": "Austrian Grand Prix",
+      "circuitId": "spielberg",
+      "date": "1973-08-19",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 2,
+          "laps": 54,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:28:48.780"
+        },
+        {
+          "position": 2,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 7,
+          "laps": 54,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:28:57.790"
+        },
+        {
+          "position": 3,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 8,
+          "laps": 54,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:29:35.420"
+        },
+        {
+          "position": 4,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 5,
+          "laps": 54,
+          "status": "Finished",
+          "points": 3,
+          "time": "1:29:36.690"
+        },
+        {
+          "position": 5,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 13,
+          "laps": 54,
+          "status": "Finished",
+          "points": 2,
+          "time": "1:30:10.380"
+        },
+        {
+          "position": 6,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 14,
+          "laps": 54,
+          "status": "Finished",
+          "points": 1,
+          "time": "1:30:27.180"
+        },
+        {
+          "position": 7,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "grid": 6,
+          "laps": 53,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 8,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 3,
+          "laps": 53,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 9,
+          "driverId": "gijs-van-lennep",
+          "teamId": "iso-marlboro",
+          "grid": 23,
+          "laps": 52,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 10,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 15,
+          "laps": 49,
+          "status": "Finished",
+          "points": 0,
+          "time": "+5 laps"
+        },
+        {
+          "position": 11,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 1,
+          "laps": 48,
+          "status": "Finished",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 21,
+          "laps": 44,
+          "status": "NC",
+          "points": 0,
+          "time": "+10 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "grid": 12,
+          "laps": 37,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "grid": 19,
+          "laps": 34,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 16,
+          "laps": 31,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 22,
+          "laps": 28,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 20,
+          "laps": 23,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "rolf-stommelen",
+          "teamId": "brabham",
+          "grid": 17,
+          "laps": 21,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 18,
+          "laps": 9,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 10,
+          "laps": 6,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "grid": 9,
+          "laps": 3,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 4,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 11,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "chris-amon",
+          "teamId": "tecno",
+          "grid": 0,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 0,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "rolf-stommelen",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "chris-amon",
+          "teamId": "tecno",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 24,
+          "driverId": "gijs-van-lennep",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "name": "Italian Grand Prix",
+      "circuitId": "monza",
+      "date": "1973-09-09",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 1,
+          "laps": 55,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:29:17.000"
+        },
+        {
+          "position": 2,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 4,
+          "laps": 55,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:29:17.800"
+        },
+        {
+          "position": 3,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 2,
+          "laps": 55,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:29:45.800"
+        },
+        {
+          "position": 4,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 6,
+          "laps": 55,
+          "status": "Finished",
+          "points": 3,
+          "time": "1:29:50.200"
+        },
+        {
+          "position": 5,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 11,
+          "laps": 55,
+          "status": "Finished",
+          "points": 2,
+          "time": "1:30:03.200"
+        },
+        {
+          "position": 6,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 10,
+          "laps": 55,
+          "status": "Finished",
+          "points": 1,
+          "time": "1:30:16.800"
+        },
+        {
+          "position": 7,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 8,
+          "laps": 55,
+          "status": "Finished",
+          "points": 0,
+          "time": "1:30:45.700"
+        },
+        {
+          "position": 8,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "grid": 14,
+          "laps": 54,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 9,
+          "driverId": "david-purley",
+          "teamId": "march",
+          "grid": 24,
+          "laps": 54,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 10,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 21,
+          "laps": 54,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 11,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 19,
+          "laps": 54,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 12,
+          "driverId": "rolf-stommelen",
+          "teamId": "brabham",
+          "grid": 9,
+          "laps": 54,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 13,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 13,
+          "laps": 54,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 14,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 22,
+          "laps": 54,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 15,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 3,
+          "laps": 53,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 20,
+          "laps": 44,
+          "status": "NC",
+          "points": 0,
+          "time": "+11 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 12,
+          "laps": 34,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 15,
+          "laps": 33,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 18,
+          "laps": 31,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 5,
+          "laps": 17,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "gijs-van-lennep",
+          "teamId": "iso-marlboro",
+          "grid": 23,
+          "laps": 14,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "grid": 17,
+          "laps": 10,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 16,
+          "laps": 6,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "grid": 7,
+          "laps": 2,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "grid": 0,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "rolf-stommelen",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "jacky-ickx",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "gijs-van-lennep",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 24,
+          "driverId": "david-purley",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 25,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "name": "Canadian Grand Prix",
+      "circuitId": "mosport",
+      "date": "1973-09-23",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 2,
+          "laps": 80,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:59:04.083"
+        },
+        {
+          "position": 2,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 5,
+          "laps": 80,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:59:36.817"
+        },
+        {
+          "position": 3,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 14,
+          "laps": 80,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:59:38.588"
+        },
+        {
+          "position": 4,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 16,
+          "laps": 80,
+          "status": "Finished",
+          "points": 3,
+          "time": "1:59:40.597"
+        },
+        {
+          "position": 5,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 9,
+          "laps": 79,
+          "status": "Finished",
+          "points": 2,
+          "time": "+1 lap"
+        },
+        {
+          "position": 6,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 22,
+          "laps": 79,
+          "status": "Finished",
+          "points": 1,
+          "time": "+1 lap"
+        },
+        {
+          "position": 7,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "grid": 15,
+          "laps": 78,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 8,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 4,
+          "laps": 78,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 9,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 12,
+          "laps": 78,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 10,
+          "driverId": "chris-amon",
+          "teamId": "tyrrell",
+          "grid": 11,
+          "laps": 77,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 11,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 10,
+          "laps": 77,
+          "status": "Finished",
+          "points": 0,
+          "time": "+3 laps"
+        },
+        {
+          "position": 12,
+          "driverId": "rolf-stommelen",
+          "teamId": "brabham",
+          "grid": 18,
+          "laps": 76,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 13,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 7,
+          "laps": 75,
+          "status": "Finished",
+          "points": 0,
+          "time": "+5 laps"
+        },
+        {
+          "position": 14,
+          "driverId": "tim-schenken",
+          "teamId": "iso-marlboro",
+          "grid": 24,
+          "laps": 75,
+          "status": "Finished",
+          "points": 0,
+          "time": "+5 laps"
+        },
+        {
+          "position": 15,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "grid": 20,
+          "laps": 75,
+          "status": "Finished",
+          "points": 0,
+          "time": "+5 laps"
+        },
+        {
+          "position": 16,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 17,
+          "laps": 73,
+          "status": "Finished",
+          "points": 0,
+          "time": "+7 laps"
+        },
+        {
+          "position": 17,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 13,
+          "laps": 73,
+          "status": "Finished",
+          "points": 0,
+          "time": "+7 laps"
+        },
+        {
+          "position": 18,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 19,
+          "laps": 72,
+          "status": "Finished",
+          "points": 0,
+          "time": "+8 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "grid": 23,
+          "laps": 71,
+          "status": "NC",
+          "points": 0,
+          "time": "+9 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "grid": 26,
+          "laps": 68,
+          "status": "NC",
+          "points": 0,
+          "time": "+12 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 8,
+          "laps": 62,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jody-scheckter",
+          "teamId": "mclaren",
+          "grid": 3,
+          "laps": 32,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 6,
+          "laps": 32,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 21,
+          "laps": 20,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 1,
+          "laps": 16,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "peter-gethin",
+          "teamId": "brm",
+          "grid": 25,
+          "laps": 5,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "jody-scheckter",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "chris-amon",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "rolf-stommelen",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 24,
+          "driverId": "tim-schenken",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 25,
+          "driverId": "peter-gethin",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 26,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "name": "United States Grand Prix",
+      "circuitId": "watkins-glen",
+      "date": "1973-10-07",
+      "results": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "grid": 1,
+          "laps": 59,
+          "status": "Finished",
+          "points": 9,
+          "time": "1:41:15.799"
+        },
+        {
+          "position": 2,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "grid": 4,
+          "laps": 59,
+          "status": "Finished",
+          "points": 6,
+          "time": "1:41:16.467"
+        },
+        {
+          "position": 3,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "grid": 2,
+          "laps": 59,
+          "status": "Finished",
+          "points": 4,
+          "time": "1:41:38.729"
+        },
+        {
+          "position": 4,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "grid": 8,
+          "laps": 59,
+          "status": "Finished",
+          "points": 3,
+          "time": "1:42:06.025"
+        },
+        {
+          "position": 5,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "grid": 7,
+          "laps": 59,
+          "status": "Finished",
+          "points": 2,
+          "time": "1:42:36.166"
+        },
+        {
+          "position": 6,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "grid": 3,
+          "laps": 59,
+          "status": "Finished",
+          "points": 1,
+          "time": "1:43:03.744"
+        },
+        {
+          "position": 7,
+          "driverId": "jacky-ickx",
+          "teamId": "iso-marlboro",
+          "grid": 23,
+          "laps": 58,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 8,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "grid": 15,
+          "laps": 58,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 9,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "grid": 14,
+          "laps": 58,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 10,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "grid": 26,
+          "laps": 58,
+          "status": "Finished",
+          "points": 0,
+          "time": "+1 lap"
+        },
+        {
+          "position": 11,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "grid": 17,
+          "laps": 57,
+          "status": "Finished",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 12,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "grid": 19,
+          "laps": 57,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 13,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "grid": 18,
+          "laps": 57,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 14,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "grid": 20,
+          "laps": 57,
+          "status": "Finished",
+          "points": 0,
+          "time": "+2 laps"
+        },
+        {
+          "position": 15,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "grid": 22,
+          "laps": 55,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 16,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "grid": 11,
+          "laps": 55,
+          "status": "Finished",
+          "points": 0,
+          "time": "+4 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "grid": 25,
+          "laps": 52,
+          "status": "NC",
+          "points": 0,
+          "time": "+7 laps"
+        },
+        {
+          "position": 0,
+          "driverId": "jody-scheckter",
+          "teamId": "mclaren",
+          "grid": 10,
+          "laps": 39,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jochen-mass",
+          "teamId": "surtees",
+          "grid": 16,
+          "laps": 35,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "grid": 21,
+          "laps": 35,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "grid": 6,
+          "laps": 34,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "grid": 9,
+          "laps": 32,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "john-watson",
+          "teamId": "brabham",
+          "grid": 24,
+          "laps": 7,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "grid": 27,
+          "laps": 0,
+          "status": "DNF",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "brian-redman",
+          "teamId": "shadow",
+          "grid": 13,
+          "laps": 5,
+          "status": "DSQ",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "grid": 5,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "chris-amon",
+          "teamId": "tyrrell",
+          "grid": 12,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        },
+        {
+          "position": 0,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "grid": 0,
+          "laps": 0,
+          "status": "DNS",
+          "points": 0,
+          "time": ""
+        }
+      ],
+      "qualifying": [
+        {
+          "position": 1,
+          "driverId": "ronnie-peterson",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 2,
+          "driverId": "carlos-reutemann",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 3,
+          "driverId": "emerson-fittipaldi",
+          "teamId": "lotus",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 4,
+          "driverId": "francois-cevert",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 5,
+          "driverId": "james-hunt",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 6,
+          "driverId": "jackie-stewart",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 7,
+          "driverId": "mike-hailwood",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 8,
+          "driverId": "peter-revson",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 9,
+          "driverId": "denny-hulme",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 10,
+          "driverId": "carlos-pace",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 11,
+          "driverId": "jody-scheckter",
+          "teamId": "mclaren",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 12,
+          "driverId": "arturo-merzario",
+          "teamId": "ferrari",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 13,
+          "driverId": "chris-amon",
+          "teamId": "tyrrell",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 14,
+          "driverId": "brian-redman",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 15,
+          "driverId": "jean-pierre-beltoise",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 16,
+          "driverId": "clay-regazzoni",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 17,
+          "driverId": "jochen-mass",
+          "teamId": "surtees",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 18,
+          "driverId": "jean-pierre-jarier",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 19,
+          "driverId": "graham-hill",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 20,
+          "driverId": "howden-ganley",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 21,
+          "driverId": "george-follmer",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 22,
+          "driverId": "niki-lauda",
+          "teamId": "brm",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 23,
+          "driverId": "jackie-oliver",
+          "teamId": "shadow",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 24,
+          "driverId": "jacky-ickx",
+          "teamId": "iso-marlboro",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 25,
+          "driverId": "john-watson",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 26,
+          "driverId": "wilson-fittipaldi",
+          "teamId": "brabham",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 27,
+          "driverId": "mike-beuttler",
+          "teamId": "march",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        },
+        {
+          "position": 28,
+          "driverId": "rikky-von-opel",
+          "teamId": "ensign",
+          "q1": "",
+          "q2": "",
+          "q3": ""
+        }
+      ]
+    }
+  ],
+  "driverStandings": [
+    {
+      "position": 1,
+      "id": "jackie-stewart",
+      "points": 71,
+      "wins": 5
+    },
+    {
+      "position": 2,
+      "id": "emerson-fittipaldi",
+      "points": 55,
+      "wins": 3
+    },
+    {
+      "position": 3,
+      "id": "ronnie-peterson",
+      "points": 52,
+      "wins": 4
+    },
+    {
+      "position": 4,
+      "id": "francois-cevert",
+      "points": 47,
+      "wins": 0
+    },
+    {
+      "position": 5,
+      "id": "peter-revson",
+      "points": 38,
+      "wins": 2
+    },
+    {
+      "position": 6,
+      "id": "denny-hulme",
+      "points": 26,
+      "wins": 1
+    },
+    {
+      "position": 7,
+      "id": "carlos-reutemann",
+      "points": 16,
+      "wins": 0
+    },
+    {
+      "position": 8,
+      "id": "james-hunt",
+      "points": 14,
+      "wins": 0
+    },
+    {
+      "position": 9,
+      "id": "jacky-ickx",
+      "points": 12,
+      "wins": 0
+    },
+    {
+      "position": 10,
+      "id": "jean-pierre-beltoise",
+      "points": 9,
+      "wins": 0
+    },
+    {
+      "position": 11,
+      "id": "carlos-pace",
+      "points": 7,
+      "wins": 0
+    },
+    {
+      "position": 12,
+      "id": "arturo-merzario",
+      "points": 6,
+      "wins": 0
+    },
+    {
+      "position": 13,
+      "id": "george-follmer",
+      "points": 5,
+      "wins": 0
+    },
+    {
+      "position": 14,
+      "id": "jackie-oliver",
+      "points": 4,
+      "wins": 0
+    },
+    {
+      "position": 15,
+      "id": "andrea-de-adamich",
+      "points": 3,
+      "wins": 0
+    },
+    {
+      "position": 16,
+      "id": "wilson-fittipaldi",
+      "points": 3,
+      "wins": 0
+    },
+    {
+      "position": 17,
+      "id": "niki-lauda",
+      "points": 2,
+      "wins": 0
+    },
+    {
+      "position": 18,
+      "id": "clay-regazzoni",
+      "points": 2,
+      "wins": 0
+    },
+    {
+      "position": 19,
+      "id": "chris-amon",
+      "points": 1,
+      "wins": 0
+    },
+    {
+      "position": 19,
+      "id": "gijs-van-lennep",
+      "points": 1,
+      "wins": 0
+    },
+    {
+      "position": 19,
+      "id": "howden-ganley",
+      "points": 1,
+      "wins": 0
+    }
+  ],
+  "constructorStandings": [
+    {
+      "position": 1,
+      "id": "lotus",
+      "points": 92,
+      "wins": 7
+    },
+    {
+      "position": 2,
+      "id": "tyrrell",
+      "points": 82,
+      "wins": 5
+    },
+    {
+      "position": 3,
+      "id": "mclaren",
+      "points": 58,
+      "wins": 3
+    },
+    {
+      "position": 4,
+      "id": "brabham",
+      "points": 22,
+      "wins": 0
+    },
+    {
+      "position": 5,
+      "id": "march",
+      "points": 14,
+      "wins": 0
+    },
+    {
+      "position": 6,
+      "id": "ferrari",
+      "points": 12,
+      "wins": 0
+    },
+    {
+      "position": 7,
+      "id": "brm",
+      "points": 12,
+      "wins": 0
+    },
+    {
+      "position": 8,
+      "id": "shadow",
+      "points": 9,
+      "wins": 0
+    },
+    {
+      "position": 9,
+      "id": "surtees",
+      "points": 7,
+      "wins": 0
+    },
+    {
+      "position": 10,
+      "id": "iso-marlboro",
+      "points": 2,
+      "wins": 0
+    },
+    {
+      "position": 11,
+      "id": "tecno",
+      "points": 1,
+      "wins": 0
+    }
+  ]
+}

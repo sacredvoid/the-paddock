@@ -1,0 +1,3350 @@
+[
+  {
+    "id": "ferrari",
+    "slug": "ferrari",
+    "name": "Ferrari",
+    "nationality": "Italian",
+    "color": "#E8002D",
+    "isActive": true,
+    "stats": {
+      "championships": 16,
+      "wins": 248,
+      "poles": 254,
+      "podiums": 837,
+      "races": 1125,
+      "points": 10702.0,
+      "firstEntry": 1950,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "mclaren",
+    "slug": "mclaren",
+    "name": "McLaren",
+    "nationality": "British",
+    "color": "#FF8000",
+    "isActive": true,
+    "stats": {
+      "championships": 10,
+      "wins": 203,
+      "poles": 177,
+      "podiums": 558,
+      "races": 999,
+      "points": 7793.5,
+      "firstEntry": 1966,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "mercedes",
+    "slug": "mercedes",
+    "name": "Mercedes",
+    "nationality": "German",
+    "color": "#27F4D2",
+    "isActive": true,
+    "stats": {
+      "championships": 8,
+      "wins": 132,
+      "poles": 145,
+      "podiums": 312,
+      "races": 342,
+      "points": 8202.5,
+      "firstEntry": 1954,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "red-bull",
+    "slug": "red-bull",
+    "name": "Red Bull",
+    "nationality": "Austrian",
+    "color": "#3671C6",
+    "isActive": true,
+    "stats": {
+      "championships": 6,
+      "wins": 130,
+      "poles": 111,
+      "podiums": 297,
+      "races": 419,
+      "points": 8296.0,
+      "firstEntry": 2005,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "williams",
+    "slug": "williams",
+    "name": "Williams",
+    "nationality": "British",
+    "color": "#64C4FF",
+    "isActive": true,
+    "stats": {
+      "championships": 9,
+      "wins": 114,
+      "poles": 128,
+      "podiums": 314,
+      "races": 852,
+      "points": 3768.0,
+      "firstEntry": 1978,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "lotus",
+    "slug": "lotus",
+    "name": "Lotus",
+    "nationality": "British",
+    "color": "#FFB800",
+    "isActive": false,
+    "stats": {
+      "championships": 7,
+      "wins": 79,
+      "poles": 107,
+      "podiums": 172,
+      "races": 493,
+      "points": 1332,
+      "firstEntry": 1958,
+      "lastEntry": 1994
+    }
+  },
+  {
+    "id": "brabham",
+    "slug": "brabham",
+    "name": "Brabham",
+    "nationality": "British",
+    "color": "#00783E",
+    "isActive": false,
+    "stats": {
+      "championships": 2,
+      "wins": 35,
+      "poles": 39,
+      "podiums": 124,
+      "races": 402,
+      "points": 843,
+      "firstEntry": 1962,
+      "lastEntry": 1992
+    }
+  },
+  {
+    "id": "renault",
+    "slug": "renault",
+    "name": "Renault",
+    "nationality": "French",
+    "color": "#FFF500",
+    "isActive": false,
+    "stats": {
+      "championships": 2,
+      "wins": 35,
+      "poles": 51,
+      "podiums": 103,
+      "races": 403,
+      "points": 1777,
+      "firstEntry": 1977,
+      "lastEntry": 2020
+    }
+  },
+  {
+    "id": "benetton",
+    "slug": "benetton",
+    "name": "Benetton",
+    "nationality": "Italian",
+    "color": "#00A550",
+    "isActive": false,
+    "stats": {
+      "championships": 1,
+      "wins": 27,
+      "poles": 15,
+      "podiums": 102,
+      "races": 260,
+      "points": 851.5,
+      "firstEntry": 1986,
+      "lastEntry": 2001
+    }
+  },
+  {
+    "id": "tyrrell",
+    "slug": "tyrrell",
+    "name": "Tyrrell",
+    "nationality": "British",
+    "color": "#0044AA",
+    "isActive": false,
+    "stats": {
+      "championships": 1,
+      "wins": 23,
+      "poles": 14,
+      "podiums": 77,
+      "races": 433,
+      "points": 617,
+      "firstEntry": 1970,
+      "lastEntry": 1998
+    }
+  },
+  {
+    "id": "brm",
+    "slug": "brm",
+    "name": "BRM",
+    "nationality": "British",
+    "color": "#006B3F",
+    "isActive": false,
+    "stats": {
+      "championships": 1,
+      "wins": 17,
+      "poles": 11,
+      "podiums": 61,
+      "races": 208,
+      "points": 385,
+      "firstEntry": 1951,
+      "lastEntry": 1977
+    }
+  },
+  {
+    "id": "cooper",
+    "slug": "cooper",
+    "name": "Cooper",
+    "nationality": "British",
+    "color": "#009B3A",
+    "isActive": false,
+    "stats": {
+      "championships": 2,
+      "wins": 16,
+      "poles": 11,
+      "podiums": 58,
+      "races": 129,
+      "points": 301,
+      "firstEntry": 1950,
+      "lastEntry": 1969
+    }
+  },
+  {
+    "id": "alfa-romeo",
+    "slug": "alfa-romeo",
+    "name": "Alfa Romeo",
+    "nationality": "Italian",
+    "color": "#A50F2D",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 10,
+      "poles": 12,
+      "podiums": 26,
+      "races": 214,
+      "points": 199,
+      "firstEntry": 1950,
+      "lastEntry": 2023
+    }
+  },
+  {
+    "id": "ligier",
+    "slug": "ligier",
+    "name": "Ligier",
+    "nationality": "French",
+    "color": "#0000FF",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 9,
+      "poles": 9,
+      "podiums": 50,
+      "races": 330,
+      "points": 388,
+      "firstEntry": 1976,
+      "lastEntry": 1996
+    }
+  },
+  {
+    "id": "maserati",
+    "slug": "maserati",
+    "name": "Maserati",
+    "nationality": "Italian",
+    "color": "#B22222",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 9,
+      "poles": 10,
+      "podiums": 37,
+      "races": 73,
+      "points": 6,
+      "firstEntry": 1950,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "matra",
+    "slug": "matra",
+    "name": "Matra",
+    "nationality": "French",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 1,
+      "wins": 9,
+      "poles": 4,
+      "podiums": 21,
+      "races": 63,
+      "points": 163,
+      "firstEntry": 1966,
+      "lastEntry": 1972
+    }
+  },
+  {
+    "id": "vanwall",
+    "slug": "vanwall",
+    "name": "Vanwall",
+    "nationality": "British",
+    "color": "#006400",
+    "isActive": false,
+    "stats": {
+      "championships": 1,
+      "wins": 9,
+      "poles": 7,
+      "podiums": 13,
+      "races": 29,
+      "points": 48,
+      "firstEntry": 1954,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "brawn",
+    "slug": "brawn",
+    "name": "Brawn",
+    "nationality": "British",
+    "color": "#B5F500",
+    "isActive": false,
+    "stats": {
+      "championships": 1,
+      "wins": 8,
+      "poles": 5,
+      "podiums": 15,
+      "races": 17,
+      "points": 172,
+      "firstEntry": 2009,
+      "lastEntry": 2009
+    }
+  },
+  {
+    "id": "kurtis-kraft",
+    "slug": "kurtis-kraft",
+    "name": "Kurtis Kraft",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 5,
+      "poles": 6,
+      "podiums": 16,
+      "races": 12,
+      "points": 4,
+      "firstEntry": 1950,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "jordan",
+    "slug": "jordan",
+    "name": "Jordan",
+    "nationality": "Irish",
+    "color": "#FFC700",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 4,
+      "poles": 2,
+      "podiums": 19,
+      "races": 250,
+      "points": 291,
+      "firstEntry": 1991,
+      "lastEntry": 2005
+    }
+  },
+  {
+    "id": "honda",
+    "slug": "honda",
+    "name": "Honda",
+    "nationality": "Japanese",
+    "color": "#E40521",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 3,
+      "poles": 2,
+      "podiums": 9,
+      "races": 88,
+      "points": 154,
+      "firstEntry": 1964,
+      "lastEntry": 2008
+    }
+  },
+  {
+    "id": "march",
+    "slug": "march",
+    "name": "March",
+    "nationality": "British",
+    "color": "#800080",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 3,
+      "poles": 5,
+      "podiums": 21,
+      "races": 208,
+      "points": 172.5,
+      "firstEntry": 1970,
+      "lastEntry": 1992
+    }
+  },
+  {
+    "id": "watson",
+    "slug": "watson",
+    "name": "Watson",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 3,
+      "poles": 2,
+      "podiums": 5,
+      "races": 9,
+      "points": 28,
+      "firstEntry": 1950,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "wolf",
+    "slug": "wolf",
+    "name": "Wolf",
+    "nationality": "Canadian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 3,
+      "poles": 1,
+      "podiums": 13,
+      "races": 48,
+      "points": 79,
+      "firstEntry": 1977,
+      "lastEntry": 1979
+    }
+  },
+  {
+    "id": "epperly",
+    "slug": "epperly",
+    "name": "Epperly",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 2,
+      "poles": 0,
+      "podiums": 5,
+      "races": 5,
+      "points": 29,
+      "firstEntry": 1955,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "lotus-f1",
+    "slug": "lotus",
+    "name": "Lotus",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 2,
+      "poles": 0,
+      "podiums": 25,
+      "races": 77,
+      "points": 706,
+      "firstEntry": 2012,
+      "lastEntry": 2015
+    }
+  },
+  {
+    "id": "alphatauri",
+    "slug": "alphatauri",
+    "name": "AlphaTauri",
+    "nationality": "Italian",
+    "color": "#4E7C9B",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 0,
+      "podiums": 2,
+      "races": 83,
+      "points": 309,
+      "firstEntry": 2020,
+      "lastEntry": 2023
+    }
+  },
+  {
+    "id": "alpine",
+    "slug": "alpine",
+    "name": "Alpine",
+    "nationality": "French",
+    "color": "#FF87BC",
+    "isActive": true,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 0,
+      "podiums": 6,
+      "races": 115,
+      "points": 536,
+      "firstEntry": 2021,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "bmw-sauber",
+    "slug": "bmw-sauber",
+    "name": "BMW Sauber",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 1,
+      "podiums": 17,
+      "races": 70,
+      "points": 308,
+      "firstEntry": 2006,
+      "lastEntry": 2009
+    }
+  },
+  {
+    "id": "eagle",
+    "slug": "eagle",
+    "name": "Eagle",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 0,
+      "podiums": 2,
+      "races": 26,
+      "points": 17,
+      "firstEntry": 1966,
+      "lastEntry": 1969
+    }
+  },
+  {
+    "id": "hesketh",
+    "slug": "hesketh",
+    "name": "Hesketh",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 0,
+      "podiums": 7,
+      "races": 60,
+      "points": 48,
+      "firstEntry": 1974,
+      "lastEntry": 1978
+    }
+  },
+  {
+    "id": "kuzma",
+    "slug": "kuzma",
+    "name": "Kuzma",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 0,
+      "podiums": 3,
+      "races": 10,
+      "points": 0,
+      "firstEntry": 1951,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "penske",
+    "slug": "penske",
+    "name": "Penske",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 0,
+      "podiums": 3,
+      "races": 41,
+      "points": 23,
+      "firstEntry": 1974,
+      "lastEntry": 1977
+    }
+  },
+  {
+    "id": "porsche",
+    "slug": "porsche",
+    "name": "Porsche",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 1,
+      "podiums": 5,
+      "races": 35,
+      "points": 46,
+      "firstEntry": 1957,
+      "lastEntry": 1964
+    }
+  },
+  {
+    "id": "racing-point",
+    "slug": "racing-point",
+    "name": "Racing Point",
+    "nationality": "British",
+    "color": "#F596C8",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 1,
+      "podiums": 4,
+      "races": 38,
+      "points": 268,
+      "firstEntry": 2019,
+      "lastEntry": 2020
+    }
+  },
+  {
+    "id": "shadow",
+    "slug": "shadow",
+    "name": "Shadow",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 3,
+      "podiums": 7,
+      "races": 112,
+      "points": 67.5,
+      "firstEntry": 1973,
+      "lastEntry": 1980
+    }
+  },
+  {
+    "id": "stewart",
+    "slug": "stewart",
+    "name": "Stewart",
+    "nationality": "British",
+    "color": "#FFFFFF",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 1,
+      "podiums": 5,
+      "races": 49,
+      "points": 47,
+      "firstEntry": 1997,
+      "lastEntry": 1999
+    }
+  },
+  {
+    "id": "toro-rosso",
+    "slug": "toro-rosso",
+    "name": "Toro Rosso",
+    "nationality": "Italian",
+    "color": "#469BFF",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 1,
+      "poles": 1,
+      "podiums": 3,
+      "races": 268,
+      "points": 500,
+      "firstEntry": 2006,
+      "lastEntry": 2019
+    }
+  },
+  {
+    "id": "afm",
+    "slug": "afm",
+    "name": "AFM",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 4,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1953
+    }
+  },
+  {
+    "id": "ags",
+    "slug": "ags",
+    "name": "AGS",
+    "nationality": "French",
+    "color": "#9932CC",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 80,
+      "points": 2,
+      "firstEntry": 1986,
+      "lastEntry": 1991
+    }
+  },
+  {
+    "id": "ats-wheels",
+    "slug": "ats",
+    "name": "ATS",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 107,
+      "points": 7,
+      "firstEntry": 1978,
+      "lastEntry": 1984
+    }
+  },
+  {
+    "id": "ats",
+    "slug": "ats",
+    "name": "ATS",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 5,
+      "points": 0,
+      "firstEntry": 1963,
+      "lastEntry": 1963
+    }
+  },
+  {
+    "id": "adams",
+    "slug": "adams",
+    "name": "Adams",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1950
+    }
+  },
+  {
+    "id": "alfa-special",
+    "slug": "alfa-special",
+    "name": "Alfa Special",
+    "nationality": "South African",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1963,
+      "lastEntry": 1965
+    }
+  },
+  {
+    "id": "alta",
+    "slug": "alta",
+    "name": "Alta",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 5,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "amon",
+    "slug": "amon",
+    "name": "Amon",
+    "nationality": "New Zealander",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 4,
+      "points": 0,
+      "firstEntry": 1974,
+      "lastEntry": 1974
+    }
+  },
+  {
+    "id": "andrea-moda",
+    "slug": "andrea-moda",
+    "name": "Andrea Moda",
+    "nationality": "Italian",
+    "color": "#006400",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 10,
+      "points": 0,
+      "firstEntry": 1992,
+      "lastEntry": 1992
+    }
+  },
+  {
+    "id": "apollon",
+    "slug": "apollon",
+    "name": "Apollon",
+    "nationality": "Swiss",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1977,
+      "lastEntry": 1977
+    }
+  },
+  {
+    "id": "arrows",
+    "slug": "arrows",
+    "name": "Arrows",
+    "nationality": "British",
+    "color": "#FF8C00",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 1,
+      "podiums": 8,
+      "races": 296,
+      "points": 142,
+      "firstEntry": 1978,
+      "lastEntry": 2002
+    }
+  },
+  {
+    "id": "arzani-volpini",
+    "slug": "arzani-volpini",
+    "name": "Arzani-Volpini",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1955,
+      "lastEntry": 1955
+    }
+  },
+  {
+    "id": "aston-butterworth",
+    "slug": "aston-butterworth",
+    "name": "Aston Butterworth",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 4,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "aston-martin",
+    "slug": "aston-martin",
+    "name": "Aston Martin",
+    "nationality": "British",
+    "color": "#229971",
+    "isActive": true,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 9,
+      "races": 121,
+      "points": 595,
+      "firstEntry": 1959,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "audi",
+    "slug": "audi",
+    "name": "Audi",
+    "nationality": "German",
+    "color": "#000000",
+    "isActive": true,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 2,
+      "firstEntry": 2026,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "bar",
+    "slug": "bar",
+    "name": "BAR",
+    "nationality": "British",
+    "color": "#FFFFFF",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 2,
+      "podiums": 15,
+      "races": 118,
+      "points": 227,
+      "firstEntry": 1999,
+      "lastEntry": 2005
+    }
+  },
+  {
+    "id": "bmw",
+    "slug": "bmw",
+    "name": "BMW",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1969,
+      "lastEntry": 1969
+    }
+  },
+  {
+    "id": "brp",
+    "slug": "brp",
+    "name": "BRP",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 13,
+      "points": 11,
+      "firstEntry": 1963,
+      "lastEntry": 1964
+    }
+  },
+  {
+    "id": "balsa",
+    "slug": "balsa",
+    "name": "Balsa",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "behra-porsche",
+    "slug": "behra-porsche",
+    "name": "Behra-Porsche",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 4,
+      "points": 0,
+      "firstEntry": 1959,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "bellasi",
+    "slug": "bellasi",
+    "name": "Bellasi",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 6,
+      "points": 0,
+      "firstEntry": 1970,
+      "lastEntry": 1971
+    }
+  },
+  {
+    "id": "boro",
+    "slug": "boro",
+    "name": "Boro",
+    "nationality": "Dutch",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 8,
+      "points": 0,
+      "firstEntry": 1976,
+      "lastEntry": 1977
+    }
+  },
+  {
+    "id": "bromme",
+    "slug": "bromme",
+    "name": "Bromme",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 4,
+      "points": 0,
+      "firstEntry": 1951,
+      "lastEntry": 1954
+    }
+  },
+  {
+    "id": "bugatti",
+    "slug": "bugatti",
+    "name": "Bugatti",
+    "nationality": "French",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1956,
+      "lastEntry": 1956
+    }
+  },
+  {
+    "id": "cadillac",
+    "slug": "cadillac",
+    "name": "Cadillac",
+    "nationality": "American",
+    "color": "#C0C0C0",
+    "isActive": true,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 2026,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "caterham",
+    "slug": "caterham",
+    "name": "Caterham",
+    "nationality": "Malaysian",
+    "color": "#005030",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 56,
+      "points": 0,
+      "firstEntry": 2012,
+      "lastEntry": 2014
+    }
+  },
+  {
+    "id": "christensen",
+    "slug": "christensen",
+    "name": "Christensen",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1959,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "cisitalia",
+    "slug": "cisitalia",
+    "name": "Cisitalia",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "coloni",
+    "slug": "coloni",
+    "name": "Coloni",
+    "nationality": "Italian",
+    "color": "#F0E68C",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 65,
+      "points": 0,
+      "firstEntry": 1987,
+      "lastEntry": 1991
+    }
+  },
+  {
+    "id": "connaught",
+    "slug": "connaught",
+    "name": "Connaught",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 1,
+      "races": 18,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1959
+    }
+  },
+  {
+    "id": "connew",
+    "slug": "connew",
+    "name": "Connew",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1972,
+      "lastEntry": 1972
+    }
+  },
+  {
+    "id": "dallara",
+    "slug": "dallara",
+    "name": "Dallara",
+    "nationality": "Italian",
+    "color": "#DC143C",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 2,
+      "races": 80,
+      "points": 15,
+      "firstEntry": 1988,
+      "lastEntry": 1992
+    }
+  },
+  {
+    "id": "de-tomaso",
+    "slug": "de-tomaso",
+    "name": "De Tomaso",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 15,
+      "points": 0,
+      "firstEntry": 1961,
+      "lastEntry": 1970
+    }
+  },
+  {
+    "id": "deidt",
+    "slug": "deidt",
+    "name": "Deidt",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 2,
+      "races": 3,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "del-roy",
+    "slug": "del-roy",
+    "name": "Del Roy",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1953,
+      "lastEntry": 1953
+    }
+  },
+  {
+    "id": "derrington-francis",
+    "slug": "derrington-francis",
+    "name": "Derrington-Francis",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1964,
+      "lastEntry": 1964
+    }
+  },
+  {
+    "id": "dunn",
+    "slug": "dunn",
+    "name": "Dunn",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 3,
+      "points": 0,
+      "firstEntry": 1957,
+      "lastEntry": 1959
+    }
+  },
+  {
+    "id": "emw",
+    "slug": "emw",
+    "name": "EMW",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1953,
+      "lastEntry": 1953
+    }
+  },
+  {
+    "id": "enb",
+    "slug": "enb",
+    "name": "ENB",
+    "nationality": "Belgian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1962,
+      "lastEntry": 1962
+    }
+  },
+  {
+    "id": "era",
+    "slug": "era",
+    "name": "ERA",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 7,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "eifelland",
+    "slug": "eifelland",
+    "name": "Eifelland",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 8,
+      "points": 0,
+      "firstEntry": 1972,
+      "lastEntry": 1972
+    }
+  },
+  {
+    "id": "elder",
+    "slug": "elder",
+    "name": "Elder",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1959,
+      "lastEntry": 1959
+    }
+  },
+  {
+    "id": "emeryson",
+    "slug": "emeryson",
+    "name": "Emeryson",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 6,
+      "points": 0,
+      "firstEntry": 1956,
+      "lastEntry": 1962
+    }
+  },
+  {
+    "id": "ensign",
+    "slug": "ensign",
+    "name": "Ensign",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 133,
+      "points": 19,
+      "firstEntry": 1973,
+      "lastEntry": 1982
+    }
+  },
+  {
+    "id": "eurobrun",
+    "slug": "eurobrun",
+    "name": "EuroBrun",
+    "nationality": "Italian",
+    "color": "#2F4F4F",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 46,
+      "points": 0,
+      "firstEntry": 1988,
+      "lastEntry": 1990
+    }
+  },
+  {
+    "id": "ewing",
+    "slug": "ewing",
+    "name": "Ewing",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 1,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "ferguson",
+    "slug": "ferguson",
+    "name": "Ferguson",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1961,
+      "lastEntry": 1961
+    }
+  },
+  {
+    "id": "fittipaldi",
+    "slug": "fittipaldi",
+    "name": "Fittipaldi",
+    "nationality": "Brazilian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 3,
+      "races": 120,
+      "points": 44,
+      "firstEntry": 1975,
+      "lastEntry": 1982
+    }
+  },
+  {
+    "id": "fondmetal",
+    "slug": "fondmetal",
+    "name": "Fondmetal",
+    "nationality": "Italian",
+    "color": "#4169E1",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 29,
+      "points": 0,
+      "firstEntry": 1991,
+      "lastEntry": 1992
+    }
+  },
+  {
+    "id": "footwork",
+    "slug": "footwork",
+    "name": "Footwork",
+    "nationality": "British",
+    "color": "#0000CD",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 1,
+      "races": 97,
+      "points": 25,
+      "firstEntry": 1991,
+      "lastEntry": 1996
+    }
+  },
+  {
+    "id": "force-india",
+    "slug": "force-india",
+    "name": "Force India",
+    "nationality": "Indian",
+    "color": "#F596C8",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 1,
+      "podiums": 6,
+      "races": 212,
+      "points": 1039,
+      "firstEntry": 2008,
+      "lastEntry": 2018
+    }
+  },
+  {
+    "id": "forti",
+    "slug": "forti",
+    "name": "Forti",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 27,
+      "points": 0,
+      "firstEntry": 1995,
+      "lastEntry": 1996
+    }
+  },
+  {
+    "id": "frank-williams-racing-cars",
+    "slug": "frank-williams-racing-cars",
+    "name": "Frank Williams Racing Cars",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 1,
+      "races": 14,
+      "points": 6,
+      "firstEntry": 1975,
+      "lastEntry": 1975
+    }
+  },
+  {
+    "id": "frazer-nash",
+    "slug": "frazer-nash",
+    "name": "Frazer-Nash",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 4,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "fry",
+    "slug": "fry",
+    "name": "Fry",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1959,
+      "lastEntry": 1959
+    }
+  },
+  {
+    "id": "gilby",
+    "slug": "gilby",
+    "name": "Gilby",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 6,
+      "points": 0,
+      "firstEntry": 1961,
+      "lastEntry": 1963
+    }
+  },
+  {
+    "id": "gordini",
+    "slug": "gordini",
+    "name": "Gordini",
+    "nationality": "French",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 2,
+      "races": 33,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1956
+    }
+  },
+  {
+    "id": "greifzu",
+    "slug": "greifzu",
+    "name": "Greifzu",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1953,
+      "lastEntry": 1953
+    }
+  },
+  {
+    "id": "hrt",
+    "slug": "hrt",
+    "name": "HRT",
+    "nationality": "Spanish",
+    "color": "#968C6D",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 57,
+      "points": 0,
+      "firstEntry": 2010,
+      "lastEntry": 2012
+    }
+  },
+  {
+    "id": "hwm",
+    "slug": "hwm",
+    "name": "HWM",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 16,
+      "points": 0,
+      "firstEntry": 1951,
+      "lastEntry": 1955
+    }
+  },
+  {
+    "id": "haas",
+    "slug": "haas",
+    "name": "Haas",
+    "nationality": "American",
+    "color": "#B6BABD",
+    "isActive": true,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 215,
+      "points": 392,
+      "firstEntry": 2016,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "hall",
+    "slug": "hall",
+    "name": "Hall",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1951,
+      "lastEntry": 1951
+    }
+  },
+  {
+    "id": "heck",
+    "slug": "heck",
+    "name": "Heck",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1953
+    }
+  },
+  {
+    "id": "hill",
+    "slug": "hill",
+    "name": "Hill",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 11,
+      "points": 3,
+      "firstEntry": 1975,
+      "lastEntry": 1975
+    }
+  },
+  {
+    "id": "iso-marlboro",
+    "slug": "iso-marlboro",
+    "name": "Iso-Marlboro",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 30,
+      "points": 6,
+      "firstEntry": 1973,
+      "lastEntry": 1974
+    }
+  },
+  {
+    "id": "jbw",
+    "slug": "jbw",
+    "name": "JBW",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 6,
+      "points": 0,
+      "firstEntry": 1959,
+      "lastEntry": 1961
+    }
+  },
+  {
+    "id": "jaguar",
+    "slug": "jaguar",
+    "name": "Jaguar",
+    "nationality": "British",
+    "color": "#006633",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 2,
+      "races": 85,
+      "points": 49,
+      "firstEntry": 2000,
+      "lastEntry": 2004
+    }
+  },
+  {
+    "id": "kauhsen",
+    "slug": "kauhsen",
+    "name": "Kauhsen",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1979,
+      "lastEntry": 1979
+    }
+  },
+  {
+    "id": "kick-sauber",
+    "slug": "kick-sauber",
+    "name": "Kick Sauber",
+    "nationality": "Swiss",
+    "color": "#52E252",
+    "isActive": true,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 1,
+      "races": 48,
+      "points": 74,
+      "firstEntry": 2024,
+      "lastEntry": 2025
+    }
+  },
+  {
+    "id": "klenk",
+    "slug": "klenk",
+    "name": "Klenk",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1954,
+      "lastEntry": 1954
+    }
+  },
+  {
+    "id": "kojima",
+    "slug": "kojima",
+    "name": "Kojima",
+    "nationality": "Japanese",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1976,
+      "lastEntry": 1977
+    }
+  },
+  {
+    "id": "krakau",
+    "slug": "krakau",
+    "name": "Krakau",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "lds",
+    "slug": "lds",
+    "name": "LDS",
+    "nationality": "South African",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 5,
+      "points": 0,
+      "firstEntry": 1962,
+      "lastEntry": 1968
+    }
+  },
+  {
+    "id": "lec",
+    "slug": "lec",
+    "name": "LEC",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 5,
+      "points": 0,
+      "firstEntry": 1977,
+      "lastEntry": 1977
+    }
+  },
+  {
+    "id": "lancia",
+    "slug": "lancia",
+    "name": "Lancia",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 2,
+      "podiums": 1,
+      "races": 5,
+      "points": 0,
+      "firstEntry": 1954,
+      "lastEntry": 1955
+    }
+  },
+  {
+    "id": "langley",
+    "slug": "langley",
+    "name": "Langley",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1950
+    }
+  },
+  {
+    "id": "larrousse",
+    "slug": "larrousse",
+    "name": "Larrousse",
+    "nationality": "French",
+    "color": "#FFD700",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 32,
+      "points": 5,
+      "firstEntry": 1993,
+      "lastEntry": 1994
+    }
+  },
+  {
+    "id": "lesovsky",
+    "slug": "lesovsky",
+    "name": "Lesovsky",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 1,
+      "podiums": 1,
+      "races": 9,
+      "points": 7,
+      "firstEntry": 1950,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "leyton-house",
+    "slug": "leyton-house",
+    "name": "Leyton House",
+    "nationality": "British",
+    "color": "#20B2AA",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 1,
+      "races": 32,
+      "points": 8,
+      "firstEntry": 1990,
+      "lastEntry": 1991
+    }
+  },
+  {
+    "id": "life",
+    "slug": "life",
+    "name": "Life",
+    "nationality": "Italian",
+    "color": "#808080",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 14,
+      "points": 0,
+      "firstEntry": 1990,
+      "lastEntry": 1990
+    }
+  },
+  {
+    "id": "lola",
+    "slug": "lola",
+    "name": "Lola",
+    "nationality": "British",
+    "color": "#009900",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 1,
+      "podiums": 3,
+      "races": 152,
+      "points": 43,
+      "firstEntry": 1962,
+      "lastEntry": 1997
+    }
+  },
+  {
+    "id": "lotus-racing",
+    "slug": "lotus-racing",
+    "name": "Lotus Racing",
+    "nationality": "Malaysian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 38,
+      "points": 0,
+      "firstEntry": 2010,
+      "lastEntry": 2011
+    }
+  },
+  {
+    "id": "lyncar",
+    "slug": "lyncar",
+    "name": "Lyncar",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1974,
+      "lastEntry": 1975
+    }
+  },
+  {
+    "id": "maki",
+    "slug": "maki",
+    "name": "Maki",
+    "nationality": "Japanese",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 8,
+      "points": 0,
+      "firstEntry": 1974,
+      "lastEntry": 1976
+    }
+  },
+  {
+    "id": "manor",
+    "slug": "manor",
+    "name": "Manor",
+    "nationality": "British",
+    "color": "#ED1C24",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 21,
+      "points": 1,
+      "firstEntry": 2016,
+      "lastEntry": 2016
+    }
+  },
+  {
+    "id": "marchese",
+    "slug": "marchese",
+    "name": "Marchese",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1951
+    }
+  },
+  {
+    "id": "martini",
+    "slug": "martini",
+    "name": "Martini",
+    "nationality": "French",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 7,
+      "points": 0,
+      "firstEntry": 1978,
+      "lastEntry": 1978
+    }
+  },
+  {
+    "id": "marussia",
+    "slug": "marussia",
+    "name": "Marussia",
+    "nationality": "British",
+    "color": "#6E0000",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 74,
+      "points": 2,
+      "firstEntry": 2012,
+      "lastEntry": 2015
+    }
+  },
+  {
+    "id": "mcguire",
+    "slug": "mcguire",
+    "name": "McGuire",
+    "nationality": "Australian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1977,
+      "lastEntry": 1977
+    }
+  },
+  {
+    "id": "merzario",
+    "slug": "merzario",
+    "name": "Merzario",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 31,
+      "points": 0,
+      "firstEntry": 1978,
+      "lastEntry": 1979
+    }
+  },
+  {
+    "id": "meskowski",
+    "slug": "meskowski",
+    "name": "Meskowski",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1960,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "midland",
+    "slug": "midland",
+    "name": "Midland",
+    "nationality": "Russian",
+    "color": "#FF4500",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 18,
+      "points": 0,
+      "firstEntry": 2006,
+      "lastEntry": 2006
+    }
+  },
+  {
+    "id": "minardi",
+    "slug": "minardi",
+    "name": "Minardi",
+    "nationality": "Italian",
+    "color": "#000000",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 346,
+      "points": 38,
+      "firstEntry": 1985,
+      "lastEntry": 2005
+    }
+  },
+  {
+    "id": "modena",
+    "slug": "modena",
+    "name": "Modena",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 16,
+      "points": 0,
+      "firstEntry": 1991,
+      "lastEntry": 1991
+    }
+  },
+  {
+    "id": "moore",
+    "slug": "moore",
+    "name": "Moore",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 3,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1959
+    }
+  },
+  {
+    "id": "nacke",
+    "slug": "nacke",
+    "name": "Nacke",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "nichels",
+    "slug": "nichels",
+    "name": "Nichels",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1954
+    }
+  },
+  {
+    "id": "osca",
+    "slug": "osca",
+    "name": "O.S.C.A.",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 7,
+      "points": 0,
+      "firstEntry": 1951,
+      "lastEntry": 1958
+    }
+  },
+  {
+    "id": "olson",
+    "slug": "olson",
+    "name": "Olson",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1950
+    }
+  },
+  {
+    "id": "onyx",
+    "slug": "onyx",
+    "name": "Onyx",
+    "nationality": "British",
+    "color": "#800000",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 1,
+      "races": 26,
+      "points": 6,
+      "firstEntry": 1989,
+      "lastEntry": 1990
+    }
+  },
+  {
+    "id": "osella",
+    "slug": "osella",
+    "name": "Osella",
+    "nationality": "Italian",
+    "color": "#FF6347",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 172,
+      "points": 5,
+      "firstEntry": 1980,
+      "lastEntry": 1990
+    }
+  },
+  {
+    "id": "pacific",
+    "slug": "pacific",
+    "name": "Pacific",
+    "nationality": "British",
+    "color": "#228B22",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 33,
+      "points": 0,
+      "firstEntry": 1994,
+      "lastEntry": 1995
+    }
+  },
+  {
+    "id": "pankratz",
+    "slug": "pankratz",
+    "name": "Pankratz",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1954,
+      "lastEntry": 1955
+    }
+  },
+  {
+    "id": "parnelli",
+    "slug": "parnelli",
+    "name": "Parnelli",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 16,
+      "points": 6,
+      "firstEntry": 1974,
+      "lastEntry": 1976
+    }
+  },
+  {
+    "id": "pawl",
+    "slug": "pawl",
+    "name": "Pawl",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 3,
+      "points": 0,
+      "firstEntry": 1951,
+      "lastEntry": 1955
+    }
+  },
+  {
+    "id": "phillips",
+    "slug": "phillips",
+    "name": "Phillips",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 1,
+      "races": 7,
+      "points": 3,
+      "firstEntry": 1954,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "politoys",
+    "slug": "politoys",
+    "name": "Politoys",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1972,
+      "lastEntry": 1972
+    }
+  },
+  {
+    "id": "prost",
+    "slug": "prost",
+    "name": "Prost",
+    "nationality": "French",
+    "color": "#0055A4",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 3,
+      "races": 83,
+      "points": 35,
+      "firstEntry": 1997,
+      "lastEntry": 2001
+    }
+  },
+  {
+    "id": "protos",
+    "slug": "protos",
+    "name": "Protos",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1967,
+      "lastEntry": 1967
+    }
+  },
+  {
+    "id": "ram",
+    "slug": "ram",
+    "name": "RAM",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 44,
+      "points": 0,
+      "firstEntry": 1983,
+      "lastEntry": 1985
+    }
+  },
+  {
+    "id": "rb",
+    "slug": "rb",
+    "name": "RB",
+    "nationality": "Italian",
+    "color": "#6692FF",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 24,
+      "points": 46,
+      "firstEntry": 2024,
+      "lastEntry": 2024
+    }
+  },
+  {
+    "id": "racing-bulls",
+    "slug": "racing-bulls",
+    "name": "Racing Bulls",
+    "nationality": "Italian",
+    "color": "#6692FF",
+    "isActive": true,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 1,
+      "races": 25,
+      "points": 96,
+      "firstEntry": 2025,
+      "lastEntry": 2026
+    }
+  },
+  {
+    "id": "rae",
+    "slug": "rae",
+    "name": "Rae",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1950
+    }
+  },
+  {
+    "id": "rebaque",
+    "slug": "rebaque",
+    "name": "Rebaque",
+    "nationality": "Mexican",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 3,
+      "points": 0,
+      "firstEntry": 1979,
+      "lastEntry": 1979
+    }
+  },
+  {
+    "id": "reif",
+    "slug": "reif",
+    "name": "Reif",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1952,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "rial",
+    "slug": "rial",
+    "name": "Rial",
+    "nationality": "German",
+    "color": "#4682B4",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 32,
+      "points": 6,
+      "firstEntry": 1988,
+      "lastEntry": 1989
+    }
+  },
+  {
+    "id": "sauber",
+    "slug": "sauber",
+    "name": "Sauber",
+    "nationality": "Swiss",
+    "color": "#006EFF",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 10,
+      "races": 395,
+      "points": 557,
+      "firstEntry": 1993,
+      "lastEntry": 2018
+    }
+  },
+  {
+    "id": "scarab",
+    "slug": "scarab",
+    "name": "Scarab",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 5,
+      "points": 0,
+      "firstEntry": 1960,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "schroeder",
+    "slug": "schroeder",
+    "name": "Schroeder",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 4,
+      "points": 0,
+      "firstEntry": 1951,
+      "lastEntry": 1955
+    }
+  },
+  {
+    "id": "scirocco",
+    "slug": "scirocco",
+    "name": "Scirocco",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 7,
+      "points": 0,
+      "firstEntry": 1963,
+      "lastEntry": 1964
+    }
+  },
+  {
+    "id": "shannon",
+    "slug": "shannon",
+    "name": "Shannon",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1966,
+      "lastEntry": 1966
+    }
+  },
+  {
+    "id": "sherman",
+    "slug": "sherman",
+    "name": "Sherman",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 2,
+      "points": 0,
+      "firstEntry": 1951,
+      "lastEntry": 1952
+    }
+  },
+  {
+    "id": "simca-gordini",
+    "slug": "simca-gordini",
+    "name": "Simca-Gordini",
+    "nationality": "French",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 15,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1953
+    }
+  },
+  {
+    "id": "simtek",
+    "slug": "simtek",
+    "name": "Simtek",
+    "nationality": "British",
+    "color": "#800080",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 21,
+      "points": 0,
+      "firstEntry": 1994,
+      "lastEntry": 1995
+    }
+  },
+  {
+    "id": "snowberger",
+    "slug": "snowberger",
+    "name": "Snowberger",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1950
+    }
+  },
+  {
+    "id": "spirit",
+    "slug": "spirit",
+    "name": "Spirit",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 25,
+      "points": 0,
+      "firstEntry": 1983,
+      "lastEntry": 1985
+    }
+  },
+  {
+    "id": "spyker",
+    "slug": "spyker",
+    "name": "Spyker",
+    "nationality": "Dutch",
+    "color": "#FF6600",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 17,
+      "points": 1,
+      "firstEntry": 2007,
+      "lastEntry": 2007
+    }
+  },
+  {
+    "id": "stebro",
+    "slug": "stebro",
+    "name": "Stebro",
+    "nationality": "Canadian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1963,
+      "lastEntry": 1963
+    }
+  },
+  {
+    "id": "stevens",
+    "slug": "stevens",
+    "name": "Stevens",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 1,
+      "podiums": 0,
+      "races": 6,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1956
+    }
+  },
+  {
+    "id": "super-aguri",
+    "slug": "super-aguri",
+    "name": "Super Aguri",
+    "nationality": "Japanese",
+    "color": "#FFFFFF",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 39,
+      "points": 4,
+      "firstEntry": 2006,
+      "lastEntry": 2008
+    }
+  },
+  {
+    "id": "surtees",
+    "slug": "surtees",
+    "name": "Surtees",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 2,
+      "races": 119,
+      "points": 53,
+      "firstEntry": 1970,
+      "lastEntry": 1978
+    }
+  },
+  {
+    "id": "sutton",
+    "slug": "sutton",
+    "name": "Sutton",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1959,
+      "lastEntry": 1959
+    }
+  },
+  {
+    "id": "talbot-lago",
+    "slug": "talbot-lago",
+    "name": "Talbot-Lago",
+    "nationality": "French",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 2,
+      "races": 13,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1951
+    }
+  },
+  {
+    "id": "tec-mec",
+    "slug": "tec-mec",
+    "name": "Tec-Mec",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1959,
+      "lastEntry": 1959
+    }
+  },
+  {
+    "id": "tecno",
+    "slug": "tecno",
+    "name": "Tecno",
+    "nationality": "Italian",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 14,
+      "points": 1,
+      "firstEntry": 1969,
+      "lastEntry": 1973
+    }
+  },
+  {
+    "id": "theodore",
+    "slug": "theodore",
+    "name": "Theodore",
+    "nationality": "Hongkongese",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 51,
+      "points": 2,
+      "firstEntry": 1978,
+      "lastEntry": 1983
+    }
+  },
+  {
+    "id": "token",
+    "slug": "token",
+    "name": "Token",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 4,
+      "points": 0,
+      "firstEntry": 1974,
+      "lastEntry": 1974
+    }
+  },
+  {
+    "id": "toleman",
+    "slug": "toleman",
+    "name": "Toleman",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 1,
+      "podiums": 3,
+      "races": 70,
+      "points": 26,
+      "firstEntry": 1981,
+      "lastEntry": 1985
+    }
+  },
+  {
+    "id": "toyota",
+    "slug": "toyota",
+    "name": "Toyota",
+    "nationality": "Japanese",
+    "color": "#CC0000",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 3,
+      "podiums": 13,
+      "races": 140,
+      "points": 278.5,
+      "firstEntry": 2002,
+      "lastEntry": 2009
+    }
+  },
+  {
+    "id": "trevis",
+    "slug": "trevis",
+    "name": "Trevis",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 4,
+      "points": 1,
+      "firstEntry": 1951,
+      "lastEntry": 1960
+    }
+  },
+  {
+    "id": "trojan",
+    "slug": "trojan",
+    "name": "Trojan",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 8,
+      "points": 0,
+      "firstEntry": 1974,
+      "lastEntry": 1974
+    }
+  },
+  {
+    "id": "turner",
+    "slug": "turner",
+    "name": "Turner",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1953,
+      "lastEntry": 1953
+    }
+  },
+  {
+    "id": "venturi",
+    "slug": "venturi",
+    "name": "Venturi",
+    "nationality": "French",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 16,
+      "points": 1,
+      "firstEntry": 1992,
+      "lastEntry": 1992
+    }
+  },
+  {
+    "id": "veritas",
+    "slug": "veritas",
+    "name": "Veritas",
+    "nationality": "German",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 6,
+      "points": 0,
+      "firstEntry": 1951,
+      "lastEntry": 1953
+    }
+  },
+  {
+    "id": "virgin",
+    "slug": "virgin",
+    "name": "Virgin",
+    "nationality": "British",
+    "color": "#C82E37",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 38,
+      "points": 0,
+      "firstEntry": 2010,
+      "lastEntry": 2011
+    }
+  },
+  {
+    "id": "wetteroth",
+    "slug": "wetteroth",
+    "name": "Wetteroth",
+    "nationality": "American",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 1,
+      "points": 0,
+      "firstEntry": 1950,
+      "lastEntry": 1950
+    }
+  },
+  {
+    "id": "wolf-williams",
+    "slug": "wolf-williams",
+    "name": "Wolf-Williams",
+    "nationality": "British",
+    "color": "#888888",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 16,
+      "points": 0,
+      "firstEntry": 1976,
+      "lastEntry": 1976
+    }
+  },
+  {
+    "id": "zakspeed",
+    "slug": "zakspeed",
+    "name": "Zakspeed",
+    "nationality": "German",
+    "color": "#696969",
+    "isActive": false,
+    "stats": {
+      "championships": 0,
+      "wins": 0,
+      "poles": 0,
+      "podiums": 0,
+      "races": 74,
+      "points": 2,
+      "firstEntry": 1985,
+      "lastEntry": 1989
+    }
+  }
+]

@@ -1,0 +1,782 @@
+[
+  {
+    "id": "monza",
+    "slug": "monza",
+    "name": "Autodromo Nazionale Monza",
+    "country": "Italy",
+    "city": "Monza",
+    "lat": 45.620556,
+    "lng": 9.289444,
+    "totalRaces": 75
+  },
+  {
+    "id": "monaco",
+    "slug": "monaco",
+    "name": "Circuit de Monaco",
+    "country": "Monaco",
+    "city": "Monte Carlo",
+    "lat": 43.734722,
+    "lng": 7.420556,
+    "totalRaces": 71
+  },
+  {
+    "id": "silverstone",
+    "slug": "silverstone",
+    "name": "Silverstone Circuit",
+    "country": "United Kingdom",
+    "city": "Silverstone",
+    "lat": 52.078611,
+    "lng": -1.016944,
+    "totalRaces": 60
+  },
+  {
+    "id": "spa-francorchamps",
+    "slug": "spa-francorchamps",
+    "name": "Circuit de Spa-Francorchamps",
+    "country": "Belgium",
+    "city": "Spa",
+    "lat": 50.437222,
+    "lng": 5.971389,
+    "totalRaces": 58
+  },
+  {
+    "id": "montreal",
+    "slug": "gilles-villeneuve",
+    "name": "Circuit Gilles Villeneuve",
+    "country": "Canada",
+    "city": "Montreal",
+    "lat": 45.500578,
+    "lng": -73.522461,
+    "totalRaces": 44
+  },
+  {
+    "id": "interlagos",
+    "slug": "jos\u00e9-carlos-pace",
+    "name": "Aut\u00f3dromo Jos\u00e9 Carlos Pace",
+    "country": "Brazil",
+    "city": "S\u00e3o Paulo",
+    "lat": -23.701111,
+    "lng": -46.697222,
+    "totalRaces": 42
+  },
+  {
+    "id": "nurburgring",
+    "slug": "n\u00fcrburgring",
+    "name": "N\u00fcrburgring",
+    "country": "Germany",
+    "city": "N\u00fcrburg",
+    "lat": 50.335556,
+    "lng": 6.9475,
+    "totalRaces": 41
+  },
+  {
+    "id": "hungaroring",
+    "slug": "hungaroring",
+    "name": "Hungaroring",
+    "country": "Hungary",
+    "city": "Budapest",
+    "lat": 47.582222,
+    "lng": 19.251111,
+    "totalRaces": 40
+  },
+  {
+    "id": "spielberg",
+    "slug": "red-bull-ring",
+    "name": "Red Bull Ring",
+    "country": "Austria",
+    "city": "Spielberg",
+    "lat": 47.219722,
+    "lng": 14.764722,
+    "totalRaces": 39
+  },
+  {
+    "id": "hockenheimring",
+    "slug": "hockenheimring",
+    "name": "Hockenheimring",
+    "country": "Germany",
+    "city": "Hockenheim",
+    "lat": 49.327778,
+    "lng": 8.565833,
+    "totalRaces": 37
+  },
+  {
+    "id": "catalunya",
+    "slug": "catalunya",
+    "name": "Circuit de Barcelona-Catalunya",
+    "country": "Spain",
+    "city": "Montmel\u00f3",
+    "lat": 41.57,
+    "lng": 2.261111,
+    "totalRaces": 35
+  },
+  {
+    "id": "suzuka",
+    "slug": "suzuka",
+    "name": "Suzuka Circuit",
+    "country": "Japan",
+    "city": "Suzuka",
+    "lat": 34.843056,
+    "lng": 136.540556,
+    "totalRaces": 35
+  },
+  {
+    "id": "zandvoort",
+    "slug": "zandvoort",
+    "name": "Circuit Park Zandvoort",
+    "country": "Netherlands",
+    "city": "Zandvoort",
+    "lat": 52.388819,
+    "lng": 4.540922,
+    "totalRaces": 35
+  },
+  {
+    "id": "imola",
+    "slug": "enzo-e-dino-ferrari",
+    "name": "Autodromo Internazionale Enzo e Dino Ferrari",
+    "country": "Italy",
+    "city": "Imola",
+    "lat": 44.341111,
+    "lng": 11.713333,
+    "totalRaces": 32
+  },
+  {
+    "id": "melbourne",
+    "slug": "melbourne",
+    "name": "Melbourne Grand Prix Circuit",
+    "country": "Australia",
+    "city": "Melbourne",
+    "lat": -37.849722,
+    "lng": 144.968333,
+    "totalRaces": 29
+  },
+  {
+    "id": "mexico-city",
+    "slug": "hermanos-rodr\u00edguez",
+    "name": "Aut\u00f3dromo Hermanos Rodr\u00edguez",
+    "country": "Mexico",
+    "city": "Mexico City",
+    "lat": 19.404197,
+    "lng": -99.088747,
+    "totalRaces": 25
+  },
+  {
+    "id": "bahrain",
+    "slug": "bahrain",
+    "name": "Bahrain International Circuit",
+    "country": "Bahrain",
+    "city": "Sakhir",
+    "lat": 26.0325,
+    "lng": 50.510556,
+    "totalRaces": 22
+  },
+  {
+    "id": "buenos-aires",
+    "slug": "juan-y-oscar-g\u00e1lvez",
+    "name": "Aut\u00f3dromo Juan y Oscar G\u00e1lvez",
+    "country": "Argentina",
+    "city": "Buenos Aires",
+    "lat": -34.694272,
+    "lng": -58.459347,
+    "totalRaces": 20
+  },
+  {
+    "id": "kyalami",
+    "slug": "kyalami",
+    "name": "Kyalami Racing Circuit",
+    "country": "South Africa",
+    "city": "Midrand",
+    "lat": -25.998611,
+    "lng": 28.068889,
+    "totalRaces": 20
+  },
+  {
+    "id": "watkins-glen",
+    "slug": "watkins-glen",
+    "name": "Watkins Glen International",
+    "country": "United States of America",
+    "city": "Watkins Glen",
+    "lat": 42.336944,
+    "lng": -76.927222,
+    "totalRaces": 20
+  },
+  {
+    "id": "indianapolis",
+    "slug": "indianapolis",
+    "name": "Indianapolis Motor Speedway",
+    "country": "United States of America",
+    "city": "Indianapolis",
+    "lat": 39.798333,
+    "lng": -86.232778,
+    "totalRaces": 19
+  },
+  {
+    "id": "sepang",
+    "slug": "sepang",
+    "name": "Sepang International Circuit",
+    "country": "Malaysia",
+    "city": "Sepang",
+    "lat": 2.760556,
+    "lng": 101.7375,
+    "totalRaces": 19
+  },
+  {
+    "id": "magny-cours",
+    "slug": "magny-cours",
+    "name": "Circuit de Nevers Magny-Cours",
+    "country": "France",
+    "city": "Nevers",
+    "lat": 46.863242,
+    "lng": 3.164228,
+    "totalRaces": 18
+  },
+  {
+    "id": "paul-ricard",
+    "slug": "paul-ricard",
+    "name": "Circuit Paul Ricard",
+    "country": "France",
+    "city": "Le Castellet",
+    "lat": 43.250556,
+    "lng": 5.791667,
+    "totalRaces": 18
+  },
+  {
+    "id": "shanghai",
+    "slug": "shanghai",
+    "name": "Shanghai International Circuit",
+    "country": "China",
+    "city": "Shanghai",
+    "lat": 31.338889,
+    "lng": 121.219722,
+    "totalRaces": 18
+  },
+  {
+    "id": "yas-marina",
+    "slug": "yas-marina",
+    "name": "Yas Marina Circuit",
+    "country": "United Arab Emirates",
+    "city": "Abu Dhabi",
+    "lat": 24.467222,
+    "lng": 54.603056,
+    "totalRaces": 17
+  },
+  {
+    "id": "marina-bay",
+    "slug": "marina-bay",
+    "name": "Marina Bay Street Circuit",
+    "country": "Singapore",
+    "city": "Singapore",
+    "lat": 1.291531,
+    "lng": 103.86385,
+    "totalRaces": 16
+  },
+  {
+    "id": "brands-hatch",
+    "slug": "brands-hatch",
+    "name": "Brands Hatch",
+    "country": "United Kingdom",
+    "city": "Fawkham",
+    "lat": 51.356667,
+    "lng": 0.2625,
+    "totalRaces": 14
+  },
+  {
+    "id": "austin",
+    "slug": "americas",
+    "name": "Circuit of the Americas",
+    "country": "United States of America",
+    "city": "Austin",
+    "lat": 30.132778,
+    "lng": -97.641111,
+    "totalRaces": 13
+  },
+  {
+    "id": "estoril",
+    "slug": "estoril",
+    "name": "Aut\u00f3dromo do Estoril",
+    "country": "Portugal",
+    "city": "Estoril",
+    "lat": 38.750833,
+    "lng": -9.394167,
+    "totalRaces": 13
+  },
+  {
+    "id": "adelaide",
+    "slug": "adelaide",
+    "name": "Adelaide Street Circuit",
+    "country": "Australia",
+    "city": "Adelaide",
+    "lat": -34.927222,
+    "lng": 138.617222,
+    "totalRaces": 11
+  },
+  {
+    "id": "reims",
+    "slug": "reims-gueux",
+    "name": "Reims-Gueux",
+    "country": "France",
+    "city": "Reims",
+    "lat": 49.254075,
+    "lng": 3.930561,
+    "totalRaces": 11
+  },
+  {
+    "id": "jacarepagua",
+    "slug": "nelson-piquet",
+    "name": "Aut\u00f3dromo Internacional Nelson Piquet",
+    "country": "Brazil",
+    "city": "Rio de Janeiro",
+    "lat": -22.975556,
+    "lng": -43.395,
+    "totalRaces": 10
+  },
+  {
+    "id": "zolder",
+    "slug": "zolder",
+    "name": "Circuit Zolder",
+    "country": "Belgium",
+    "city": "Heusden-Zolder",
+    "lat": 50.988889,
+    "lng": 5.255556,
+    "totalRaces": 10
+  },
+  {
+    "id": "baku",
+    "slug": "baku",
+    "name": "Baku City Circuit",
+    "country": "Azerbaijan",
+    "city": "Baku",
+    "lat": 40.3725,
+    "lng": 49.853333,
+    "totalRaces": 9
+  },
+  {
+    "id": "istanbul",
+    "slug": "istanbul-park",
+    "name": "Istanbul Park",
+    "country": "Turkey",
+    "city": "Istanbul",
+    "lat": 40.951667,
+    "lng": 29.405,
+    "totalRaces": 9
+  },
+  {
+    "id": "jarama",
+    "slug": "jarama",
+    "name": "Circuito del Jarama",
+    "country": "Spain",
+    "city": "Madrid",
+    "lat": 40.617111,
+    "lng": -3.585583,
+    "totalRaces": 9
+  },
+  {
+    "id": "long-beach",
+    "slug": "long-beach",
+    "name": "Long Beach",
+    "country": "United States of America",
+    "city": "Long Beach",
+    "lat": 33.766389,
+    "lng": -118.192778,
+    "totalRaces": 8
+  },
+  {
+    "id": "mosport",
+    "slug": "mosport",
+    "name": "Canadian Tire Motorsport Park",
+    "country": "Canada",
+    "city": "Bowmanville",
+    "lat": 44.05,
+    "lng": -78.677778,
+    "totalRaces": 8
+  },
+  {
+    "id": "sochi",
+    "slug": "sochi",
+    "name": "Sochi Autodrom",
+    "country": "Russia",
+    "city": "Sochi",
+    "lat": 43.410278,
+    "lng": 39.968271,
+    "totalRaces": 8
+  },
+  {
+    "id": "detroit",
+    "slug": "detroit",
+    "name": "Detroit Street Circuit",
+    "country": "United States of America",
+    "city": "Detroit",
+    "lat": 42.32975,
+    "lng": -83.040111,
+    "totalRaces": 7
+  },
+  {
+    "id": "jerez",
+    "slug": "jerez",
+    "name": "Circuito de Jerez",
+    "country": "Spain",
+    "city": "Jerez de la Frontera",
+    "lat": 36.708333,
+    "lng": -6.034167,
+    "totalRaces": 7
+  },
+  {
+    "id": "anderstorp",
+    "slug": "anderstorp-raceway",
+    "name": "Anderstorp Raceway",
+    "country": "Sweden",
+    "city": "Anderstorp",
+    "lat": 57.264167,
+    "lng": 13.601389,
+    "totalRaces": 6
+  },
+  {
+    "id": "dijon",
+    "slug": "dijon-prenois",
+    "name": "Dijon-Prenois",
+    "country": "France",
+    "city": "Dijon",
+    "lat": 47.3625,
+    "lng": 4.899167,
+    "totalRaces": 6
+  },
+  {
+    "id": "aintree",
+    "slug": "aintree",
+    "name": "Aintree Motor Racing Circuit",
+    "country": "United Kingdom",
+    "city": "Aintree",
+    "lat": 53.476944,
+    "lng": -2.940556,
+    "totalRaces": 5
+  },
+  {
+    "id": "bremgarten",
+    "slug": "bremgarten",
+    "name": "Circuit Bremgarten",
+    "country": "Switzerland",
+    "city": "Bern",
+    "lat": 46.95,
+    "lng": 7.410833,
+    "totalRaces": 5
+  },
+  {
+    "id": "jeddah",
+    "slug": "jeddah",
+    "name": "Jeddah Corniche Circuit",
+    "country": "Saudi Arabia",
+    "city": "Jeddah",
+    "lat": 21.543333,
+    "lng": 39.172778,
+    "totalRaces": 5
+  },
+  {
+    "id": "rouen",
+    "slug": "rouen-les-essarts",
+    "name": "Rouen-Les-Essarts",
+    "country": "France",
+    "city": "Rouen",
+    "lat": 49.330639,
+    "lng": 1.004583,
+    "totalRaces": 5
+  },
+  {
+    "id": "valencia",
+    "slug": "valencia",
+    "name": "Valencia Street Circuit",
+    "country": "Spain",
+    "city": "Valencia",
+    "lat": 39.458778,
+    "lng": -0.325556,
+    "totalRaces": 5
+  },
+  {
+    "id": "clermont-ferrand",
+    "slug": "charade",
+    "name": "Charade Circuit",
+    "country": "France",
+    "city": "Clermont-Ferrand",
+    "lat": 45.747222,
+    "lng": 3.038889,
+    "totalRaces": 4
+  },
+  {
+    "id": "fuji",
+    "slug": "fuji",
+    "name": "Fuji Speedway",
+    "country": "Japan",
+    "city": "Oyama",
+    "lat": 35.371667,
+    "lng": 138.926667,
+    "totalRaces": 4
+  },
+  {
+    "id": "lusail",
+    "slug": "lusail",
+    "name": "Lusail International Circuit",
+    "country": "Qatar",
+    "city": "Lusail",
+    "lat": 25.49,
+    "lng": 51.454167,
+    "totalRaces": 4
+  },
+  {
+    "id": "miami",
+    "slug": "miami",
+    "name": "Miami International Autodrome",
+    "country": "United States of America",
+    "city": "Miami Gardens",
+    "lat": 25.958056,
+    "lng": -80.238889,
+    "totalRaces": 4
+  },
+  {
+    "id": "montjuic",
+    "slug": "montju\u00efc",
+    "name": "Circuito de Montju\u00efc",
+    "country": "Spain",
+    "city": "Barcelona",
+    "lat": 41.366389,
+    "lng": 2.151667,
+    "totalRaces": 4
+  },
+  {
+    "id": "yeongam",
+    "slug": "korea",
+    "name": "Korea International Circuit",
+    "country": "South Korea",
+    "city": "Yeongam",
+    "lat": 34.733333,
+    "lng": 126.416667,
+    "totalRaces": 4
+  },
+  {
+    "id": "buddh",
+    "slug": "buddh",
+    "name": "Buddh International Circuit",
+    "country": "India",
+    "city": "Greater Noida",
+    "lat": 28.350556,
+    "lng": 77.535,
+    "totalRaces": 3
+  },
+  {
+    "id": "east-london",
+    "slug": "prince-george",
+    "name": "Prince George Circuit",
+    "country": "South Africa",
+    "city": "East London",
+    "lat": -33.048611,
+    "lng": 27.873611,
+    "totalRaces": 3
+  },
+  {
+    "id": "las-vegas",
+    "slug": "las-vegas",
+    "name": "Las Vegas Street Circuit",
+    "country": "United States of America",
+    "city": "Las Vegas",
+    "lat": 36.175,
+    "lng": -115.136389,
+    "totalRaces": 3
+  },
+  {
+    "id": "phoenix",
+    "slug": "phoenix",
+    "name": "Phoenix Street Circuit",
+    "country": "United States of America",
+    "city": "Phoenix",
+    "lat": 33.447917,
+    "lng": -112.074583,
+    "totalRaces": 3
+  },
+  {
+    "id": "aida",
+    "slug": "aida",
+    "name": "Okayama International Circuit",
+    "country": "Japan",
+    "city": "Aida",
+    "lat": 34.915,
+    "lng": 134.221111,
+    "totalRaces": 2
+  },
+  {
+    "id": "caesars-palace",
+    "slug": "caesars-palace",
+    "name": "Caesars Palace",
+    "country": "United States of America",
+    "city": "Las Vegas",
+    "lat": 36.116944,
+    "lng": -115.175,
+    "totalRaces": 2
+  },
+  {
+    "id": "mont-tremblant",
+    "slug": "mont-tremblant",
+    "name": "Circuit Mont-Tremblant",
+    "country": "Canada",
+    "city": "Mont-Tremblant",
+    "lat": 46.187707,
+    "lng": -74.609936,
+    "totalRaces": 2
+  },
+  {
+    "id": "nivelles",
+    "slug": "nivelles-baulers",
+    "name": "Nivelles-Baulers",
+    "country": "Belgium",
+    "city": "Nivelles",
+    "lat": 50.621111,
+    "lng": 4.326944,
+    "totalRaces": 2
+  },
+  {
+    "id": "pedralbes",
+    "slug": "pedralbes",
+    "name": "Pedralbes Circuit",
+    "country": "Spain",
+    "city": "Barcelona",
+    "lat": 41.390278,
+    "lng": 2.116667,
+    "totalRaces": 2
+  },
+  {
+    "id": "portimao",
+    "slug": "portim\u00e3o",
+    "name": "Algarve International Circuit",
+    "country": "Portugal",
+    "city": "Portim\u00e3o",
+    "lat": 37.221944,
+    "lng": -8.629444,
+    "totalRaces": 2
+  },
+  {
+    "id": "porto",
+    "slug": "boavista",
+    "name": "Circuito da Boavista",
+    "country": "Portugal",
+    "city": "Porto",
+    "lat": 41.170472,
+    "lng": -8.67325,
+    "totalRaces": 2
+  },
+  {
+    "id": "ain-diab",
+    "slug": "ain-diab",
+    "name": "Ain-Diab Circuit",
+    "country": "Morocco",
+    "city": "Casablanca",
+    "lat": 33.578611,
+    "lng": -7.6875,
+    "totalRaces": 1
+  },
+  {
+    "id": "avus",
+    "slug": "avus",
+    "name": "AVUS",
+    "country": "Germany",
+    "city": "Berlin",
+    "lat": 52.480556,
+    "lng": 13.251389,
+    "totalRaces": 1
+  },
+  {
+    "id": "bugatti",
+    "slug": "bugatti",
+    "name": "Bugatti Circuit",
+    "country": "France",
+    "city": "Le Mans",
+    "lat": 47.937694,
+    "lng": 0.225611,
+    "totalRaces": 1
+  },
+  {
+    "id": "dallas",
+    "slug": "fair-park",
+    "name": "Fair Park",
+    "country": "United States of America",
+    "city": "Dallas",
+    "lat": 32.781944,
+    "lng": -96.765556,
+    "totalRaces": 1
+  },
+  {
+    "id": "donington",
+    "slug": "donington-park",
+    "name": "Donington Park",
+    "country": "United Kingdom",
+    "city": "Leicestershire",
+    "lat": 52.829806,
+    "lng": -1.379556,
+    "totalRaces": 1
+  },
+  {
+    "id": "monsanto",
+    "slug": "monsanto",
+    "name": "Circuito de Monsanto",
+    "country": "Portugal",
+    "city": "Lisbon",
+    "lat": 38.719722,
+    "lng": -9.203056,
+    "totalRaces": 1
+  },
+  {
+    "id": "mugello",
+    "slug": "mugello",
+    "name": "Autodromo Internazionale del Mugello",
+    "country": "Italy",
+    "city": "Scarperia e San Piero",
+    "lat": 43.9975,
+    "lng": 11.371944,
+    "totalRaces": 1
+  },
+  {
+    "id": "pescara",
+    "slug": "pescara",
+    "name": "Pescara Circuit",
+    "country": "Italy",
+    "city": "Pescara",
+    "lat": 42.475,
+    "lng": 14.150833,
+    "totalRaces": 1
+  },
+  {
+    "id": "riverside",
+    "slug": "riverside",
+    "name": "Riverside International Raceway",
+    "country": "United States of America",
+    "city": "Riverside",
+    "lat": 33.937,
+    "lng": -117.272556,
+    "totalRaces": 1
+  },
+  {
+    "id": "sebring",
+    "slug": "sebring",
+    "name": "Sebring International Raceway",
+    "country": "United States of America",
+    "city": "Sebring",
+    "lat": 27.454741,
+    "lng": -81.348267,
+    "totalRaces": 1
+  },
+  {
+    "id": "zeltweg",
+    "slug": "zeltweg",
+    "name": "Zeltweg",
+    "country": "Austria",
+    "city": "Zeltweg",
+    "lat": 47.202222,
+    "lng": 14.742222,
+    "totalRaces": 1
+  },
+  {
+    "id": "madring",
+    "slug": "madring",
+    "name": "Circuito de Madring",
+    "country": "Spain",
+    "city": "Madrid",
+    "lat": 40.465278,
+    "lng": -3.615278,
+    "totalRaces": 0
+  }
+]
