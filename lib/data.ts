@@ -3,7 +3,7 @@ import type {
   Team,
   Circuit,
   Season,
-  Record,
+  Record as F1Record,
 } from "./types";
 
 // ---------------------------------------------------------------------------
@@ -14,6 +14,7 @@ import driversData from "@/data/drivers.json";
 import teamsData from "@/data/teams.json";
 import circuitsData from "@/data/circuits.json";
 import recordsData from "@/data/records.json";
+import teamDriversData from "@/data/team-drivers.json";
 
 // ---------------------------------------------------------------------------
 // Drivers
@@ -55,6 +56,24 @@ export function getActiveTeams(): Team[] {
   return (teamsData as Team[]).filter((t) => t.isActive);
 }
 
+export interface TeamDriverEntry {
+  driverId: string;
+  firstName: string;
+  lastName: string;
+  wins: number;
+  podiums: number;
+  races: number;
+  points: number;
+  yearStart: number;
+  yearEnd: number;
+}
+
+const teamDrivers = teamDriversData as Record<string, TeamDriverEntry[]>;
+
+export function getTeamDrivers(teamId: string): TeamDriverEntry[] {
+  return teamDrivers[teamId] ?? [];
+}
+
 // ---------------------------------------------------------------------------
 // Circuits
 // ---------------------------------------------------------------------------
@@ -75,8 +94,8 @@ export function getCircuitById(id: string): Circuit | undefined {
 // Records
 // ---------------------------------------------------------------------------
 
-export function getAllRecords(): Record[] {
-  return recordsData as Record[];
+export function getAllRecords(): F1Record[] {
+  return recordsData as F1Record[];
 }
 
 // ---------------------------------------------------------------------------

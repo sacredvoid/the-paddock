@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { getCircuitSvgPath } from "@/lib/images";
 
 interface CircuitMiniMapProps {
   svgPath?: string;
@@ -10,10 +11,27 @@ interface CircuitMiniMapProps {
 
 export function CircuitMiniMap({
   svgPath,
+  circuitId,
   className,
   width = 64,
   height = 64,
 }: CircuitMiniMapProps) {
+  // If a circuitId is provided, render the SVG file as an image
+  if (circuitId) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={getCircuitSvgPath(circuitId)}
+        alt="Track layout"
+        width={width}
+        height={height}
+        className={cn("shrink-0 object-contain", className)}
+        loading="lazy"
+      />
+    );
+  }
+
+  // Fallback: inline SVG with path data (original behavior)
   return (
     <svg
       width={width}

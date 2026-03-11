@@ -85,40 +85,69 @@ export default async function DriverDetailPage({
       <section className="mb-10">
         <div className="rounded-xl border border-border-subtle bg-surface p-6 md:p-8">
           <div className="flex flex-wrap items-start justify-between gap-6">
-            {/* Left: driver info */}
-            <div className="space-y-4">
-              {/* Number + Code */}
-              <div className="flex items-center gap-4">
-                {driver.number && driver.number !== "0" && (
-                  <span
-                    className="stats-number text-5xl font-black text-f1-red md:text-6xl"
-                  >
-                    #{driver.number}
-                  </span>
-                )}
-                {driver.code && (
-                  <span
-                    className="stats-number rounded-md border border-border-subtle bg-surface-elevated px-3 py-1 text-2xl font-bold tracking-widest text-text-primary"
-                  >
-                    {driver.code}
-                  </span>
+            {/* Left: headshot + driver info */}
+            <div className="flex items-start gap-6">
+              {/* Headshot */}
+              <div className="relative size-[120px] shrink-0 overflow-hidden rounded-full border-2 border-border-subtle bg-surface-elevated md:size-[160px]">
+                {imageUrl ? (
+                  <Image
+                    src={imageUrl}
+                    alt={fullName}
+                    width={200}
+                    height={200}
+                    className="size-full object-cover"
+                  />
+                ) : (
+                  <div className="flex size-full items-center justify-center">
+                    {driver.number && driver.number !== "0" ? (
+                      <span className="stats-number text-4xl font-black text-f1-red md:text-5xl">
+                        {driver.number}
+                      </span>
+                    ) : (
+                      <span className="text-3xl font-bold text-text-secondary md:text-4xl">
+                        {driver.firstName.charAt(0)}
+                        {driver.lastName.charAt(0)}
+                      </span>
+                    )}
+                  </div>
                 )}
               </div>
 
-              {/* Meta row */}
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-text-secondary">
-                <span className="flex items-center gap-1.5">
-                  <Flag className="size-4" />
-                  {driver.nationality}
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <Calendar className="size-4" />
-                  {formattedDob}
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <Hash className="size-4" />
-                  {sortedSeasons.length} season{sortedSeasons.length !== 1 ? "s" : ""}
-                </span>
+              {/* Info */}
+              <div className="space-y-4">
+                {/* Number + Code */}
+                <div className="flex items-center gap-4">
+                  {driver.number && driver.number !== "0" && (
+                    <span
+                      className="stats-number text-5xl font-black text-f1-red md:text-6xl"
+                    >
+                      #{driver.number}
+                    </span>
+                  )}
+                  {driver.code && (
+                    <span
+                      className="stats-number rounded-md border border-border-subtle bg-surface-elevated px-3 py-1 text-2xl font-bold tracking-widest text-text-primary"
+                    >
+                      {driver.code}
+                    </span>
+                  )}
+                </div>
+
+                {/* Meta row */}
+                <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-text-secondary">
+                  <span className="flex items-center gap-1.5">
+                    <Flag className="size-4" />
+                    {driver.nationality}
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Calendar className="size-4" />
+                    {formattedDob}
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Hash className="size-4" />
+                    {sortedSeasons.length} season{sortedSeasons.length !== 1 ? "s" : ""}
+                  </span>
+                </div>
               </div>
             </div>
 
