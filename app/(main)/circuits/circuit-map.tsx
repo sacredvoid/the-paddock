@@ -27,7 +27,7 @@ export function CircuitMap({ circuits }: CircuitMapProps) {
   } | null>(null);
 
   return (
-    <div className="relative overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)] bg-surface-1">
+    <div className="relative overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)] bg-background">
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{

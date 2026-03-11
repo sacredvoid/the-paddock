@@ -17,7 +17,7 @@ interface CircuitLocationMapProps {
 
 export function CircuitLocationMap({ lat, lng, name }: CircuitLocationMapProps) {
   return (
-    <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)] bg-surface-1">
+    <div className="overflow-hidden rounded-xl border border-[rgba(255,255,255,0.06)] bg-background">
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{

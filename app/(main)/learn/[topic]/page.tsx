@@ -29,21 +29,18 @@ const mdxComponents = {
   h1: (props: React.ComponentProps<"h1">) => (
     <h1
       className="mb-6 mt-10 text-3xl font-bold text-text-primary first:mt-0"
-      style={{ fontFamily: "var(--font-titillium)" }}
       {...props}
     />
   ),
   h2: (props: React.ComponentProps<"h2">) => (
     <h2
       className="mb-4 mt-8 text-2xl font-bold text-text-primary"
-      style={{ fontFamily: "var(--font-titillium)" }}
       {...props}
     />
   ),
   h3: (props: React.ComponentProps<"h3">) => (
     <h3
       className="mb-3 mt-6 text-xl font-semibold text-text-primary"
-      style={{ fontFamily: "var(--font-titillium)" }}
       {...props}
     />
   ),
@@ -66,26 +63,26 @@ const mdxComponents = {
     <li className="leading-relaxed" {...props} />
   ),
   a: (props: React.ComponentProps<"a">) => (
-    <a className="text-accent hover:underline" {...props} />
+    <a className="text-glow hover:underline" {...props} />
   ),
   strong: (props: React.ComponentProps<"strong">) => (
     <strong className="font-semibold text-text-primary" {...props} />
   ),
   blockquote: (props: React.ComponentProps<"blockquote">) => (
     <blockquote
-      className="mb-4 border-l-4 border-accent pl-4 italic text-text-secondary"
+      className="mb-4 border-l-4 border-glow pl-4 italic text-text-secondary"
       {...props}
     />
   ),
   code: (props: React.ComponentProps<"code">) => (
     <code
-      className="rounded bg-surface-elevated px-1.5 py-0.5 text-sm font-mono text-text-primary"
+      className="rounded bg-surface-2 px-1.5 py-0.5 text-sm font-mono text-text-primary"
       {...props}
     />
   ),
   pre: (props: React.ComponentProps<"pre">) => (
     <pre
-      className="mb-4 overflow-x-auto rounded-lg bg-surface p-4 text-sm"
+      className="mb-4 overflow-x-auto rounded-lg bg-surface-1 p-4 text-sm"
       {...props}
     />
   ),
@@ -95,23 +92,22 @@ const mdxComponents = {
     </div>
   ),
   thead: (props: React.ComponentProps<"thead">) => (
-    <thead className="border-b border-border-subtle" {...props} />
+    <thead className="border-b border-[rgba(255,255,255,0.06)]" {...props} />
   ),
   th: (props: React.ComponentProps<"th">) => (
     <th
       className="px-4 py-2 text-sm font-semibold text-text-primary"
-      style={{ fontFamily: "var(--font-titillium)" }}
       {...props}
     />
   ),
   td: (props: React.ComponentProps<"td">) => (
     <td
-      className="border-b border-border-subtle px-4 py-2 text-sm text-text-secondary"
+      className="border-b border-[rgba(255,255,255,0.06)] px-4 py-2 text-sm text-text-secondary"
       {...props}
     />
   ),
   hr: (props: React.ComponentProps<"hr">) => (
-    <hr className="my-8 border-border-subtle" {...props} />
+    <hr className="my-8 border-[rgba(255,255,255,0.06)]" {...props} />
   ),
 };
 
@@ -156,19 +152,16 @@ export default async function LearnTopicPage({
       </article>
 
       {/* Previous / Next Navigation */}
-      <nav className="mt-12 flex items-stretch gap-4 border-t border-border-subtle pt-8">
+      <nav className="mt-12 flex items-stretch gap-4 border-t border-[rgba(255,255,255,0.06)] pt-8">
         {prevTopic ? (
           <Link
             href={`/learn/${prevTopic.slug}`}
-            className="group flex flex-1 flex-col rounded-lg border border-border-subtle p-4 transition-colors hover:border-accent/40 hover:bg-surface-elevated"
+            className="group flex flex-1 flex-col rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 p-4 card-glow"
           >
             <span className="mb-1 text-xs text-text-secondary">
               Previous
             </span>
-            <span
-              className="text-sm font-semibold text-text-primary group-hover:text-accent"
-              style={{ fontFamily: "var(--font-titillium)" }}
-            >
+            <span className="text-sm font-semibold text-text-primary group-hover:text-glow">
               {prevTopic.title}
             </span>
           </Link>
@@ -178,15 +171,12 @@ export default async function LearnTopicPage({
         {nextTopic ? (
           <Link
             href={`/learn/${nextTopic.slug}`}
-            className="group flex flex-1 flex-col items-end rounded-lg border border-border-subtle p-4 text-right transition-colors hover:border-accent/40 hover:bg-surface-elevated"
+            className="group flex flex-1 flex-col items-end rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1 p-4 text-right card-glow"
           >
             <span className="mb-1 text-xs text-text-secondary">
               Next
             </span>
-            <span
-              className="text-sm font-semibold text-text-primary group-hover:text-accent"
-              style={{ fontFamily: "var(--font-titillium)" }}
-            >
+            <span className="text-sm font-semibold text-text-primary group-hover:text-glow">
               {nextTopic.title}
             </span>
           </Link>
