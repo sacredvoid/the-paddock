@@ -1,0 +1,28 @@
+{
+  "planPath": "docs/plans/2026-03-10-the-paddock-implementation.md",
+  "tasks": [
+    {"id": 0, "subject": "Task 0: Project Scaffolding", "status": "pending"},
+    {"id": 1, "subject": "Task 1: Design System and Theme", "status": "pending", "blockedBy": [0]},
+    {"id": 2, "subject": "Task 2: Layout Shell (Header, Footer, Navigation)", "status": "pending", "blockedBy": [1]},
+    {"id": 3, "subject": "Task 3: Data Pipeline - Python Fetch Script", "status": "pending"},
+    {"id": 4, "subject": "Task 4: Reusable UI Components", "status": "pending", "blockedBy": [2]},
+    {"id": 5, "subject": "Task 5: Home Page", "status": "pending", "blockedBy": [3, 4]},
+    {"id": 6, "subject": "Task 6: Drivers List Page", "status": "pending", "blockedBy": [3, 4]},
+    {"id": 7, "subject": "Task 7: Driver Profile Page", "status": "pending", "blockedBy": [6]},
+    {"id": 8, "subject": "Task 8: Circuits List Page (World Map)", "status": "pending", "blockedBy": [3, 4]},
+    {"id": 9, "subject": "Task 9: Circuit Detail Page", "status": "pending", "blockedBy": [8]},
+    {"id": 10, "subject": "Task 10: Seasons List and Season Detail", "status": "pending", "blockedBy": [3, 4]},
+    {"id": 11, "subject": "Task 11: Race Detail Page", "status": "pending", "blockedBy": [10]},
+    {"id": 12, "subject": "Task 12: Records & Stats Page", "status": "pending", "blockedBy": [3, 4]},
+    {"id": 13, "subject": "Task 13: Teams List and Team Profile Pages", "status": "pending", "blockedBy": [3, 4]},
+    {"id": 14, "subject": "Task 14: Race Analysis (Telemetry Visualizations)", "status": "pending", "blockedBy": [3, 11]},
+    {"id": 15, "subject": "Task 15: Constructor Family Tree", "status": "pending", "blockedBy": [3, 13]},
+    {"id": 16, "subject": "Task 16: What-If Simulator", "status": "pending", "blockedBy": [3]},
+    {"id": 17, "subject": "Task 17: F1 101 Learn Section", "status": "pending", "blockedBy": [4]},
+    {"id": 18, "subject": "Task 18: Global Search (Cmd+K)", "status": "pending", "blockedBy": [4]},
+    {"id": 19, "subject": "Task 19: Animations and Micro-Interactions", "status": "pending", "blockedBy": [4]},
+    {"id": 20, "subject": "Task 20: OG Images and Social Sharing", "status": "pending", "blockedBy": [5]},
+    {"id": 21, "subject": "Task 21: Performance Audit and Final Polish", "status": "pending", "blockedBy": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}
+  ],
+  "lastUpdated": "2026-03-10T21:45:00Z"
+}
