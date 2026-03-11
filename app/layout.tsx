@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inter, titillium, jetbrainsMono } from "@/lib/fonts";
+import { inter, jetbrainsMono } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${titillium.variable} ${jetbrainsMono.variable} dark`}
+      className={`${inter.variable} ${jetbrainsMono.variable}`}
     >
       <body className="min-h-screen bg-background antialiased">
         {children}
