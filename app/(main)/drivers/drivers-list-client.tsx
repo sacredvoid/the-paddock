@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { motion } from "motion/react";
 import { DriverCard } from "@/components/ui/driver-card";
 import { FilterBar, type FilterConfig } from "@/components/ui/filter-bar";
 
@@ -174,26 +175,42 @@ export function DriversListClient({
               </span>
             </div>
           )}
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+          <motion.div
+            key={`active-${statusFilter}-${nationalityFilter}-${sortBy}-${search}`}
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.03 } },
+            }}
+            className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+          >
             {filtered.active.map((driver) => (
-              <DriverCard
+              <motion.div
                 key={driver.slug}
-                driver={{
-                  slug: driver.slug,
-                  firstName: driver.firstName,
-                  lastName: driver.lastName,
-                  code: driver.code,
-                  number: driver.number || undefined,
-                  nationality: driver.nationality,
-                  stats: {
-                    wins: driver.stats.wins,
-                    championships: driver.stats.championships,
-                  },
+                variants={{
+                  hidden: { opacity: 0, y: 12 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
                 }}
-                imageUrl={driverImageUrls[driver.slug]}
-              />
+              >
+                <DriverCard
+                  driver={{
+                    slug: driver.slug,
+                    firstName: driver.firstName,
+                    lastName: driver.lastName,
+                    code: driver.code,
+                    number: driver.number || undefined,
+                    nationality: driver.nationality,
+                    stats: {
+                      wins: driver.stats.wins,
+                      championships: driver.stats.championships,
+                    },
+                  }}
+                  imageUrl={driverImageUrls[driver.slug]}
+                />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       )}
 
@@ -211,26 +228,42 @@ export function DriversListClient({
               {filtered.historic.length}
             </span>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+          <motion.div
+            key={`historic-${statusFilter}-${nationalityFilter}-${sortBy}-${search}`}
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.02 } },
+            }}
+            className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+          >
             {filtered.historic.map((driver) => (
-              <DriverCard
+              <motion.div
                 key={driver.slug}
-                driver={{
-                  slug: driver.slug,
-                  firstName: driver.firstName,
-                  lastName: driver.lastName,
-                  code: driver.code,
-                  number: driver.number || undefined,
-                  nationality: driver.nationality,
-                  stats: {
-                    wins: driver.stats.wins,
-                    championships: driver.stats.championships,
-                  },
+                variants={{
+                  hidden: { opacity: 0, y: 12 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
                 }}
-                imageUrl={driverImageUrls[driver.slug]}
-              />
+              >
+                <DriverCard
+                  driver={{
+                    slug: driver.slug,
+                    firstName: driver.firstName,
+                    lastName: driver.lastName,
+                    code: driver.code,
+                    number: driver.number || undefined,
+                    nationality: driver.nationality,
+                    stats: {
+                      wins: driver.stats.wins,
+                      championships: driver.stats.championships,
+                    },
+                  }}
+                  imageUrl={driverImageUrls[driver.slug]}
+                />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       )}
 

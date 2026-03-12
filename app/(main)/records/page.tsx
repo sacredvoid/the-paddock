@@ -3,6 +3,7 @@ import { getAllRecords, getDriverById, getTeamById } from "@/lib/data";
 import { getTeamColor } from "@/lib/team-colors";
 import { PageHeader } from "@/components/ui/page-header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { AnimateIn, StaggerChildren, StaggerItem } from "@/components/ui/animate-in";
 import { Trophy, Medal, Award } from "lucide-react";
 import type { Record as F1Record, RecordEntry } from "@/lib/types";
 
@@ -179,47 +180,57 @@ export default function RecordsPage() {
 
   return (
     <div>
-      <PageHeader
-        title="F1 Records"
-        subtitle="All-time statistical records across 75+ years of Formula 1 racing"
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "Records" },
-        ]}
-      />
+      <AnimateIn direction="up">
+        <PageHeader
+          title="F1 Records"
+          subtitle="All-time statistical records across 75+ years of Formula 1 racing"
+          breadcrumbs={[
+            { label: "Home", href: "/" },
+            { label: "Records" },
+          ]}
+        />
+      </AnimateIn>
 
       {/* Driver Records */}
       <section className="mb-16">
-        <div className="mb-6 flex items-center gap-3">
-          <div className="h-8 w-1 rounded-full bg-glow" />
-          <h2
-            className="text-2xl font-bold text-text-primary"
-          >
-            Driver Records
-          </h2>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2">
+        <AnimateIn direction="up">
+          <div className="mb-6 flex items-center gap-3">
+            <div className="h-8 w-1 rounded-full bg-glow" />
+            <h2
+              className="text-2xl font-bold text-text-primary"
+            >
+              Driver Records
+            </h2>
+          </div>
+        </AnimateIn>
+        <StaggerChildren className="grid gap-6 md:grid-cols-2" staggerDelay={0.08}>
           {driverRecords.map((record) => (
-            <RecordCard key={record.title} record={record} />
+            <StaggerItem key={record.title}>
+              <RecordCard record={record} />
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerChildren>
       </section>
 
       {/* Constructor Records */}
       <section>
-        <div className="mb-6 flex items-center gap-3">
-          <div className="h-8 w-1 rounded-full bg-glow" />
-          <h2
-            className="text-2xl font-bold text-text-primary"
-          >
-            Constructor Records
-          </h2>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2">
+        <AnimateIn direction="up">
+          <div className="mb-6 flex items-center gap-3">
+            <div className="h-8 w-1 rounded-full bg-glow" />
+            <h2
+              className="text-2xl font-bold text-text-primary"
+            >
+              Constructor Records
+            </h2>
+          </div>
+        </AnimateIn>
+        <StaggerChildren className="grid gap-6 md:grid-cols-2" staggerDelay={0.08}>
           {constructorRecords.map((record) => (
-            <RecordCard key={record.title} record={record} />
+            <StaggerItem key={record.title}>
+              <RecordCard record={record} />
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerChildren>
       </section>
     </div>
   );

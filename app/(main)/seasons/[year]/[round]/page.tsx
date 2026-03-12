@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { PageHeader } from "@/components/ui/page-header";
@@ -14,6 +15,8 @@ import {
 } from "@/components/ui/table";
 import { Trophy, Clock, Gauge, Fuel } from "lucide-react";
 import type { Season, PitStop } from "@/lib/types";
+import { RaceAnalysisSection } from "@/components/races/race-analysis-section";
+import { RaceHeadToHead } from "@/components/races/race-head-to-head";
 
 function driverDisplayName(driverId: string): string {
   const driver = getDriverById(driverId);
@@ -198,6 +201,15 @@ export default async function RaceDetailPage({
         </div>
       </section>
 
+      {/* Head-to-Head Comparison */}
+      <RaceHeadToHead
+        results={race.results}
+        qualifying={race.qualifying}
+        pitStops={race.pitStops}
+        year={year}
+        round={round}
+      />
+
       {/* Qualifying Results */}
       {race.qualifying && race.qualifying.length > 0 && (
         <section className="mb-12">
@@ -330,6 +342,18 @@ export default async function RaceDetailPage({
           </div>
         </section>
       )}
+
+      {/* Race Analysis - only for races with telemetry data */}
+      <Suspense
+        fallback={
+          <div className="mb-12 space-y-4">
+            <div className="h-8 w-48 animate-pulse rounded" style={{ backgroundColor: "#1A1A1E" }} />
+            <div className="h-64 w-full animate-pulse rounded-xl" style={{ backgroundColor: "#1A1A1E" }} />
+          </div>
+        }
+      >
+        <RaceAnalysisSection year={year} round={round} />
+      </Suspense>
     </div>
   );
 }

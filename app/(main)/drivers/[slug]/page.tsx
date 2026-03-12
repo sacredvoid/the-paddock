@@ -151,8 +151,14 @@ export default async function DriverDetailPage({
               </div>
             </div>
 
-            {/* Right: status badge */}
-            <div>
+            {/* Right: status badge + compare link */}
+            <div className="flex items-center gap-2">
+              <Link
+                href={`/compare?drivers=${driver.slug}`}
+                className="rounded-md border border-[rgba(255,255,255,0.06)] bg-surface-2 px-3 py-1.5 text-xs font-medium text-text-secondary transition-colors hover:border-glow/30 hover:text-glow"
+              >
+                Compare
+              </Link>
               <Badge
                 variant={driver.isActive ? "default" : "secondary"}
                 className={

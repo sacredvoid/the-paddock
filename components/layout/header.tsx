@@ -6,11 +6,17 @@ import { Search, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NAV_ITEMS } from "@/lib/navigation";
 import { MobileNav } from "./mobile-nav";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 export function Header() {
   const pathname = usePathname();
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const openSearch = useCallback(() => {
+    document.dispatchEvent(
+      new KeyboardEvent("keydown", { key: "k", metaKey: true }),
+    );
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 glass border-b border-[rgba(255,255,255,0.06)]">
@@ -49,12 +55,27 @@ export function Header() {
 
         {/* Right side actions */}
         <div className="flex items-center gap-1">
-          {/* Search button with Cmd+K hint */}
-          <Button variant="ghost" size="icon" className="relative" aria-label="Search">
-            <Search className="size-4" />
-            <kbd className="pointer-events-none absolute -right-1 -top-1 hidden rounded border border-[rgba(255,255,255,0.06)] bg-surface-2 px-1 py-0.5 text-[10px] text-text-tertiary md:inline-block">
+          {/* Search trigger - opens Cmd+K command palette */}
+          <button
+            type="button"
+            onClick={openSearch}
+            className="hidden items-center gap-2 rounded-lg border border-[rgba(255,255,255,0.06)] bg-surface-1/60 px-3 py-1.5 text-sm text-text-secondary transition-colors hover:border-[rgba(255,255,255,0.12)] hover:text-text-primary md:flex"
+          >
+            <Search className="size-3.5" />
+            <span>Search</span>
+            <kbd className="ml-1 rounded border border-[rgba(255,255,255,0.08)] bg-surface-2 px-1.5 py-0.5 text-[10px] text-text-tertiary">
               ⌘K
             </kbd>
+          </button>
+          {/* Mobile search icon */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            aria-label="Search"
+            onClick={openSearch}
+          >
+            <Search className="size-4" />
           </Button>
 
           {/* Mobile hamburger */}

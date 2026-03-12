@@ -2,6 +2,7 @@ import { getAllDrivers, getActiveDrivers } from "@/lib/data";
 import { getDriverImageUrl } from "@/lib/images";
 import { PageHeader } from "@/components/ui/page-header";
 import { StatCard } from "@/components/ui/stat-card";
+import { AnimateIn, StaggerChildren, StaggerItem } from "@/components/ui/animate-in";
 import { DriversListClient } from "./drivers-list-client";
 
 export const metadata = {
@@ -57,51 +58,63 @@ export default function DriversPage() {
   return (
     <div>
       {/* Header */}
-      <section className="mb-10">
-        <PageHeader
-          title="Drivers"
-          subtitle="Every driver who has competed in Formula 1, from the pioneers of the 1950s to today's grid."
-          breadcrumbs={[
-            { label: "Home", href: "/" },
-            { label: "Drivers" },
-          ]}
-        />
-      </section>
+      <AnimateIn direction="up">
+        <section className="mb-10">
+          <PageHeader
+            title="Drivers"
+            subtitle="Every driver who has competed in Formula 1, from the pioneers of the 1950s to today's grid."
+            breadcrumbs={[
+              { label: "Home", href: "/" },
+              { label: "Drivers" },
+            ]}
+          />
+        </section>
+      </AnimateIn>
 
       {/* Summary stats */}
       <section className="mb-10">
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-          <StatCard
-            label="Total Drivers"
-            value={allDrivers.length.toLocaleString()}
-            teamColor="#E10600"
-          />
-          <StatCard
-            label="Active Drivers"
-            value={activeDrivers.length}
-            teamColor="#00D2BE"
-          />
-          <StatCard
-            label="World Championships"
-            value={totalChampionships}
-            teamColor="#FF8000"
-          />
-          <StatCard
-            label="Race Victories"
-            value={totalWins.toLocaleString()}
-            teamColor="#3671C6"
-          />
-        </div>
+        <StaggerChildren className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+          <StaggerItem>
+            <StatCard
+              label="Total Drivers"
+              value={allDrivers.length.toLocaleString()}
+              teamColor="#E10600"
+            />
+          </StaggerItem>
+          <StaggerItem>
+            <StatCard
+              label="Active Drivers"
+              value={activeDrivers.length}
+              teamColor="#00D2BE"
+            />
+          </StaggerItem>
+          <StaggerItem>
+            <StatCard
+              label="World Championships"
+              value={totalChampionships}
+              teamColor="#FF8000"
+            />
+          </StaggerItem>
+          <StaggerItem>
+            <StatCard
+              label="Race Victories"
+              value={totalWins.toLocaleString()}
+              teamColor="#3671C6"
+            />
+          </StaggerItem>
+        </StaggerChildren>
       </section>
 
       {/* Interactive driver list */}
-      <section>
-        <DriversListClient
-          drivers={driversForClient}
-          nationalities={nationalities}
-          driverImageUrls={driverImageUrls}
-        />
-      </section>
+      <AnimateIn delay={0.15} direction="up">
+        <section>
+          <DriversListClient
+            drivers={driversForClient}
+            nationalities={nationalities}
+            driverImageUrls={driverImageUrls}
+          />
+        </section>
+      </AnimateIn>
     </div>
   );
 }

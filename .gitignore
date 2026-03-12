@@ -37,3 +37,4 @@ scripts/.venv/
 scripts/f1db/
 yarn-debug.log*
 yarn-error.log*
+.playwright-mcp/

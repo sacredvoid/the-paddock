@@ -130,6 +130,23 @@ export interface Season {
 }
 
 // ---------------------------------------------------------------------------
+// Team Lineage (Family Tree)
+// ---------------------------------------------------------------------------
+
+export interface TeamLineageEntry {
+  id: string;
+  name: string;
+  years: [number, number];
+  color: string;
+}
+
+export interface TeamLineage {
+  id: string;
+  name: string;
+  chain: TeamLineageEntry[];
+}
+
+// ---------------------------------------------------------------------------
 // Records
 // ---------------------------------------------------------------------------
 
@@ -144,4 +161,67 @@ export interface Record {
   category: "drivers" | "constructors";
   title: string;
   entries: RecordEntry[];
+}
+
+// ---------------------------------------------------------------------------
+// Telemetry / Race Analysis
+// ---------------------------------------------------------------------------
+
+export interface LapData {
+  lap: number;
+  position: number;
+  time: string;
+  timeMs: number;
+  compound: string;
+  stint: number;
+}
+
+export interface TelemetryDriver {
+  abbreviation: string;
+  teamId: string;
+  laps: LapData[];
+}
+
+export interface TelemetryPitStop {
+  driverId: string;
+  lap: number;
+  duration: number;
+  compound: string;
+}
+
+export interface SafetyCar {
+  type: "SC" | "VSC" | "RED";
+  startLap: number;
+  endLap: number;
+}
+
+export interface RaceTelemetry {
+  year: number;
+  round: number;
+  totalLaps: number;
+  drivers: { [driverId: string]: TelemetryDriver };
+  pitStops: TelemetryPitStop[];
+  safetyCars: SafetyCar[];
+}
+
+// ---------------------------------------------------------------------------
+// Detailed Car Telemetry (speed/throttle/brake traces)
+// ---------------------------------------------------------------------------
+
+export interface DetailedTelemetryDriver {
+  abbreviation: string;
+  lapTime: string;
+  distance: number[];
+  speed: number[];
+  throttle: number[];
+  brake: number[];
+  gear: number[];
+  rpm: number[];
+}
+
+export interface DetailedTelemetry {
+  year: number;
+  round: number;
+  raceName: string;
+  drivers: { [driverId: string]: DetailedTelemetryDriver };
 }

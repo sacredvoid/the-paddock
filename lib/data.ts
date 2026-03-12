@@ -4,6 +4,8 @@ import type {
   Circuit,
   Season,
   Record as F1Record,
+  TeamLineage,
+  RaceTelemetry,
 } from "./types";
 
 // ---------------------------------------------------------------------------
@@ -15,6 +17,7 @@ import teamsData from "@/data/teams.json";
 import circuitsData from "@/data/circuits.json";
 import recordsData from "@/data/records.json";
 import teamDriversData from "@/data/team-drivers.json";
+import lineageData from "@/data/team-lineage.json";
 
 // ---------------------------------------------------------------------------
 // Drivers
@@ -99,6 +102,14 @@ export function getAllRecords(): F1Record[] {
 }
 
 // ---------------------------------------------------------------------------
+// Team Lineages (Family Tree)
+// ---------------------------------------------------------------------------
+
+export function getTeamLineages(): TeamLineage[] {
+  return lineageData.lineages as TeamLineage[];
+}
+
+// ---------------------------------------------------------------------------
 // Seasons
 // ---------------------------------------------------------------------------
 
@@ -117,4 +128,20 @@ export async function getSeason(year: number): Promise<Season> {
   // Dynamic import so we only load the season data when needed
   const data = await import(`@/data/seasons/${year}.json`);
   return data.default as Season;
+}
+
+// ---------------------------------------------------------------------------
+// Telemetry
+// ---------------------------------------------------------------------------
+
+export async function getRaceTelemetry(
+  year: number,
+  round: number
+): Promise<RaceTelemetry | null> {
+  try {
+    const data = await import(`@/data/telemetry/${year}/${round}.json`);
+    return data.default as RaceTelemetry;
+  } catch {
+    return null;
+  }
 }

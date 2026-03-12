@@ -136,12 +136,14 @@
 
 /* Card hover glow effect */
 .card-glow {
-  transition: border-color 150ms, box-shadow 150ms, transform 250ms;
+  transition: border-color 200ms ease, box-shadow 300ms ease, transform 250ms ease;
 }
 .card-glow:hover {
-  border-color: rgba(255, 255, 255, 0.10);
-  box-shadow: 0 0 20px rgba(255, 107, 44, 0.08);
-  transform: scale(1.01);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 0 20px rgba(255, 107, 44, 0.10),
+    0 0 40px rgba(255, 107, 44, 0.04);
+  transform: translateY(-2px) scale(1.01);
 }
 
 /* Section heading label style */

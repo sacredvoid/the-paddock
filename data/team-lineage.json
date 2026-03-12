@@ -1,0 +1,98 @@
+{
+  "lineages": [
+    {
+      "id": "ferrari-line",
+      "name": "Ferrari Line",
+      "chain": [
+        { "id": "ferrari", "name": "Ferrari", "years": [1950, 2026], "color": "#E8002D" }
+      ]
+    },
+    {
+      "id": "mclaren-line",
+      "name": "McLaren Line",
+      "chain": [
+        { "id": "mclaren", "name": "McLaren", "years": [1966, 2026], "color": "#FF8000" }
+      ]
+    },
+    {
+      "id": "mercedes-line",
+      "name": "Mercedes Line",
+      "chain": [
+        { "id": "tyrrell", "name": "Tyrrell", "years": [1970, 1998], "color": "#0044AA" },
+        { "id": "bar", "name": "BAR", "years": [1999, 2005], "color": "#FFFFFF" },
+        { "id": "honda", "name": "Honda Racing", "years": [2006, 2008], "color": "#FFFFFF" },
+        { "id": "brawn", "name": "Brawn GP", "years": [2009, 2009], "color": "#B5F500" },
+        { "id": "mercedes", "name": "Mercedes", "years": [2010, 2026], "color": "#27F4D2" }
+      ]
+    },
+    {
+      "id": "williams-line",
+      "name": "Williams Line",
+      "chain": [
+        { "id": "williams", "name": "Williams", "years": [1978, 2026], "color": "#64C4FF" }
+      ]
+    },
+    {
+      "id": "red-bull-line",
+      "name": "Red Bull Racing Line",
+      "chain": [
+        { "id": "stewart", "name": "Stewart GP", "years": [1997, 1999], "color": "#FFFFFF" },
+        { "id": "jaguar", "name": "Jaguar Racing", "years": [2000, 2004], "color": "#006633" },
+        { "id": "red_bull", "name": "Red Bull Racing", "years": [2005, 2026], "color": "#3671C6" }
+      ]
+    },
+    {
+      "id": "alpine-line",
+      "name": "Alpine Line",
+      "chain": [
+        { "id": "toleman", "name": "Toleman", "years": [1981, 1985], "color": "#003366" },
+        { "id": "benetton", "name": "Benetton", "years": [1986, 2001], "color": "#00A550" },
+        { "id": "renault", "name": "Renault F1", "years": [2002, 2010], "color": "#FFF500" },
+        { "id": "lotus_renault", "name": "Lotus F1", "years": [2011, 2015], "color": "#FFB800" },
+        { "id": "renault2", "name": "Renault F1 (2nd era)", "years": [2016, 2020], "color": "#FFF500" },
+        { "id": "alpine", "name": "Alpine", "years": [2021, 2026], "color": "#FF87BC" }
+      ]
+    },
+    {
+      "id": "aston-martin-line",
+      "name": "Aston Martin Line",
+      "chain": [
+        { "id": "jordan", "name": "Jordan GP", "years": [1991, 2005], "color": "#FFC700" },
+        { "id": "midland", "name": "MF1 Racing", "years": [2006, 2006], "color": "#CC0000" },
+        { "id": "spyker", "name": "Spyker F1", "years": [2007, 2007], "color": "#FF6600" },
+        { "id": "force_india", "name": "Force India", "years": [2008, 2018], "color": "#F596C8" },
+        { "id": "racing_point", "name": "Racing Point", "years": [2019, 2020], "color": "#F596C8" },
+        { "id": "aston_martin", "name": "Aston Martin", "years": [2021, 2026], "color": "#229971" }
+      ]
+    },
+    {
+      "id": "sauber-line",
+      "name": "Sauber / Audi Line",
+      "chain": [
+        { "id": "sauber", "name": "Sauber", "years": [1993, 2005], "color": "#006EFF" },
+        { "id": "bmw_sauber", "name": "BMW Sauber", "years": [2006, 2009], "color": "#FFFFFF" },
+        { "id": "sauber2", "name": "Sauber (return)", "years": [2010, 2018], "color": "#006EFF" },
+        { "id": "alfa_romeo", "name": "Alfa Romeo", "years": [2019, 2023], "color": "#A50F2D" },
+        { "id": "kick_sauber", "name": "Kick Sauber", "years": [2024, 2025], "color": "#52E252" },
+        { "id": "audi", "name": "Audi", "years": [2026, 2026], "color": "#000000" }
+      ]
+    },
+    {
+      "id": "rb-line",
+      "name": "RB (Visa Cash App) Line",
+      "chain": [
+        { "id": "minardi", "name": "Minardi", "years": [1985, 2005], "color": "#000000" },
+        { "id": "toro_rosso", "name": "Toro Rosso", "years": [2006, 2019], "color": "#469BFF" },
+        { "id": "alphatauri", "name": "AlphaTauri", "years": [2020, 2023], "color": "#4E7C9B" },
+        { "id": "rb", "name": "RB", "years": [2024, 2026], "color": "#6692FF" }
+      ]
+    },
+    {
+      "id": "haas-line",
+      "name": "Haas Line",
+      "chain": [
+        { "id": "haas", "name": "Haas F1 Team", "years": [2016, 2026], "color": "#B6BABD" }
+      ]
+    }
+  ]
+}
