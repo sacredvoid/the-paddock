@@ -1,0 +1,64 @@
+---
+title: "Reading Telemetry Data"
+description: "Speed traces, throttle inputs, and what the data actually tells you."
+difficulty: "intermediate"
+order: 11
+---
+
+# Reading Telemetry Data
+
+Every F1 car generates roughly 1.5 terabytes of data per race weekend, transmitted from over 300 sensors to the team's engineers in real time. While most of this data stays behind closed doors, a growing amount of telemetry is publicly available through official F1 channels and community tools. Understanding how to read it transforms you from a casual viewer into someone who can see why one driver is faster, not just that they are.
+
+## Speed Traces Explained
+
+A **speed trace** is the most common telemetry chart you'll encounter. It plots the car's speed (vertical axis) against distance around the lap (horizontal axis). The result is a wavy line where peaks represent top speed on straights and valleys show minimum speed through corners.
+
+Comparing two drivers' speed traces on the same chart instantly reveals where time is gained or lost. If Driver A carries 5 km/h more speed through a corner's apex, their line will sit slightly higher in that section. If Driver B brakes later, their speed trace will drop later (further along the horizontal axis) into the braking zone.
+
+The shape of the curve matters as much as the numbers. A smooth, gradual speed reduction into a corner suggests confidence and a well-balanced car. A sharp, sudden dip might indicate the driver is braking too late or that the car lacks front-end grip.
+
+## Throttle and Brake Inputs
+
+**Throttle traces** show what percentage of throttle the driver is applying at any point on the lap, ranging from 0% (fully off) to 100% (fully on). **Brake traces** show braking pressure or a binary on/off signal, depending on the data source.
+
+These traces reveal driving style. A driver who gets on the throttle early and smoothly out of a corner is maximizing traction. A jagged throttle trace with multiple on-off corrections suggests the driver is fighting oversteer or managing tire slip.
+
+Braking data is equally telling. Elite drivers brake later and release the brake progressively as they turn in (a technique called **trail braking**). You can spot this in the data: the brake trace tapers off gradually rather than dropping to zero all at once before the corner entry.
+
+Overlaying throttle and brake traces with the speed trace gives a complete picture of how a driver attacks a corner: when they brake, how quickly they get back to full power, and how efficiently they manage the transition between the two.
+
+## Gear Usage
+
+**Gear traces** show which of the eight forward gears the driver is using at each point on the lap. This data reveals the car's acceleration characteristics and the driver's approach to each corner.
+
+A driver who short-shifts (changing up a gear earlier than the rev limit) might be managing tire wear or dealing with wheelspin. A driver holding a lower gear deeper into a corner is using engine braking to help slow the car and maintain control.
+
+Gear data also highlights differences in car setup. Two teammates might take the same corner in different gears, indicating different downforce levels or differential settings.
+
+## Tire Temperatures
+
+**Tire temperature data** tracks the heat across the surface and core of each tire. Sensors measure the inside, middle, and outside of the tread surface, while internal sensors estimate the core (carcass) temperature.
+
+Ideal operating temperatures vary by compound but generally fall between 85 and 110 degrees Celsius for dry tires. If the inside of the tire is hotter than the outside, it suggests too much camber or heavy loading in corners. If the outside overheats, the car may be sliding through turns.
+
+Drivers and engineers monitor tire temperatures constantly to judge degradation. A tire running above its optimal window degrades faster, leading to "graining" (surface tearing) or "blistering" (subsurface overheating that causes the rubber to bubble). Spotting these signs in the data early allows teams to adjust strategy before performance falls off a cliff.
+
+## How Engineers Read the Data
+
+Race engineers sit on the pit wall with multiple screens displaying live telemetry. They watch dozens of channels simultaneously: speed, throttle, brake, steering angle, tire pressures, tire temperatures, fuel flow, battery state of charge, coolant temperatures, and more.
+
+During a session, the engineer's primary job is comparing the current lap to a reference lap, often the driver's best lap or a theoretical "ideal" lap built from the best individual sectors. When a driver radios asking "Where am I losing time?", the engineer is already looking at the overlay.
+
+Post-session analysis goes deeper. Engineers at the factory run simulations using the telemetry to validate their aerodynamic models, predict tire degradation curves, and plan strategy for upcoming sessions. A single qualifying lap might take hours to fully debrief.
+
+The relationship between driver and engineer is built on this data. When a driver says the car "understeers in the middle of Turn 4," the engineer checks the telemetry to quantify it: how much steering lock, at what speed, with what throttle input. The data turns subjective feedback into actionable engineering changes.
+
+## What Fans Can Learn from Public Telemetry
+
+You don't need to be an engineer to use telemetry. The official F1 app provides speed comparison data, and community tools built on the FastF1 Python library give access to detailed session data including speed, throttle, brake, gear, and DRS activation for every lap of every session.
+
+Start by comparing two drivers through a single corner. Look at who brakes later, who carries more speed through the apex, and who gets on the throttle earlier. Then zoom out to a full lap and see how small differences in every corner compound into the gap you see on the timing screen.
+
+You can explore telemetry comparisons on our [driver comparison page](/compare), which lets you overlay data from different drivers and sessions. It is a hands-on way to see how tenths are gained and lost across a lap.
+
+Understanding telemetry changes how you watch races. When a commentator says "he's struggling with rear grip," you'll know to picture that jagged throttle trace. When a driver gains three tenths in one sector, you'll understand it came from a combination of later braking, higher apex speed, and earlier throttle application. The data makes the invisible visible.
