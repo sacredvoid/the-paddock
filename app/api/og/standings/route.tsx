@@ -159,7 +159,7 @@ export async function GET(request: Request) {
   const pointsFontSize = isLandscape ? 16 : 20;
   const posFontSize = isLandscape ? 16 : 22;
 
-  return new ImageResponse(
+  const imageResponse = new ImageResponse(
     (
       <div
         style={{
@@ -386,4 +386,9 @@ export async function GET(request: Request) {
     ),
     { width, height }
   );
+  imageResponse.headers.set(
+    "Cache-Control",
+    "public, s-maxage=604800, stale-while-revalidate=2592000"
+  );
+  return imageResponse;
 }

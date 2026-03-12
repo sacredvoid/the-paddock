@@ -138,7 +138,7 @@ export async function GET(request: Request) {
   const labelFontSize = isLandscape ? 16 : 18;
   const rowPadding = isLandscape ? "14px 0" : "18px 0";
 
-  return new ImageResponse(
+  const imageResponse = new ImageResponse(
     (
       <div
         style={{
@@ -367,4 +367,9 @@ export async function GET(request: Request) {
     ),
     { width, height }
   );
+  imageResponse.headers.set(
+    "Cache-Control",
+    "public, s-maxage=604800, stale-while-revalidate=2592000"
+  );
+  return imageResponse;
 }

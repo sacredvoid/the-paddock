@@ -31,7 +31,14 @@ export async function GET(
       })
     );
 
-    return NextResponse.json({ year: yearNum, races });
+    return NextResponse.json(
+      { year: yearNum, races },
+      {
+        headers: {
+          "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
+        },
+      }
+    );
   } catch {
     return NextResponse.json(
       { error: "Season data not available" },

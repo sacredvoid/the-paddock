@@ -1,0 +1,142 @@
+{
+  "model_file": "race-predictor.onnx",
+  "feature_names": [
+    "grid_position",
+    "constructor_strength",
+    "driver_form",
+    "driver_circuit_history",
+    "teammate_quali_gap",
+    "circuit_type",
+    "is_wet"
+  ],
+  "feature_count": 7,
+  "training_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "total_samples": 5108,
+  "circuit_type_mapping": {
+    "monaco": 0,
+    "marina-bay": 0,
+    "baku": 0,
+    "jeddah": 0,
+    "las-vegas": 0,
+    "miami": 0,
+    "melbourne": 1,
+    "hungaroring": 1,
+    "zandvoort": 1,
+    "montreal": 1,
+    "mexico-city": 1,
+    "interlagos": 1,
+    "austin": 1,
+    "imola": 1,
+    "istanbul": 1,
+    "portimao": 1,
+    "mugello": 1,
+    "nurburgring": 1,
+    "sochi": 1,
+    "shanghai": 1,
+    "sepang": 1,
+    "yas-marina": 1,
+    "lusail": 1,
+    "paul-ricard": 1,
+    "monza": 2,
+    "spa-francorchamps": 2,
+    "silverstone": 2,
+    "spielberg": 2,
+    "suzuka": 2,
+    "bahrain": 2,
+    "catalunya": 2,
+    "hockenheimring": 2
+  },
+  "circuit_type_labels": {
+    "0": "street",
+    "1": "mixed",
+    "2": "high_speed"
+  },
+  "feature_descriptions": {
+    "grid_position": "Qualifying grid position (1-20)",
+    "constructor_strength": "Constructor championship points normalised 0-1 at time of race",
+    "driver_form": "Rolling 5-race average finish position (lower is better)",
+    "driver_circuit_history": "Average finish at this circuit from prior years",
+    "teammate_quali_gap": "Qualifying time delta to teammate in seconds (positive = slower)",
+    "circuit_type": "Circuit category: street=0, mixed=1, high_speed=2",
+    "is_wet": "Wet weather flag (0 or 1, default 0)"
+  },
+  "feature_normalization": {
+    "grid_position": {
+      "min": 1.0,
+      "max": 20.0,
+      "mean": 10.187745094299316,
+      "std": 5.837209224700928
+    },
+    "constructor_strength": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.2808089554309845,
+      "std": 0.3266800045967102
+    },
+    "driver_form": {
+      "min": 1.0,
+      "max": 18.399999618530273,
+      "mean": 7.931244373321533,
+      "std": 3.8042654991149902
+    },
+    "driver_circuit_history": {
+      "min": 1.0,
+      "max": 20.0,
+      "mean": 8.032894134521484,
+      "std": 3.6582062244415283
+    },
+    "teammate_quali_gap": {
+      "min": -40.81700134277344,
+      "max": 40.81700134277344,
+      "mean": 6.362779822666198e-05,
+      "std": 1.8369003534317017
+    },
+    "circuit_type": {
+      "min": 0.0,
+      "max": 2.0,
+      "mean": 1.1922475099563599,
+      "std": 0.698641300201416
+    },
+    "is_wet": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "std": 0.0
+    }
+  },
+  "validation_metrics": {
+    "cv_folds": 3,
+    "avg_mae": 3.7864,
+    "avg_rmse": 5.0138,
+    "fold_details": [
+      {
+        "fold": 1,
+        "mae": 3.8488,
+        "rmse": 5.0717
+      },
+      {
+        "fold": 2,
+        "mae": 3.8055,
+        "rmse": 5.0153
+      },
+      {
+        "fold": 3,
+        "mae": 3.705,
+        "rmse": 4.9543
+      }
+    ]
+  }
+}

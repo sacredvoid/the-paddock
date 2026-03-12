@@ -122,7 +122,7 @@ export async function GET(request: Request) {
       ]
     : [];
 
-  return new ImageResponse(
+  const imageResponse = new ImageResponse(
     (
       <div
         style={{
@@ -315,4 +315,9 @@ export async function GET(request: Request) {
     ),
     { width, height }
   );
+  imageResponse.headers.set(
+    "Cache-Control",
+    "public, s-maxage=604800, stale-while-revalidate=2592000"
+  );
+  return imageResponse;
 }

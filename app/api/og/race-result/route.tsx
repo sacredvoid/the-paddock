@@ -188,7 +188,7 @@ export async function GET(request: Request) {
   const top3 = race.results.slice(0, 3);
   const isLandscape = validSize === "landscape";
 
-  return new ImageResponse(
+  const imageResponse = new ImageResponse(
     (
       <div
         style={{
@@ -382,4 +382,9 @@ export async function GET(request: Request) {
     ),
     { width, height }
   );
+  imageResponse.headers.set(
+    "Cache-Control",
+    "public, s-maxage=604800, stale-while-revalidate=2592000"
+  );
+  return imageResponse;
 }

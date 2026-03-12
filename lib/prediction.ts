@@ -1,14 +1,20 @@
-import * as ort from "onnxruntime-web";
+// onnxruntime-web is loaded lazily only when the user requests predictions
+type OrtModule = typeof import("onnxruntime-web");
+type InferenceSession = import("onnxruntime-web").InferenceSession;
+type TensorConstructor = typeof import("onnxruntime-web").Tensor;
 
-// ---------------------------------------------------------------------------
-// ONNX Model Session
-// ---------------------------------------------------------------------------
-
-let session: ort.InferenceSession | null = null;
+let ortModule: OrtModule | null = null;
+let session: InferenceSession | null = null;
+let TensorClass: TensorConstructor | null = null;
 
 export async function loadModel(): Promise<void> {
   if (session) return;
-  session = await ort.InferenceSession.create("/models/race-predictor.onnx");
+  // Dynamic import - only loads onnxruntime-web when this function is called
+  ortModule = await import("onnxruntime-web");
+  TensorClass = ortModule.Tensor;
+  session = await ortModule.InferenceSession.create(
+    "/models/race-predictor.onnx"
+  );
 }
 
 export function isModelLoaded(): boolean {
@@ -68,7 +74,7 @@ export async function predict(inputs: PredictionInput[]): Promise<number[]> {
     flatFeatures[offset + 6] = inp.teammateQualiGap;
   }
 
-  const tensor = new ort.Tensor("float32", flatFeatures, [
+  const tensor = new TensorClass!("float32", flatFeatures, [
     inputs.length,
     featureCount,
   ]);

@@ -20,5 +20,9 @@ export async function GET(
   }
 
   const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-  return NextResponse.json(data);
+  return NextResponse.json(data, {
+    headers: {
+      "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
+    },
+  });
 }

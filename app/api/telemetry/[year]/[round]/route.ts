@@ -35,7 +35,11 @@ export async function GET(
       `${roundNum}.json`
     );
     const data = await readFile(filePath, "utf-8");
-    return NextResponse.json(JSON.parse(data));
+    return NextResponse.json(JSON.parse(data), {
+      headers: {
+        "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
+      },
+    });
   } catch {
     return NextResponse.json(
       { error: "Telemetry data not available" },
