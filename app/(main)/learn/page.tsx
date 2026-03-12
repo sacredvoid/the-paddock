@@ -17,6 +17,7 @@ export default function LearnPage() {
   const intermediateTopics = topics.filter(
     (t) => t.difficulty === "intermediate"
   );
+  const dramaTopics = topics.filter((t) => t.difficulty === "drama");
 
   return (
     <div>
@@ -74,6 +75,30 @@ export default function LearnPage() {
                 <TopicCard
                   topic={topic}
                   index={beginnerTopics.length + i}
+                />
+              </StaggerItem>
+            ))}
+          </StaggerChildren>
+        </section>
+      )}
+
+      {/* Drama Section */}
+      {dramaTopics.length > 0 && (
+        <section className="mb-12">
+          <AnimateIn direction="up">
+            <h2 className="mb-6 text-2xl font-bold text-text-primary">
+              F1 Drama
+            </h2>
+            <p className="mb-6 text-sm text-text-secondary">
+              The controversies, betrayals, and scandals that shaped Formula 1.
+            </p>
+          </AnimateIn>
+          <StaggerChildren className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" staggerDelay={0.07}>
+            {dramaTopics.map((topic, i) => (
+              <StaggerItem key={topic.slug}>
+                <TopicCard
+                  topic={topic}
+                  index={beginnerTopics.length + intermediateTopics.length + i}
                 />
               </StaggerItem>
             ))}

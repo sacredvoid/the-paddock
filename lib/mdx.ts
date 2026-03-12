@@ -8,7 +8,7 @@ export interface TopicMeta {
   slug: string;
   title: string;
   description: string;
-  difficulty: "beginner" | "intermediate" | "advanced";
+  difficulty: "beginner" | "intermediate" | "advanced" | "drama";
   order: number;
   readingTime: string;
 }

@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 interface DifficultyBadgeProps {
-  difficulty: "beginner" | "intermediate" | "advanced";
+  difficulty: "beginner" | "intermediate" | "advanced" | "drama";
 }
 
 const config = {
@@ -16,6 +16,10 @@ const config = {
   advanced: {
     label: "Advanced",
     className: "bg-glow/15 text-glow border-glow/30",
+  },
+  drama: {
+    label: "Drama",
+    className: "bg-red-500/15 text-red-400 border-red-500/30",
   },
 };
 
