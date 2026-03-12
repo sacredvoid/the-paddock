@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { inter, jetbrainsMono } from "@/lib/fonts";
 import { CommandPalette } from "@/components/search/command-palette";
 import "./globals.css";
@@ -25,6 +26,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-background antialiased">
         {children}
+        <Analytics />
         <CommandPalette />
       </body>
     </html>
