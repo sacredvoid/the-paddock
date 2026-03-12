@@ -17,6 +17,7 @@ import { Trophy, Clock, Gauge, Fuel } from "lucide-react";
 import type { Season, PitStop } from "@/lib/types";
 import { RaceAnalysisSection } from "@/components/races/race-analysis-section";
 import { RaceHeadToHead } from "@/components/races/race-head-to-head";
+import { ShareButton } from "@/components/ui/share-button";
 
 function driverDisplayName(driverId: string): string {
   const driver = getDriverById(driverId);
@@ -94,6 +95,14 @@ export default async function RaceDetailPage({
           { label: `Round ${round}` },
         ]}
       />
+
+      {/* Share button */}
+      <div className="mb-6 flex justify-end">
+        <ShareButton
+          cardType="race-result"
+          params={{ year: String(year), round: String(round) }}
+        />
+      </div>
 
       {/* Key stats */}
       <div className="mb-10 grid grid-cols-2 gap-4 lg:grid-cols-4">

@@ -9,6 +9,7 @@ import { StatCard } from "@/components/ui/stat-card";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Flag, Calendar, Hash, Target } from "lucide-react";
+import { ShareButton } from "@/components/ui/share-button";
 
 // ---------------------------------------------------------------------------
 // Static params for build-time generation
@@ -151,8 +152,9 @@ export default async function DriverDetailPage({
               </div>
             </div>
 
-            {/* Right: status badge + compare link */}
+            {/* Right: status badge + compare link + share */}
             <div className="flex items-center gap-2">
+              <ShareButton cardType="driver" params={{ slug }} />
               <Link
                 href={`/compare?drivers=${driver.slug}`}
                 className="rounded-md border border-[rgba(255,255,255,0.06)] bg-surface-2 px-3 py-1.5 text-xs font-medium text-text-secondary transition-colors hover:border-glow/30 hover:text-glow"

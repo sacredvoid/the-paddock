@@ -10,6 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { SkeletonChart } from "@/components/ui/skeleton-chart";
 import Image from "next/image";
 import { X, Plus, Activity } from "lucide-react";
+import { ShareButton } from "@/components/ui/share-button";
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -450,7 +451,7 @@ export function CompareClient() {
         {selectedRound && telemetryData && (
           <div className="flex items-center gap-3">
             <Activity className="size-5 text-glow" />
-            <div>
+            <div className="flex-1">
               <h2 className="text-lg font-bold text-text-primary">
                 {selectedRaceName}
               </h2>
@@ -458,6 +459,15 @@ export function CompareClient() {
                 Fastest lap telemetry - Speed, Throttle, Brake, Gear data
               </p>
             </div>
+            {selectedDriverIds.length >= 2 && (
+              <ShareButton
+                cardType="head-to-head"
+                params={{
+                  driver1: selectedDriverIds[0],
+                  driver2: selectedDriverIds[1],
+                }}
+              />
+            )}
           </div>
         )}
 
