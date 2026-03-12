@@ -51,20 +51,20 @@
   },
   {
     "id": "interlagos",
-    "slug": "jos\u00e9-carlos-pace",
-    "name": "Aut\u00f3dromo Jos\u00e9 Carlos Pace",
+    "slug": "jose-carlos-pace",
+    "name": "Autódromo José Carlos Pace",
     "country": "Brazil",
-    "city": "S\u00e3o Paulo",
+    "city": "São Paulo",
     "lat": -23.701111,
     "lng": -46.697222,
     "totalRaces": 42
   },
   {
     "id": "nurburgring",
-    "slug": "n\u00fcrburgring",
-    "name": "N\u00fcrburgring",
+    "slug": "nurburgring",
+    "name": "Nürburgring",
     "country": "Germany",
-    "city": "N\u00fcrburg",
+    "city": "Nürburg",
     "lat": 50.335556,
     "lng": 6.9475,
     "totalRaces": 41
@@ -104,7 +104,7 @@
     "slug": "catalunya",
     "name": "Circuit de Barcelona-Catalunya",
     "country": "Spain",
-    "city": "Montmel\u00f3",
+    "city": "Montmeló",
     "lat": 41.57,
     "lng": 2.261111,
     "totalRaces": 35
@@ -151,8 +151,8 @@
   },
   {
     "id": "mexico-city",
-    "slug": "hermanos-rodr\u00edguez",
-    "name": "Aut\u00f3dromo Hermanos Rodr\u00edguez",
+    "slug": "hermanos-rodriguez",
+    "name": "Autódromo Hermanos Rodríguez",
     "country": "Mexico",
     "city": "Mexico City",
     "lat": 19.404197,
@@ -171,8 +171,8 @@
   },
   {
     "id": "buenos-aires",
-    "slug": "juan-y-oscar-g\u00e1lvez",
-    "name": "Aut\u00f3dromo Juan y Oscar G\u00e1lvez",
+    "slug": "juan-y-oscar-galvez",
+    "name": "Autódromo Juan y Oscar Gálvez",
     "country": "Argentina",
     "city": "Buenos Aires",
     "lat": -34.694272,
@@ -292,7 +292,7 @@
   {
     "id": "estoril",
     "slug": "estoril",
-    "name": "Aut\u00f3dromo do Estoril",
+    "name": "Autódromo do Estoril",
     "country": "Portugal",
     "city": "Estoril",
     "lat": 38.750833,
@@ -322,7 +322,7 @@
   {
     "id": "jacarepagua",
     "slug": "nelson-piquet",
-    "name": "Aut\u00f3dromo Internacional Nelson Piquet",
+    "name": "Autódromo Internacional Nelson Piquet",
     "country": "Brazil",
     "city": "Rio de Janeiro",
     "lat": -22.975556,
@@ -531,8 +531,8 @@
   },
   {
     "id": "montjuic",
-    "slug": "montju\u00efc",
-    "name": "Circuito de Montju\u00efc",
+    "slug": "montjuic",
+    "name": "Circuito de Montjuïc",
     "country": "Spain",
     "city": "Barcelona",
     "lat": 41.366389,
@@ -641,10 +641,10 @@
   },
   {
     "id": "portimao",
-    "slug": "portim\u00e3o",
+    "slug": "portimao",
     "name": "Algarve International Circuit",
     "country": "Portugal",
-    "city": "Portim\u00e3o",
+    "city": "Portimão",
     "lat": 37.221944,
     "lng": -8.629444,
     "totalRaces": 2
