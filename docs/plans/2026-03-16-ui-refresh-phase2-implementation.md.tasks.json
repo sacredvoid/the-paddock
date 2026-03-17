@@ -1,0 +1,14 @@
+{
+  "planPath": "docs/plans/2026-03-16-ui-refresh-phase2-implementation.md",
+  "tasks": [
+    {"id": 1, "subject": "Task 1: Fix homepage stat counter 0 bug", "status": "pending"},
+    {"id": 2, "subject": "Task 2: Refresh driver detail page", "status": "pending", "blockedBy": [1]},
+    {"id": 3, "subject": "Task 3: Refresh team detail page", "status": "pending", "blockedBy": [1]},
+    {"id": 4, "subject": "Task 4: Refresh circuit detail page", "status": "pending", "blockedBy": [1]},
+    {"id": 5, "subject": "Task 5: Refresh race detail page", "status": "pending", "blockedBy": [1]},
+    {"id": 6, "subject": "Task 6: Polish interactive tool pages", "status": "pending", "blockedBy": [1]},
+    {"id": 7, "subject": "Task 7: Build verification", "status": "pending", "blockedBy": [2, 3, 4, 5, 6]},
+    {"id": 8, "subject": "Task 8: Impeccable polish passes", "status": "pending", "blockedBy": [7]}
+  ],
+  "lastUpdated": "2026-03-16T11:30:00-04:00"
+}
