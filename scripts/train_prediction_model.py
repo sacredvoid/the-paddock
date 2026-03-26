@@ -339,12 +339,12 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
     # ------------------------------------------------------------------
     print(f"\nTraining final model on all data (n_estimators={avg_best_iter}) ...")
     final_model = xgb.XGBRegressor(
-        objective="reg:squarederror",
+        objective="reg:pseudohubererror",
         n_estimators=avg_best_iter,
         max_depth=4,
         learning_rate=0.1,
-        subsample=0.8,
-        colsample_bytree=0.8,
+        subsample=0.7,
+        colsample_bytree=0.7,
         reg_alpha=1.0,
         reg_lambda=1.0,
         min_child_weight=5,
