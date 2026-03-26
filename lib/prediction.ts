@@ -29,10 +29,11 @@ export interface PredictionInput {
   gridPosition: number;
   constructorStrength: number;
   driverForm: number;
-  circuitType: number;
-  isWet: number;
   driverCircuitHistory: number;
   teammateQualiGap: number;
+  circuitType: number;
+  isWet: number;
+  driverChampionshipPos: number;
 }
 
 export interface PredictionOutput {
@@ -59,19 +60,23 @@ export async function predict(inputs: PredictionInput[]): Promise<number[]> {
     return inputs.map((inp) => heuristicScore(inp));
   }
 
-  const featureCount = 7;
+  const featureCount = 8;
   const flatFeatures = new Float32Array(inputs.length * featureCount);
 
   for (let i = 0; i < inputs.length; i++) {
     const inp = inputs[i];
     const offset = i * featureCount;
+    // Must match Python training order exactly:
+    // grid_position, constructor_strength, driver_form, driver_circuit_history,
+    // teammate_quali_gap, circuit_type, is_wet, driver_championship_pos
     flatFeatures[offset] = inp.gridPosition;
     flatFeatures[offset + 1] = inp.constructorStrength;
     flatFeatures[offset + 2] = inp.driverForm;
-    flatFeatures[offset + 3] = inp.circuitType;
-    flatFeatures[offset + 4] = inp.isWet;
-    flatFeatures[offset + 5] = inp.driverCircuitHistory;
-    flatFeatures[offset + 6] = inp.teammateQualiGap;
+    flatFeatures[offset + 3] = inp.driverCircuitHistory;
+    flatFeatures[offset + 4] = inp.teammateQualiGap;
+    flatFeatures[offset + 5] = inp.circuitType;
+    flatFeatures[offset + 6] = inp.isWet;
+    flatFeatures[offset + 7] = inp.driverChampionshipPos;
   }
 
   const tensor = new TensorClass!("float32", flatFeatures, [
@@ -117,6 +122,8 @@ export async function predictWithProbabilities(
       constructorStrength:
         inp.constructorStrength + (Math.random() - 0.5) * 0.2,
       teammateQualiGap: inp.teammateQualiGap + (Math.random() - 0.5) * 0.1,
+      driverChampionshipPos:
+        inp.driverChampionshipPos + (Math.random() - 0.5) * 0.05,
       isWet: inp.isWet, // Keep wet/dry consistent
     }));
 

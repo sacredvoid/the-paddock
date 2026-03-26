@@ -7,9 +7,10 @@
     "driver_circuit_history",
     "teammate_quali_gap",
     "circuit_type",
-    "is_wet"
+    "is_wet",
+    "driver_championship_pos"
   ],
-  "feature_count": 7,
+  "feature_count": 8,
   "training_years": [
     2014,
     2015,
@@ -71,7 +72,8 @@
     "driver_circuit_history": "Average finish at this circuit from prior years",
     "teammate_quali_gap": "Qualifying time delta to teammate in seconds (positive = slower)",
     "circuit_type": "Circuit category: street=0, mixed=1, high_speed=2",
-    "is_wet": "Wet weather flag (0 or 1, default 0)"
+    "is_wet": "Wet weather flag (0 or 1, default 0)",
+    "driver_championship_pos": "Driver WDC standing position normalised 0-1 (0 = leader)"
   },
   "feature_normalization": {
     "grid_position": {
@@ -88,15 +90,15 @@
     },
     "driver_form": {
       "min": 1.0,
-      "max": 18.399999618530273,
-      "mean": 7.931244373321533,
-      "std": 3.8042654991149902
+      "max": 18.700000762939453,
+      "mean": 7.942946434020996,
+      "std": 3.8733839988708496
     },
     "driver_circuit_history": {
       "min": 1.0,
       "max": 20.0,
-      "mean": 8.032894134521484,
-      "std": 3.6582062244415283
+      "mean": 8.017325401306152,
+      "std": 3.823606014251709
     },
     "teammate_quali_gap": {
       "min": -40.81700134277344,
@@ -115,27 +117,33 @@
       "max": 0.0,
       "mean": 0.0,
       "std": 0.0
+    },
+    "driver_championship_pos": {
+      "min": 0.03999999910593033,
+      "max": 1.0,
+      "mean": 0.5051760673522949,
+      "std": 0.27550554275512695
     }
   },
   "validation_metrics": {
     "cv_folds": 3,
-    "avg_mae": 3.7864,
-    "avg_rmse": 5.0138,
+    "avg_mae": 3.2862,
+    "avg_rmse": 4.5332,
     "fold_details": [
       {
         "fold": 1,
-        "mae": 3.8488,
-        "rmse": 5.0717
+        "mae": 3.2983,
+        "rmse": 4.519
       },
       {
         "fold": 2,
-        "mae": 3.8055,
-        "rmse": 5.0153
+        "mae": 3.3166,
+        "rmse": 4.6043
       },
       {
         "fold": 3,
-        "mae": 3.705,
-        "rmse": 4.9543
+        "mae": 3.2437,
+        "rmse": 4.4763
       }
     ]
   }
