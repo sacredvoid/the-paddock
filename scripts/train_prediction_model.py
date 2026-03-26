@@ -88,7 +88,6 @@ FEATURE_NAMES = [
     "circuit_type",
     "is_wet",
     "driver_championship_pos",
-    "grid_position_sq",
 ]
 
 
@@ -257,7 +256,6 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                     float(circuit_type),
                     float(is_wet),
                     float(driver_champ_pos),
-                    float(grid_pos ** 2) / 400.0,  # normalised squared grid (1-400 -> 0-1)
                 ])
                 y_rows.append(float(finish_pos))
                 meta_rows.append({
@@ -446,7 +444,6 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
             "circuit_type": "Circuit category: street=0, mixed=1, high_speed=2",
             "is_wet": "Wet weather flag (0 or 1, default 0)",
             "driver_championship_pos": "Driver WDC standing position normalised 0-1 (0 = leader)",
-            "grid_position_sq": "Grid position squared normalised 0-1, captures non-linear advantage of front positions",
         },
         "feature_normalization": feature_stats,
         "validation_metrics": {
