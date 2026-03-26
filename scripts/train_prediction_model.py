@@ -316,7 +316,7 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
             colsample_bytree=0.7,
             colsample_bylevel=0.7,
             reg_alpha=3.0,
-            reg_lambda=1.0,
+            reg_lambda=3.0,
             min_child_weight=5,
             random_state=42,
             early_stopping_rounds=50,
