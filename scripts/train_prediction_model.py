@@ -87,6 +87,7 @@ FEATURE_NAMES = [
     "teammate_quali_gap",
     "circuit_type",
     "is_wet",
+    "driver_championship_pos",
 ]
 
 
@@ -144,6 +145,8 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
     circuit_history: dict[tuple[str, str], list[int]] = defaultdict(list)
     # constructor_points[year][teamId] = cumulative points so far this season
     constructor_points: dict[int, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    # driver_points[year][driverId] = cumulative points so far this season
+    driver_points: dict[int, dict[str, float]] = defaultdict(lambda: defaultdict(float))
 
     X_rows: list[list[float]] = []
     y_rows: list[float] = []
@@ -196,13 +199,22 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 raw_cp = constructor_points[year].get(team_id, 0.0)
                 constructor_strength = raw_cp / max_cp
 
-                # -- Feature: driver_form (rolling 5-race avg finish) --
+                # -- Feature: driver_form (exponentially weighted 5-race avg finish) --
                 recent = driver_form_history[driver_id][-5:]
-                driver_form = float(np.mean(recent)) if recent else 10.0  # neutral default
+                if recent:
+                    weights = np.array([0.1, 0.15, 0.2, 0.25, 0.3][-len(recent):])
+                    weights = weights / weights.sum()
+                    driver_form = float(np.average(recent, weights=weights))
+                else:
+                    driver_form = 10.0  # neutral default
 
-                # -- Feature: driver_circuit_history --
+                # -- Feature: driver_circuit_history (last 3 visits, weighted) --
                 hist = circuit_history.get((driver_id, circuit_id), [])
-                driver_circuit_hist = float(np.mean(hist)) if hist else 10.0
+                if hist:
+                    recent_hist = hist[-3:]  # last 3 visits only
+                    driver_circuit_hist = float(np.mean(recent_hist))
+                else:
+                    driver_circuit_hist = 10.0
 
                 # -- Feature: teammate_quali_gap --
                 teammate_gap = 0.0
@@ -225,6 +237,16 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 # -- Feature: is_wet (always 0, no weather data) --
                 is_wet = 0
 
+                # -- Feature: driver_championship_pos (current WDC standing, normalised 0-1) --
+                dp = driver_points[year]
+                if dp:
+                    sorted_drivers = sorted(dp.items(), key=lambda x: -x[1])
+                    pos = next((i + 1 for i, (d, _) in enumerate(sorted_drivers) if d == driver_id), 10)
+                    total_drivers = len(sorted_drivers)
+                    driver_champ_pos = pos / max(total_drivers, 1)
+                else:
+                    driver_champ_pos = 0.5  # neutral for first race of season
+
                 X_rows.append([
                     float(grid_pos),
                     constructor_strength,
@@ -233,6 +255,7 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                     teammate_gap,
                     float(circuit_type),
                     float(is_wet),
+                    float(driver_champ_pos),
                 ])
                 y_rows.append(float(finish_pos))
                 meta_rows.append({
@@ -256,6 +279,7 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 driver_form_history[driver_id].append(finish_pos)
                 circuit_history[(driver_id, circuit_id)].append(finish_pos)
                 constructor_points[year][team_id] += pts
+                driver_points[year][driver_id] += pts
 
     X = np.array(X_rows, dtype=np.float32)
     y = np.array(y_rows, dtype=np.float32)
@@ -284,13 +308,18 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
         y_tr, y_val = y[train_idx], y[val_idx]
 
         model = xgb.XGBRegressor(
-            objective="reg:squarederror",
-            n_estimators=300,
-            max_depth=6,
+            objective="reg:pseudohubererror",
+            n_estimators=1000,
+            max_depth=4,
             learning_rate=0.1,
-            subsample=0.8,
-            colsample_bytree=0.8,
+            subsample=0.7,
+            colsample_bytree=0.7,
+            colsample_bylevel=0.7,
+            reg_alpha=3.0,
+            reg_lambda=1.0,
+            min_child_weight=5,
             random_state=42,
+            early_stopping_rounds=50,
         )
         model.fit(
             X_tr, y_tr,
@@ -301,24 +330,30 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
         preds = model.predict(X_val)
         mae = mean_absolute_error(y_val, preds)
         rmse = float(np.sqrt(mean_squared_error(y_val, preds)))
-        fold_metrics.append({"mae": mae, "rmse": rmse})
-        print(f"  Fold {fold_idx + 1}: MAE={mae:.3f}  RMSE={rmse:.3f}  (val size={len(val_idx)})")
+        best_iter = model.best_iteration if hasattr(model, 'best_iteration') else 300
+        fold_metrics.append({"mae": mae, "rmse": rmse, "best_iter": best_iter})
+        print(f"  Fold {fold_idx + 1}: MAE={mae:.3f}  RMSE={rmse:.3f}  best_iter={best_iter}  (val size={len(val_idx)})")
 
     avg_mae = float(np.mean([m["mae"] for m in fold_metrics]))
     avg_rmse = float(np.mean([m["rmse"] for m in fold_metrics]))
-    print(f"  Average: MAE={avg_mae:.3f}  RMSE={avg_rmse:.3f}")
+    avg_best_iter = int(np.mean([m["best_iter"] for m in fold_metrics]))
+    print(f"  Average: MAE={avg_mae:.3f}  RMSE={avg_rmse:.3f}  avg_best_iter={avg_best_iter}")
 
     # ------------------------------------------------------------------
-    # Train final model on all data
+    # Train final model on all data using avg best iteration from CV
     # ------------------------------------------------------------------
-    print("\nTraining final model on all data ...")
+    print(f"\nTraining final model on all data (n_estimators={avg_best_iter}) ...")
     final_model = xgb.XGBRegressor(
-        objective="reg:squarederror",
-        n_estimators=300,
-        max_depth=6,
+        objective="reg:pseudohubererror",
+        n_estimators=avg_best_iter,
+        max_depth=4,
         learning_rate=0.1,
-        subsample=0.8,
-        colsample_bytree=0.8,
+        subsample=0.7,
+        colsample_bytree=0.7,
+        colsample_bylevel=0.7,
+        reg_alpha=1.0,
+        reg_lambda=1.0,
+        min_child_weight=5,
         random_state=42,
     )
     final_model.fit(X, y, verbose=False)
@@ -408,6 +443,7 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
             "teammate_quali_gap": "Qualifying time delta to teammate in seconds (positive = slower)",
             "circuit_type": "Circuit category: street=0, mixed=1, high_speed=2",
             "is_wet": "Wet weather flag (0 or 1, default 0)",
+            "driver_championship_pos": "Driver WDC standing position normalised 0-1 (0 = leader)",
         },
         "feature_normalization": feature_stats,
         "validation_metrics": {

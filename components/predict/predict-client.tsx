@@ -280,9 +280,19 @@ export function PredictClient() {
     try {
       const allSeasons = [seasonData, ...historicalSeasons];
 
+      const totalDrivers = seasonData.driverStandings.length || 20;
+
       const inputs: PredictionInput[] = selectedRace.results.map((result) => {
         const formAdj =
           overrides.driverFormAdjustments[result.driverId] ?? 0;
+
+        // Compute normalised driver championship position (0 = leader, 1 = last)
+        const driverStanding = seasonData.driverStandings.find(
+          (s) => s.id === result.driverId
+        );
+        const champPos = driverStanding
+          ? driverStanding.position / totalDrivers
+          : 0.5;
 
         return {
           gridPosition: result.grid || 20,
@@ -296,8 +306,6 @@ export function PredictClient() {
               seasonData,
               selectedRace.round
             ) + formAdj,
-          circuitType: classifyCircuit(selectedRace.circuitId),
-          isWet: overrides.isWet ? 1 : 0,
           driverCircuitHistory: computeCircuitHistory(
             result.driverId,
             selectedRace.circuitId,
@@ -308,6 +316,9 @@ export function PredictClient() {
             result.teamId,
             selectedRace
           ),
+          circuitType: classifyCircuit(selectedRace.circuitId),
+          isWet: overrides.isWet ? 1 : 0,
+          driverChampionshipPos: champPos,
         };
       });
 
