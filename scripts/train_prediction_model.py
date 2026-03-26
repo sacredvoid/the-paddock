@@ -287,7 +287,7 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
             objective="reg:squarederror",
             n_estimators=1000,
             max_depth=4,
-            learning_rate=0.05,
+            learning_rate=0.1,
             subsample=0.8,
             colsample_bytree=0.8,
             random_state=42,
