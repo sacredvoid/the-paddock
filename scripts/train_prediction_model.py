@@ -306,7 +306,7 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
         model = xgb.XGBRegressor(
             objective="reg:pseudohubererror",
             n_estimators=1000,
-            max_depth=3,
+            max_depth=4,
             learning_rate=0.1,
             subsample=0.7,
             colsample_bytree=0.7,
