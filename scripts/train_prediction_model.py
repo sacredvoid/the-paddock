@@ -196,9 +196,14 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 raw_cp = constructor_points[year].get(team_id, 0.0)
                 constructor_strength = raw_cp / max_cp
 
-                # -- Feature: driver_form (rolling 5-race avg finish) --
+                # -- Feature: driver_form (exponentially weighted 5-race avg finish) --
                 recent = driver_form_history[driver_id][-5:]
-                driver_form = float(np.mean(recent)) if recent else 10.0  # neutral default
+                if recent:
+                    weights = np.array([0.1, 0.15, 0.2, 0.25, 0.3][-len(recent):])
+                    weights = weights / weights.sum()
+                    driver_form = float(np.average(recent, weights=weights))
+                else:
+                    driver_form = 10.0  # neutral default
 
                 # -- Feature: driver_circuit_history --
                 hist = circuit_history.get((driver_id, circuit_id), [])
