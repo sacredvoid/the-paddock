@@ -208,9 +208,13 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 else:
                     driver_form = 10.0  # neutral default
 
-                # -- Feature: driver_circuit_history --
+                # -- Feature: driver_circuit_history (last 3 visits, weighted) --
                 hist = circuit_history.get((driver_id, circuit_id), [])
-                driver_circuit_hist = float(np.mean(hist)) if hist else 10.0
+                if hist:
+                    recent_hist = hist[-3:]  # last 3 visits only
+                    driver_circuit_hist = float(np.mean(recent_hist))
+                else:
+                    driver_circuit_hist = 10.0
 
                 # -- Feature: teammate_quali_gap --
                 teammate_gap = 0.0
