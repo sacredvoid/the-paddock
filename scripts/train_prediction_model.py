@@ -87,6 +87,7 @@ FEATURE_NAMES = [
     "teammate_quali_gap",
     "circuit_type",
     "is_wet",
+    "driver_championship_pos",
 ]
 
 
@@ -144,6 +145,8 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
     circuit_history: dict[tuple[str, str], list[int]] = defaultdict(list)
     # constructor_points[year][teamId] = cumulative points so far this season
     constructor_points: dict[int, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    # driver_points[year][driverId] = cumulative points so far this season
+    driver_points: dict[int, dict[str, float]] = defaultdict(lambda: defaultdict(float))
 
     X_rows: list[list[float]] = []
     y_rows: list[float] = []
@@ -230,6 +233,16 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 # -- Feature: is_wet (always 0, no weather data) --
                 is_wet = 0
 
+                # -- Feature: driver_championship_pos (current WDC standing, normalised 0-1) --
+                dp = driver_points[year]
+                if dp:
+                    sorted_drivers = sorted(dp.items(), key=lambda x: -x[1])
+                    pos = next((i + 1 for i, (d, _) in enumerate(sorted_drivers) if d == driver_id), 10)
+                    total_drivers = len(sorted_drivers)
+                    driver_champ_pos = pos / max(total_drivers, 1)
+                else:
+                    driver_champ_pos = 0.5  # neutral for first race of season
+
                 X_rows.append([
                     float(grid_pos),
                     constructor_strength,
@@ -238,6 +251,7 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                     teammate_gap,
                     float(circuit_type),
                     float(is_wet),
+                    float(driver_champ_pos),
                 ])
                 y_rows.append(float(finish_pos))
                 meta_rows.append({
@@ -261,6 +275,7 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 driver_form_history[driver_id].append(finish_pos)
                 circuit_history[(driver_id, circuit_id)].append(finish_pos)
                 constructor_points[year][team_id] += pts
+                driver_points[year][driver_id] += pts
 
     X = np.array(X_rows, dtype=np.float32)
     y = np.array(y_rows, dtype=np.float32)
@@ -420,6 +435,7 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
             "teammate_quali_gap": "Qualifying time delta to teammate in seconds (positive = slower)",
             "circuit_type": "Circuit category: street=0, mixed=1, high_speed=2",
             "is_wet": "Wet weather flag (0 or 1, default 0)",
+            "driver_championship_pos": "Driver WDC standing position normalised 0-1 (0 = leader)",
         },
         "feature_normalization": feature_stats,
         "validation_metrics": {
