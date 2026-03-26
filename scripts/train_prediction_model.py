@@ -295,8 +295,8 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
     # ------------------------------------------------------------------
     # 3-fold temporal cross-validation
     # ------------------------------------------------------------------
-    print("\n--- 5-fold temporal cross-validation ---")
-    tscv = TimeSeriesSplit(n_splits=5)
+    print("\n--- 3-fold temporal cross-validation ---")
+    tscv = TimeSeriesSplit(n_splits=3)
     fold_metrics: list[dict[str, float]] = []
 
     for fold_idx, (train_idx, val_idx) in enumerate(tscv.split(X)):
@@ -441,7 +441,7 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
         },
         "feature_normalization": feature_stats,
         "validation_metrics": {
-            "cv_folds": 5,
+            "cv_folds": 3,
             "avg_mae": round(avg_mae, 4),
             "avg_rmse": round(avg_rmse, 4),
             "fold_details": [
