@@ -87,7 +87,6 @@ FEATURE_NAMES = [
     "teammate_quali_gap",
     "circuit_type",
     "is_wet",
-    "season_progress",
 ]
 
 
@@ -226,10 +225,6 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 # -- Feature: is_wet (always 0, no weather data) --
                 is_wet = 0
 
-                # -- Feature: season_progress (fraction of season completed) --
-                total_races = len(races)
-                season_progress = round_num / total_races if total_races > 0 else 0.5
-
                 X_rows.append([
                     float(grid_pos),
                     constructor_strength,
@@ -238,7 +233,6 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                     teammate_gap,
                     float(circuit_type),
                     float(is_wet),
-                    float(season_progress),
                 ])
                 y_rows.append(float(finish_pos))
                 meta_rows.append({
@@ -414,7 +408,6 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
             "teammate_quali_gap": "Qualifying time delta to teammate in seconds (positive = slower)",
             "circuit_type": "Circuit category: street=0, mixed=1, high_speed=2",
             "is_wet": "Wet weather flag (0 or 1, default 0)",
-            "season_progress": "Fraction of season completed (0-1), e.g. round 10 of 20 = 0.5",
         },
         "feature_normalization": feature_stats,
         "validation_metrics": {
