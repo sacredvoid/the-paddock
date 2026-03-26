@@ -88,6 +88,7 @@ FEATURE_NAMES = [
     "circuit_type",
     "is_wet",
     "driver_championship_pos",
+    "constructor_form",
 ]
 
 
@@ -147,6 +148,8 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
     constructor_points: dict[int, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     # driver_points[year][driverId] = cumulative points so far this season
     driver_points: dict[int, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    # constructor_best_results[teamId] = list of best finish per race (most recent last)
+    constructor_best_results: dict[str, list[int]] = defaultdict(list)
 
     X_rows: list[list[float]] = []
     y_rows: list[float] = []
@@ -247,6 +250,14 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 else:
                     driver_champ_pos = 0.5  # neutral for first race of season
 
+                # -- Feature: constructor_form (rolling 3-race best finish avg) --
+                con_hist = constructor_best_results.get(team_id, [])
+                if con_hist:
+                    recent_con = con_hist[-3:]
+                    constructor_form = float(np.mean(recent_con))
+                else:
+                    constructor_form = 10.0
+
                 X_rows.append([
                     float(grid_pos),
                     constructor_strength,
@@ -256,6 +267,7 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                     float(circuit_type),
                     float(is_wet),
                     float(driver_champ_pos),
+                    float(constructor_form),
                 ])
                 y_rows.append(float(finish_pos))
                 meta_rows.append({
@@ -280,6 +292,18 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 circuit_history[(driver_id, circuit_id)].append(finish_pos)
                 constructor_points[year][team_id] += pts
                 driver_points[year][driver_id] += pts
+
+            # Track best finish per team for this race
+            team_best: dict[str, int] = {}
+            for res in results:
+                tid = res.get("teamId", "unknown")
+                fp = res.get("position")
+                if fp is not None:
+                    fp = int(max(1, min(20, fp)))
+                    if tid not in team_best or fp < team_best[tid]:
+                        team_best[tid] = fp
+            for tid, best in team_best.items():
+                constructor_best_results[tid].append(best)
 
     X = np.array(X_rows, dtype=np.float32)
     y = np.array(y_rows, dtype=np.float32)
@@ -444,6 +468,7 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
             "circuit_type": "Circuit category: street=0, mixed=1, high_speed=2",
             "is_wet": "Wet weather flag (0 or 1, default 0)",
             "driver_championship_pos": "Driver WDC standing position normalised 0-1 (0 = leader)",
+            "constructor_form": "Constructor rolling 3-race best finish average (lower = stronger recent form)",
         },
         "feature_normalization": feature_stats,
         "validation_metrics": {
