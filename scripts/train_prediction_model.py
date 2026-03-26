@@ -290,6 +290,8 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
             learning_rate=0.1,
             subsample=0.8,
             colsample_bytree=0.8,
+            reg_alpha=1.0,
+            reg_lambda=1.0,
             random_state=42,
             early_stopping_rounds=50,
         )
@@ -318,10 +320,12 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
     final_model = xgb.XGBRegressor(
         objective="reg:squarederror",
         n_estimators=avg_best_iter,
-        max_depth=6,
+        max_depth=4,
         learning_rate=0.1,
         subsample=0.8,
         colsample_bytree=0.8,
+        reg_alpha=1.0,
+        reg_lambda=1.0,
         random_state=42,
     )
     final_model.fit(X, y, verbose=False)
