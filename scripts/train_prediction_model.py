@@ -319,7 +319,7 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
             reg_lambda=1.0,
             min_child_weight=5,
             random_state=42,
-            early_stopping_rounds=50,
+            early_stopping_rounds=30,
         )
         model.fit(
             X_tr, y_tr,
