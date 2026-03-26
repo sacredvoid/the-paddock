@@ -88,6 +88,7 @@ FEATURE_NAMES = [
     "circuit_type",
     "is_wet",
     "driver_championship_pos",
+    "dnf_rate",
 ]
 
 
@@ -147,6 +148,8 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
     constructor_points: dict[int, dict[str, float]] = defaultdict(lambda: defaultdict(float))
     # driver_points[year][driverId] = cumulative points so far this season
     driver_points: dict[int, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    # driver_race_counts[driverId] = (total_races, dnf_count) across all seasons
+    driver_race_counts: dict[str, list[int]] = defaultdict(lambda: [0, 0])
 
     X_rows: list[list[float]] = []
     y_rows: list[float] = []
@@ -243,6 +246,10 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 else:
                     driver_champ_pos = 0.5  # neutral for first race of season
 
+                # -- Feature: dnf_rate (historical did-not-finish rate) --
+                counts = driver_race_counts[driver_id]
+                dnf_rate = counts[1] / counts[0] if counts[0] > 0 else 0.1  # default ~10%
+
                 X_rows.append([
                     float(grid_pos),
                     constructor_strength,
@@ -252,6 +259,7 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                     float(circuit_type),
                     float(is_wet),
                     float(driver_champ_pos),
+                    float(dnf_rate),
                 ])
                 y_rows.append(float(finish_pos))
                 meta_rows.append({
@@ -276,6 +284,10 @@ def build_dataset() -> tuple[np.ndarray, np.ndarray, list[dict[str, Any]]]:
                 circuit_history[(driver_id, circuit_id)].append(finish_pos)
                 constructor_points[year][team_id] += pts
                 driver_points[year][driver_id] += pts
+                status = res.get("status", "Finished")
+                driver_race_counts[driver_id][0] += 1
+                if status in ("DNF", "DNS", "DSQ"):
+                    driver_race_counts[driver_id][1] += 1
 
     X = np.array(X_rows, dtype=np.float32)
     y = np.array(y_rows, dtype=np.float32)
@@ -438,6 +450,7 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
             "circuit_type": "Circuit category: street=0, mixed=1, high_speed=2",
             "is_wet": "Wet weather flag (0 or 1, default 0)",
             "driver_championship_pos": "Driver WDC standing position normalised 0-1 (0 = leader)",
+            "dnf_rate": "Driver historical did-not-finish rate (0-1)",
         },
         "feature_normalization": feature_stats,
         "validation_metrics": {
