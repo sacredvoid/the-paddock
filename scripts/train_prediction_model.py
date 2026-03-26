@@ -285,12 +285,13 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
 
         model = xgb.XGBRegressor(
             objective="reg:squarederror",
-            n_estimators=300,
+            n_estimators=1000,
             max_depth=6,
             learning_rate=0.1,
             subsample=0.8,
             colsample_bytree=0.8,
             random_state=42,
+            early_stopping_rounds=50,
         )
         model.fit(
             X_tr, y_tr,
@@ -301,20 +302,22 @@ def train_and_export(X: np.ndarray, y: np.ndarray, meta: list[dict[str, Any]]) -
         preds = model.predict(X_val)
         mae = mean_absolute_error(y_val, preds)
         rmse = float(np.sqrt(mean_squared_error(y_val, preds)))
-        fold_metrics.append({"mae": mae, "rmse": rmse})
-        print(f"  Fold {fold_idx + 1}: MAE={mae:.3f}  RMSE={rmse:.3f}  (val size={len(val_idx)})")
+        best_iter = model.best_iteration if hasattr(model, 'best_iteration') else 300
+        fold_metrics.append({"mae": mae, "rmse": rmse, "best_iter": best_iter})
+        print(f"  Fold {fold_idx + 1}: MAE={mae:.3f}  RMSE={rmse:.3f}  best_iter={best_iter}  (val size={len(val_idx)})")
 
     avg_mae = float(np.mean([m["mae"] for m in fold_metrics]))
     avg_rmse = float(np.mean([m["rmse"] for m in fold_metrics]))
-    print(f"  Average: MAE={avg_mae:.3f}  RMSE={avg_rmse:.3f}")
+    avg_best_iter = int(np.mean([m["best_iter"] for m in fold_metrics]))
+    print(f"  Average: MAE={avg_mae:.3f}  RMSE={avg_rmse:.3f}  avg_best_iter={avg_best_iter}")
 
     # ------------------------------------------------------------------
-    # Train final model on all data
+    # Train final model on all data using avg best iteration from CV
     # ------------------------------------------------------------------
-    print("\nTraining final model on all data ...")
+    print(f"\nTraining final model on all data (n_estimators={avg_best_iter}) ...")
     final_model = xgb.XGBRegressor(
         objective="reg:squarederror",
-        n_estimators=300,
+        n_estimators=avg_best_iter,
         max_depth=6,
         learning_rate=0.1,
         subsample=0.8,
